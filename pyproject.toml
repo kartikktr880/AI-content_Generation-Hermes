@@ -1,0 +1,19 @@
+[project]
+name = "ayce"
+version = "0.0.1"
+description = "AYCE — Autonomous YouTube Content & Video Production Engine (P0 foundation)"
+requires-python = ">=3.12"
+# Intentionally empty: P0 uses the Python standard library only.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+markers = [
+    "integration: process-level tests (invoke the CLI as a subprocess)",
+]
+
