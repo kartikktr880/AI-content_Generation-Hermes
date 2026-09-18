@@ -4,9 +4,9 @@ A scratch-built autonomous production engine (trend discovery → research →
 script → scenes → assets → audio → compositing → QA → publishing), grown
 from a verified minimal foundation, one bounded capability at a time.
 
-**Status: P3 — audio provider seam VERIFIED** (P0 foundation + P1-A Scene
-Contract + P1-B Script → Scene stage + P2 asset resolution + P3 narration
-audio).
+**Status: P4 — timeline/composition boundary VERIFIED** (P0 foundation +
+P1-A Scene Contract + P1-B Script → Scene + P2 asset resolution + P3
+narration audio + P4 renderer-neutral timeline).
 
 ## Stack
 
@@ -28,6 +28,7 @@ src/ayce/        engine package
   script_to_scene.py deterministic Script → Scene Manifest stage (P1-B)
   asset_resolution.py file-backed asset resolution stage (P2)
   narration_audio.py file-backed narration audio stage (P3)
+  timeline.py    renderer-neutral timeline/composition stage (P4)
   health.py      baseline diagnostics (`python -m ayce health`)
   cli.py         CLI entry point
 docs/
@@ -35,6 +36,7 @@ docs/
   script_to_scene.md  P1-B stage: input/output contracts & lifecycle
   asset_resolution.md P2 stage: provider adapter seam & policies
   narration_audio.md  P3 stage: audio provider adapter seam
+  timeline.md         P4 stage: renderer-neutral temporal composition
 tests/
   unit/          unit tests (fast, no external effects)
   integration/   process-level tests (CLI)
@@ -167,5 +169,31 @@ with audio data.
 - **P3 is one bounded stage — not Hermes**, and it does not depend on P2:
   narration resolves from the Scene Contract alone.
   See [`docs/narration_audio.md`](docs/narration_audio.md).
+
+## Timeline / Composition (P4)
+
+The renderer-neutral temporal composition contract lives in
+`src/ayce/timeline.py`: a deterministic, Hermes-compatible stage that
+cross-validates the Scene + Asset + Narration manifests and assembles
+them into a `timeline.json` artifact (kind `ArtifactKind.TIMELINE`,
+schema `1.0`).
+
+- **Temporal spine**: `scene[n].start = sum(preceding scene durations)`
+  from the Scene Contract; contiguous, validated, deterministic.
+- **Elements (MVP: visual + narration only)**: a `visual` element
+  occupies its full scene interval (only for scenes with a resolved
+  asset); a `narration` element starts at its scene start with the
+  truthful audio duration from P3.
+- **Duration policy (fail-fast)**: narration longer than its scene →
+  validation failure (no stretch/trim/overflow semantics); unknown audio
+  duration → failure (metadata is never invented); shorter narration is
+  fine — remaining scene time is unambiguously visual-only.
+- **Renderer-neutral**: no FFmpeg/Remotion/OTIO commands, filtergraphs,
+  or provider data — only typed timing + run-relative resolved paths.
+  Captions/graphics/transitions have no upstream contract yet and are
+  not faked; the schema is additive.
+- **P4 is one bounded stage — not Hermes.** It consumes resolved
+  artifacts only; renderer selection is a later orchestration decision.
+  See [`docs/timeline.md`](docs/timeline.md).
 
 
