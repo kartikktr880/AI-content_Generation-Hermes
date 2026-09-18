@@ -4,9 +4,9 @@ A scratch-built autonomous production engine (trend discovery → research →
 script → scenes → assets → audio → compositing → QA → publishing), grown
 from a verified minimal foundation, one bounded capability at a time.
 
-**Status: P4 — timeline/composition boundary VERIFIED** (P0 foundation +
-P1-A Scene Contract + P1-B Script → Scene + P2 asset resolution + P3
-narration audio + P4 renderer-neutral timeline).
+**Status: P4.5 — renderer boundary VERIFIED (real MP4 rendered)** (P0 + P1-A
+Scene Contract + P1-B Script → Scene + P2 assets + P3 narration + P4 timeline
++ P4.5 FFmpeg renderer smoke stage).
 
 ## Stack
 
@@ -27,8 +27,8 @@ src/ayce/        engine package
   scene_contract.py  canonical Scene Contract (P1-A; Pydantic V2)
   script_to_scene.py deterministic Script → Scene Manifest stage (P1-B)
   asset_resolution.py file-backed asset resolution stage (P2)
-  narration_audio.py file-backed narration audio stage (P3)
   timeline.py    renderer-neutral timeline/composition stage (P4)
+  render.py      FFmpeg renderer smoke stage (P4.5)
   health.py      baseline diagnostics (`python -m ayce health`)
   cli.py         CLI entry point
 docs/
@@ -37,6 +37,7 @@ docs/
   asset_resolution.md P2 stage: provider adapter seam & policies
   narration_audio.md  P3 stage: audio provider adapter seam
   timeline.md         P4 stage: renderer-neutral temporal composition
+  render.md           P4.5 stage: FFmpeg renderer boundary & smoke render
 tests/
   unit/          unit tests (fast, no external effects)
   integration/   process-level tests (CLI)
@@ -71,15 +72,18 @@ All environment access uses the `AYCE_` prefix and goes through
 | Job/run identity    | VERIFIED |
 | Stage state machine | VERIFIED |
 | Artifact references | VERIFIED |
-| Adapter convention  | VERIFIED (convention only; no providers) |
+| Adapter convention  | VERIFIED (render/asset/audio providers registered) |
 | Test harness        | VERIFIED |
 | Health check        | VERIFIED |
-| FFmpeg              | NOT INSTALLED on this machine (required before the render stage) |
+| FFmpeg + ffprobe    | VERIFIED (9.0.1 essentials, gyan.dev build, on PATH) |
 
-## Known blockers for the Golden Path
+## Environment requirement (resolved in P4.5)
 
-- FFmpeg/ffprobe are not installed on this machine; the first vertical
-  slice's composition/render step will require installing them first.
+FFmpeg/ffprobe are required for the render stage. They are now installed
+on the dev machine (FFmpeg 9.0.1 essentials from the gyan.dev release —
+the distribution officially linked from ffmpeg.org — added to the user
+PATH). Override/point to other installs via `AYCE_FFMPEG_PATH` /
+`AYCE_FFPROBE_PATH` (see `.env.example`).
 
 ## Scene Contract (P1-A)
 
@@ -169,6 +173,28 @@ with audio data.
 - **P3 is one bounded stage — not Hermes**, and it does not depend on P2:
   narration resolves from the Scene Contract alone.
   See [`docs/narration_audio.md`](docs/narration_audio.md).
+- **P4 is one bounded stage — not Hermes.** It consumes resolved
+  artifacts only; renderer selection is a later orchestration decision.
+  See [`docs/timeline.md`](docs/timeline.md).
+
+## Renderer (P4.5)
+
+The renderer boundary lives in `src/ayce/render.py`: a deterministic,
+Hermes-compatible stage that consumes the Timeline Manifest and renders
+**one scene** into a real H.264/AAC MP4 via the FFmpeg CLI
+(`render/scene-XXX.mp4`, kind `ArtifactKind.RENDERED_VIDEO`), validated
+with ffprobe before any success is reported.
+
+- `Renderer` extends the P0 `Adapter` ABC; `FFmpegRenderer` health is
+  truthful (both executables must actually run version queries;
+  `AYCE_FFMPEG_PATH`/`AYCE_FFPROBE_PATH` override PATH lookup).
+- **Subprocess safety:** explicit argument lists via `subprocess.run([...])`,
+  never `shell=True`, never concatenated command strings.
+- **Output validation:** FFmpeg exit zero is not enough — ffprobe must
+  confirm the video stream, dimensions, and duration, or the stage fails.
+- **Smoke scope:** one scene, static visual + narration audio as-is.
+  Multi-scene production rendering is a future capability.
+  See [`docs/render.md`](docs/render.md).
 
 ## Timeline / Composition (P4)
 

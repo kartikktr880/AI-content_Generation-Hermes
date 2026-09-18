@@ -135,19 +135,26 @@ def check_adapters() -> CheckResult:
 
 
 def check_ffmpeg() -> CheckResult:
-    exe = shutil.which("ffmpeg")
-    if not exe:
+    """Truthful media-tooling check: both ffmpeg AND ffprobe must be callable."""
+    missing = [name for name in ("ffmpeg", "ffprobe") if shutil.which(name) is None]
+    if missing:
         return CheckResult(
             "ffmpeg",
             WARN,
-            "ffmpeg NOT found on PATH — required later for the render/compositing stage",
+            f"{', '.join(missing)} NOT found on PATH — required for the render/compositing stage",
         )
-    try:
-        proc = subprocess.run([exe, "-version"], capture_output=True, text=True, timeout=10)
-        first = (proc.stdout or proc.stderr).splitlines()[0] if (proc.stdout or proc.stderr) else "?"
-        return CheckResult("ffmpeg", PASS, first)
-    except (OSError, subprocess.SubprocessError) as exc:
-        return CheckResult("ffmpeg", WARN, f"ffmpeg found at {exe} but failed to run: {exc}")
+    versions = []
+    for name in ("ffmpeg", "ffprobe"):
+        exe = shutil.which(name)
+        try:
+            proc = subprocess.run([exe, "-version"], capture_output=True, text=True, timeout=10)
+            if proc.returncode != 0:
+                return CheckResult("ffmpeg", WARN, f"{name} found but exited {proc.returncode}")
+            output = (proc.stdout or proc.stderr).splitlines()
+            versions.append(output[0] if output else "?")
+        except (OSError, subprocess.SubprocessError) as exc:
+            return CheckResult("ffmpeg", WARN, f"{name} found but failed to run: {exc}")
+    return CheckResult("ffmpeg", PASS, f"ffmpeg + ffprobe available ({versions[0]})")
 
 
 def check_pytest() -> CheckResult:

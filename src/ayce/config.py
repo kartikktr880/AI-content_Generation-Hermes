@@ -54,6 +54,11 @@ class Config:
 
     log_level: str = "INFO"
     data_dir: Path = Path("data")
+    #: Optional explicit ffmpeg/ffprobe executable paths. When unset, the
+    #: renderer falls back to PATH lookup. Never hardcode machine paths
+    #: in source — set AYCE_FFMPEG_PATH / AYCE_FFPROBE_PATH instead.
+    ffmpeg_path: str | None = None
+    ffprobe_path: str | None = None
 
     @property
     def resolved_data_dir(self) -> Path:
@@ -104,4 +109,9 @@ class Config:
         if not data_dir_raw:
             raise ConfigError(f"{ENV_PREFIX}DATA_DIR must not be empty")
 
-        return cls(log_level=log_level, data_dir=Path(data_dir_raw))
+        return cls(
+            log_level=log_level,
+            data_dir=Path(data_dir_raw),
+            ffmpeg_path=source.get(ENV_PREFIX + "FFMPEG_PATH") or None,
+            ffprobe_path=source.get(ENV_PREFIX + "FFPROBE_PATH") or None,
+        )
