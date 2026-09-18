@@ -1,0 +1,23 @@
+{
+  "production_id": "job-20260917T130000Z-000000abcdef",
+  "title": "Minimal P1-B Production",
+  "scenes": [
+    {
+      "narration_text": "The story begins quietly, in a small room at the edge of the city.",
+      "visual_description": "A single lamp glowing in a dark room, slow push-in."
+    },
+    {
+      "narration_text": "Then everything changes at once.",
+      "visual_description": "Doors opening onto a sunlit courtyard.",
+      "asset_requirement": {
+        "kind": "image",
+        "description": "Sunlit courtyard seen through open doors, wide angle.",
+        "requires_provenance": true
+      }
+    },
+    {
+      "narration_text": "And the rest, as they say, is history.",
+      "visual_description": "Old photographs fanned across a wooden table."
+    }
+  ]
+}

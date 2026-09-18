@@ -1,14 +1,15 @@
 # AYCE — Autonomous YouTube Content & Video Production Engine
 
-P0 foundation: the smallest clean, testable, verifiable baseline that the
-future autonomous production loop (trend discovery → research → script →
-scenes → assets → audio → compositing → QA → publishing) can grow from.
+A scratch-built autonomous production engine (trend discovery → research →
+script → scenes → assets → audio → compositing → QA → publishing), grown
+from a verified minimal foundation, one bounded capability at a time.
 
-**Status: P0 foundation — VERIFIED.** No pipeline stages are implemented yet.
+**Status: P1-B — first executable production stage VERIFIED** (P0 foundation +
+P1-A Scene Contract + P1-B deterministic Script → Scene Manifest stage).
 
 ## Stack
 
-- Python ≥ 3.12, **standard library only** (zero runtime dependencies)
+- Python ≥ 3.12; standard library + **Pydantic V2** (contract validation only)
 - pytest (test harness; already available on this machine)
 - Local JSON files under `data/` for state, logs, and artifact manifests
 
@@ -23,14 +24,16 @@ src/ayce/        engine package
   artifacts.py   artifact kinds + immutable refs + per-run manifest
   adapters.py    provider-agnostic adapter convention + registry
   scene_contract.py  canonical Scene Contract (P1-A; Pydantic V2)
+  script_to_scene.py deterministic Script → Scene Manifest stage (P1-B)
   health.py      baseline diagnostics (`python -m ayce health`)
   cli.py         CLI entry point
 docs/
   scene_contract.md   Scene Contract architecture & boundaries
+  script_to_scene.md  P1-B stage: input/output contracts & lifecycle
 tests/
   unit/          unit tests (fast, no external effects)
   integration/   process-level tests (CLI)
-  fixtures/      regression fixtures (incl. scene_contract/)
+  fixtures/      regression fixtures (scene_contract/, script_to_scene/)
 data/            runtime artifacts (git-ignored)
 ```
 
@@ -82,5 +85,38 @@ description, optional *unresolved* asset requirements with a provenance
 *requirement*) and explicitly rejects resolved-asset paths and
 renderer-specific fields. See [`docs/scene_contract.md`](docs/scene_contract.md)
 for the full boundary explanation, and `tests/fixtures/scene_contract/` for
+## Scene Contract (P1-A)
+
+The canonical, machine-readable Scene Manifest model lives in
+`src/ayce/scene_contract.py` (Pydantic V2, schema version `1.0`).
+It is the stable seam between creative planning and downstream production
+systems: it holds **creative intent only** (narration text, visual
+description, optional *unresolved* asset requirements with a provenance
+*requirement*) and explicitly rejects resolved-asset paths and
+renderer-specific fields. See [`docs/scene_contract.md`](docs/scene_contract.md)
+for the full boundary explanation, and `tests/fixtures/scene_contract/` for
 example manifests (minimal, documentary, malformed).
+
+## Script → Scene Manifest stage (P1-B)
+
+The first **executable production stage** lives in
+`src/ayce/script_to_scene.py`: a deterministic, Hermes-compatible capability
+that turns a structured script input (`ScriptInput` JSON) into a validated
+`ProductionManifest`, records the stage lifecycle in `RunState`
+(`pending → running → succeeded/failed`, retries allowed after failure),
+persists it through the existing `ArtifactRegistry` as `scene_manifest.json`,
+reloads and verifies it, and returns a `ScriptToSceneResult`.
+
+- Deterministic: no LLMs/randomness/network — identical input always
+  produces identical manifest bytes. Derived scene IDs (`scene-001`…)
+  and durations (`max(2.0 s, words / 2.5)` when unspecified) are
+  documented, replaceable MVP rules.
+- **No false success**: any stage-critical failure leaves the run state
+  observably `failed` with the error recorded; reruns with identical input
+  reuse the existing artifact instead of duplicating it.
+- **P1-B is one bounded stage — not Hermes.** Future Hermes (master
+  director) calls `run_script_to_scene_stage(...)` as a single capability.
+  See [`docs/script_to_scene.md`](docs/script_to_scene.md) and
+  `tests/fixtures/script_to_scene/`.
+
 

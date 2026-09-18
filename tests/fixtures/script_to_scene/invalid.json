@@ -1,0 +1,15 @@
+{
+  "production_id": "job-invalid-0002",
+  "title": "Deliberately invalid script input",
+  "scenes": [
+    {
+      "narration_text": "A perfectly valid opening scene.",
+      "visual_description": "A quiet street in early morning light."
+    },
+    {
+      "narration_text": "   ",
+      "visual_description": "A broken scene.",
+      "duration_seconds": -3.0
+    }
+  ]
+}
