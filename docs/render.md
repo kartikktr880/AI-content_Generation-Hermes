@@ -75,3 +75,30 @@ production renderer would render ALL scenes into one video, add
 transitions/captions/graphics, and handle audio policy (e.g., silence
 filling, ducking). Those are future capabilities; P4.5 only proves the
 render boundary and produces the first real media artifact.
+
+## P5 — multi-scene production render
+
+`FFmpegRenderer.render_production(timeline, *, run_dir)` renders the
+COMPLETE timeline into ONE production MP4:
+`render/{production_id}.mp4` (kind `rendered_video`).
+
+- Per-scene clips are encoded (same documented composition policies as
+  the smoke render: looped still / stream-looped video / black filler for
+  narration-only scenes, narration muxed as-is) into `render/tmp/`,
+  then concatenated with the FFmpeg concat demuxer (`-c copy`) in
+  canonical timeline order.
+- Intermediates are scratch: removed after successful completion,
+  preserved on failure for diagnosis. Never written into source fixtures,
+  never committed.
+- Production duration is validated against the timeline total within a
+  documented tolerance (`±0.5 s + 2%`) — proving all scene intervals were
+  incorporated. Additional lightweight coverage proof: per-scene fixture
+  visuals use distinct solid colors, so a frame sampled at each scene
+  midpoint must match that scene's color (tests sample raw RGB via
+  ffmpeg — no computer vision).
+- Idempotency (within a run): an existing production artifact for the
+  same output path is ffprobe re-validated — a valid file is reused; a
+  stale/corrupt file triggers a fresh render (never accepted as success).
+- Stage: `run_production_render_stage(timeline, run_state, registry,
+  renderer)` → `render/{production_id}.mp4`, state
+  `production_render`.

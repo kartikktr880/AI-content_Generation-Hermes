@@ -4,9 +4,9 @@ A scratch-built autonomous production engine (trend discovery → research →
 script → scenes → assets → audio → compositing → QA → publishing), grown
 from a verified minimal foundation, one bounded capability at a time.
 
-**Status: P4.5 — renderer boundary VERIFIED (real MP4 rendered)** (P0 + P1-A
+**Status: P5 — complete multi-scene production render VERIFIED** (P0 + P1-A
 Scene Contract + P1-B Script → Scene + P2 assets + P3 narration + P4 timeline
-+ P4.5 FFmpeg renderer smoke stage).
++ P4.5 single-scene render + P5 complete multi-scene production MP4).
 
 ## Stack
 
@@ -194,6 +194,26 @@ with ffprobe before any success is reported.
   confirm the video stream, dimensions, and duration, or the stage fails.
 - **Smoke scope:** one scene, static visual + narration audio as-is.
   Multi-scene production rendering is a future capability.
+  See [`docs/render.md`](docs/render.md).
+
+## Multi-Scene Production Render (P5)
+
+`FFmpegRenderer.render_production()` renders the COMPLETE verified Timeline
+Manifest into **one production MP4**: `render/{production_id}.mp4`
+(kind `rendered_video`, metadata carries `production_id`, `scene_count`,
+duration, dimensions, sha256).
+
+- All scenes render in canonical timeline order via per-scene clips
+  (same composition policies as the smoke render, including black filler
+  for narration-only scenes) concatenated with the FFmpeg concat demuxer.
+- Production duration is validated against the timeline total within a
+  documented tolerance (±0.5 s + 2%), proving scene coverage; tests add a
+  lightweight per-scene frame-color check for order/coverage.
+- Intermediates (`render/tmp/`) are scratch — removed on success,
+  preserved on failure. Idempotency: an existing production artifact is
+  ffprobe re-validated (valid → reused; stale/corrupt → re-rendered).
+- **P5 is one bounded stage — not Hermes**, and does not implement
+  captions, transitions, motion, or audio processing.
   See [`docs/render.md`](docs/render.md).
 
 ## Timeline / Composition (P4)
