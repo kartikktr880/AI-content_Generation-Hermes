@@ -22,12 +22,15 @@ src/ayce/        engine package
   state.py       stage status state machine + atomic JSON checkpoints
   artifacts.py   artifact kinds + immutable refs + per-run manifest
   adapters.py    provider-agnostic adapter convention + registry
+  scene_contract.py  canonical Scene Contract (P1-A; Pydantic V2)
   health.py      baseline diagnostics (`python -m ayce health`)
   cli.py         CLI entry point
+docs/
+  scene_contract.md   Scene Contract architecture & boundaries
 tests/
   unit/          unit tests (fast, no external effects)
   integration/   process-level tests (CLI)
-  fixtures/      future regression fixtures
+  fixtures/      regression fixtures (incl. scene_contract/)
 data/            runtime artifacts (git-ignored)
 ```
 
@@ -68,3 +71,16 @@ All environment access uses the `AYCE_` prefix and goes through
 
 - FFmpeg/ffprobe are not installed on this machine; the first vertical
   slice's composition/render step will require installing them first.
+
+## Scene Contract (P1-A)
+
+The canonical, machine-readable Scene Manifest model lives in
+`src/ayce/scene_contract.py` (Pydantic V2, schema version `1.0`).
+It is the stable seam between creative planning and downstream production
+systems: it holds **creative intent only** (narration text, visual
+description, optional *unresolved* asset requirements with a provenance
+*requirement*) and explicitly rejects resolved-asset paths and
+renderer-specific fields. See [`docs/scene_contract.md`](docs/scene_contract.md)
+for the full boundary explanation, and `tests/fixtures/scene_contract/` for
+example manifests (minimal, documentary, malformed).
+

@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "production_id": "job-20260917T121500Z-1a2b3c4d5e6f",
+  "title": "The Iron Road: Railways of Colonial India",
+  "scenes": [
+    {
+      "scene_id": "scene-1-opening",
+      "sequence": 1,
+      "duration_seconds": 5.0,
+      "narration": {
+        "text": "In 1853, the first passenger train in India left Bombay for Thane — sixteen kilometers that would bind a subcontinent together."
+      },
+      "visual": {
+        "description": "Slow zoom on a vintage map of 1850s Bombay, sepia tones.",
+        "requirement": {
+          "kind": "image",
+          "description": "Historical map of Bombay region, 1850s, public domain.",
+          "requires_provenance": true
+        }
+      }
+    },
+    {
+      "scene_id": "scene-2-arrival",
+      "sequence": 2,
+      "duration_seconds": 7.5,
+      "narration": {
+        "text": "Within three decades, the network stretched from the coasts to the interior, carrying cotton, coal, and millions of travelers."
+      },
+      "visual": {
+        "description": "Show archival railway footage from colonial India.",
+        "requirement": {
+          "kind": "video",
+          "description": "Archival footage of Indian railways, late 19th century.",
+          "requires_provenance": true
+        }
+      }
+    },
+    {
+      "scene_id": "scene-3-bridge",
+      "sequence": 3,
+      "duration_seconds": 6.0,
+      "narration": {
+        "text": "Bridges like the one over the Sutlej became symbols of an engineering ambition that outlived the empire."
+      },
+      "visual": {
+        "description": "Wide shot of a colonial-era railway bridge over a wide river.",
+        "requirement": {
+          "kind": "image",
+          "description": "Period photograph of a stone railway bridge in India.",
+          "requires_provenance": true
+        }
+      }
+    },
+    {
+      "scene_id": "scene-4-portrait",
+      "sequence": 4,
+      "duration_seconds": 6.0,
+      "narration": {
+        "text": "For the people who built and rode these lines, the railway was neither symbol nor empire — it was daily life."
+      },
+      "visual": {
+        "description": "Close, warm portrait-style still of travelers waiting on a platform.",
+        "requirement": null
+      }
+    },
+    {
+      "scene_id": "scene-5-closing",
+      "sequence": 5,
+      "duration_seconds": 8.0,
+      "narration": {
+        "text": "Today, that same iron road carries more than twenty million passengers a day."
+      },
+      "visual": {
+        "description": "Modern busy railway platform, motion-blurred crowd, sunrise light.",
+        "requirement": {
+          "kind": "image",
+          "description": "Busy modern Indian railway platform at sunrise, crowds in motion.",
+          "requires_provenance": true
+        }
+      }
+    }
+  ]
+}

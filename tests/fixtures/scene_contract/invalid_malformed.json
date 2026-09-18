@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "production_id": "job-invalid-0001",
+  "title": "Deliberately malformed manifest",
+  "scenes": [
+    {
+      "scene_id": "scene-a",
+      "sequence": 1,
+      "duration_seconds": 4.0,
+      "narration": { "text": "First scene." },
+      "visual": { "description": "A placeholder shot." }
+    },
+    {
+      "scene_id": "scene-a",
+      "sequence": 3,
+      "duration_seconds": -2.5,
+      "narration": { "text": "Second scene." },
+      "visual": { "description": "Another placeholder.", "requirement": null },
+      "ffmpeg_filter": "scale=1280:720"
+    }
+  ]
+}
