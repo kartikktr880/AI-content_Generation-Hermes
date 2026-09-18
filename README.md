@@ -4,8 +4,8 @@ A scratch-built autonomous production engine (trend discovery → research →
 script → scenes → assets → audio → compositing → QA → publishing), grown
 from a verified minimal foundation, one bounded capability at a time.
 
-**Status: P1-B — first executable production stage VERIFIED** (P0 foundation +
-P1-A Scene Contract + P1-B deterministic Script → Scene Manifest stage).
+**Status: P2 — provider adapter seam VERIFIED** (P0 foundation + P1-A Scene
+Contract + P1-B Script → Scene stage + P2 file-backed asset resolution).
 
 ## Stack
 
@@ -25,15 +25,17 @@ src/ayce/        engine package
   adapters.py    provider-agnostic adapter convention + registry
   scene_contract.py  canonical Scene Contract (P1-A; Pydantic V2)
   script_to_scene.py deterministic Script → Scene Manifest stage (P1-B)
+  asset_resolution.py file-backed asset resolution stage (P2)
   health.py      baseline diagnostics (`python -m ayce health`)
   cli.py         CLI entry point
 docs/
   scene_contract.md   Scene Contract architecture & boundaries
   script_to_scene.md  P1-B stage: input/output contracts & lifecycle
+  asset_resolution.md P2 stage: provider adapter seam & policies
 tests/
   unit/          unit tests (fast, no external effects)
   integration/   process-level tests (CLI)
-  fixtures/      regression fixtures (scene_contract/, script_to_scene/)
+  fixtures/      regression fixtures (scene_contract/, script_to_scene/, asset_provider/)
 data/            runtime artifacts (git-ignored)
 ```
 
@@ -118,5 +120,27 @@ reloads and verifies it, and returns a `ScriptToSceneResult`.
   director) calls `run_script_to_scene_stage(...)` as a single capability.
   See [`docs/script_to_scene.md`](docs/script_to_scene.md) and
   `tests/fixtures/script_to_scene/`.
+
+## Asset Resolution (P2)
+
+The provider adapter seam lives in `src/ayce/asset_resolution.py`: a
+deterministic, Hermes-compatible stage that consumes a persisted Scene
+Manifest, resolves each scene's `AssetRequirement` through an injected
+`AssetProvider` adapter, and persists a **separate** `asset_manifest.json`
+artifact. Resolved-asset data is never merged back into the Scene Contract.
+
+- `AssetProvider` extends the P0 `Adapter` ABC (`name` + truthful
+  `health()`); `FileBackedAssetProvider` resolves fixtures
+  deterministically (`<fixture_dir>/<scene_id><ext>`), copies them into
+  the run directory (`assets/`), and records sha256 + provenance.
+- **Fail-fast policy:** if any requirement fails, the stage fails and
+  publishes no manifest. Unhealthy provider → stage refuses to run.
+  Scenes without requirements are skipped (no fake assets).
+- Fixture provenance (`local_fixture`) makes **no real-world licensing
+  claim**; the `license` field exists for future real providers.
+- **P2 is one bounded stage — not Hermes.** The orchestrator selects and
+  injects the provider; the stage never chooses providers or fallbacks.
+  See [`docs/asset_resolution.md`](docs/asset_resolution.md) and
+  `tests/fixtures/asset_provider/`.
 
 
