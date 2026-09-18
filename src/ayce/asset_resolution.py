@@ -93,15 +93,6 @@ ASSET_MANIFEST_FILENAME = "asset_manifest.json"
 #: Run-relative directory holding resolved (copied) media files.
 ASSETS_DIRNAME = "assets"
 
-#: RunState stage label for this capability.
-STAGE_NAME = "asset_resolution"
-#: ArtifactRegistry stage label identifying the producing stage.
-ARTIFACT_STAGE = "asset_manifest"
-#: Persisted asset-manifest filename inside the run directory.
-ASSET_MANIFEST_FILENAME = "asset_manifest.json"
-#: Run-relative directory holding resolved (copied) media files.
-ASSETS_DIRNAME = "assets"
-
 #: Version stamped onto newly created asset manifests.
 ASSET_MANIFEST_SCHEMA_VERSION = "1.0"
 #: The only asset-manifest schema major version this build understands.

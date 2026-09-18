@@ -4,8 +4,9 @@ A scratch-built autonomous production engine (trend discovery → research →
 script → scenes → assets → audio → compositing → QA → publishing), grown
 from a verified minimal foundation, one bounded capability at a time.
 
-**Status: P2 — provider adapter seam VERIFIED** (P0 foundation + P1-A Scene
-Contract + P1-B Script → Scene stage + P2 file-backed asset resolution).
+**Status: P3 — audio provider seam VERIFIED** (P0 foundation + P1-A Scene
+Contract + P1-B Script → Scene stage + P2 asset resolution + P3 narration
+audio).
 
 ## Stack
 
@@ -26,17 +27,18 @@ src/ayce/        engine package
   scene_contract.py  canonical Scene Contract (P1-A; Pydantic V2)
   script_to_scene.py deterministic Script → Scene Manifest stage (P1-B)
   asset_resolution.py file-backed asset resolution stage (P2)
+  narration_audio.py file-backed narration audio stage (P3)
   health.py      baseline diagnostics (`python -m ayce health`)
   cli.py         CLI entry point
 docs/
   scene_contract.md   Scene Contract architecture & boundaries
   script_to_scene.md  P1-B stage: input/output contracts & lifecycle
   asset_resolution.md P2 stage: provider adapter seam & policies
+  narration_audio.md  P3 stage: audio provider adapter seam
 tests/
   unit/          unit tests (fast, no external effects)
   integration/   process-level tests (CLI)
-  fixtures/      regression fixtures (scene_contract/, script_to_scene/, asset_provider/)
-data/            runtime artifacts (git-ignored)
+  fixtures/      regression fixtures (scene_contract/, script_to_scene/, asset_provider/, narration_fixtures/)
 ```
 
 ## Commands
@@ -142,5 +144,28 @@ artifact. Resolved-asset data is never merged back into the Scene Contract.
   injects the provider; the stage never chooses providers or fallbacks.
   See [`docs/asset_resolution.md`](docs/asset_resolution.md) and
   `tests/fixtures/asset_provider/`.
+
+## Narration Audio (P3)
+
+The audio provider seam lives in `src/ayce/narration_audio.py`: a
+deterministic, Hermes-compatible stage that consumes the Scene Manifest,
+resolves each scene's `Narration` through an injected `AudioProvider`
+adapter, and persists a separate `narration_manifest.json` artifact
+(registered as `ArtifactKind.AUDIO`). The Scene Contract is never mutated
+with audio data.
+
+- `AudioProvider` extends the P0 `Adapter` ABC; `FileBackedNarrationProvider`
+  resolves fixtures deterministically (`<fixture_dir>/<scene_id>.wav`),
+  copies them into the run directory (`audio/`), records sha256, and reads
+  **truthful** `duration_seconds`/`format` from the WAV header via the
+  stdlib `wave` module (never invented; `None` when not derivable).
+- **Fail-fast policy:** any missing narration fails the stage with no
+  manifest published; unhealthy provider → stage refuses to run; fixture
+  provenance (`local_fixture`) makes no licensing claim (`license=None`).
+- Fixtures are **valid tiny WAV files (stdlib-generated silence)** — no
+  FFmpeg required at P3; they are placeholders, not real TTS.
+- **P3 is one bounded stage — not Hermes**, and it does not depend on P2:
+  narration resolves from the Scene Contract alone.
+  See [`docs/narration_audio.md`](docs/narration_audio.md).
 
 
