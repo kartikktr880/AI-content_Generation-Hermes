@@ -216,6 +216,36 @@ duration, dimensions, sha256).
   captions, transitions, motion, or audio processing.
   See [`docs/render.md`](docs/render.md).
 
+## Technical Media QA (P5.5)
+
+`src/ayce/media_qa.py` adds the first real QA gate after production
+rendering: it consumes the registered `rendered_video` artifact
+reference plus the Timeline and Narration manifests and **independently
+inspects the actual MP4 with ffprobe**, persisting `qa_report.json`
+(kind `ArtifactKind.QA_REPORT`) with a deterministic verdict.
+
+- Checks (this scope only): file existence/containment, container
+  validity, video stream (codec, dimensions, duration), audio stream
+  (codec, duration where reported), rendered duration vs the timeline
+  total (reusing the exact P5 tolerance, `±0.5 s + 2%`), and lightweight
+  per-scene frame-color coverage (the P5-proven approach — no computer
+  vision).
+- Verdict is strictly `PASS`/`FAIL` (any check FAIL → FAIL). No
+  scoring, no percentages.
+- **This is technical media QA, not complete production QA**: no
+  creative quality, factual correctness, captions, rights, loudness,
+  aesthetics, or narrative checks exist yet.
+- Failure semantics: a QA FAIL registers the report with
+  `verdict=FAIL` and the stage succeeds (evidence is the product); a QA
+  execution error (invalid artifact ref, malformed manifest, missing
+  ffprobe) fails the stage with no artifact. No QA → repair loop exists.
+- Idempotency: the report is bound to the render's sha256; same render
+  → reused report, no duplicates; changed render or corrupt/stale
+  report → fresh execution under a new artifact identity.
+- **P5.5 is one bounded stage — not Hermes**, and does not implement
+  repair, publishing, or any creative QA.
+  See [`docs/media_qa.md`](docs/media_qa.md).
+
 ## Timeline / Composition (P4)
 
 The renderer-neutral temporal composition contract lives in

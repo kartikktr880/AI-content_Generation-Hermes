@@ -64,6 +64,7 @@ __all__ = [
     "RenderResult",
     "run_render_stage",
     "run_production_render_stage",
+    "resolve_media_tool",
 ]
 
 #: RunState stage label for the P4.5 single-scene smoke capability.
@@ -113,6 +114,18 @@ class RenderedOutput(BaseModel):
     height: int | None = None
     #: Whether an audio stream is present (verified).
     has_audio: bool = False
+
+
+def resolve_media_tool(configured: str | None, name: str) -> str | None:
+    """Resolve an external media tool (ffmpeg/ffprobe) executable.
+
+    The verified P4.5 resolution policy, shared with the P5.5 media QA
+    stage: a configured ``AYCE_<TOOL>_PATH`` value wins; otherwise a PATH
+    lookup. No machine paths are hardcoded in source.
+    """
+    if configured:
+        return configured
+    return shutil.which(name)
 
 # ---- renderer adapter boundary (extends the P0 Adapter ABC) ------------------
 
@@ -174,10 +187,8 @@ class FFmpegRenderer(Renderer):
         super().__init__(config)
 
     def _resolve_executable(self, configured: str | None, name: str) -> str | None:
-        """Configured path wins; otherwise PATH lookup. No hardcoded paths."""
-        if configured:
-            return configured
-        return shutil.which(name)
+        """Configured path wins; otherwise PATH lookup (shared policy)."""
+        return resolve_media_tool(configured, name)
 
     def health(self) -> AdapterHealth:
         """Truthful: healthy only if ffmpeg AND ffprobe actually execute."""
