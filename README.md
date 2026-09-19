@@ -4,9 +4,11 @@ A scratch-built autonomous production engine (trend discovery → research →
 script → scenes → assets → audio → compositing → QA → publishing), grown
 from a verified minimal foundation, one bounded capability at a time.
 
-**Status: P5 — complete multi-scene production render VERIFIED** (P0 + P1-A
-Scene Contract + P1-B Script → Scene + P2 assets + P3 narration + P4 timeline
-+ P4.5 single-scene render + P5 complete multi-scene production MP4).
+**Status: P6 — Golden Path pipeline runner VERIFIED** (P0 + P1-A Scene
+Contract + P1-B Script → Scene + P2 assets + P3 narration + P4 timeline
++ P4.5 single-scene render + P5 complete multi-scene production MP4 +
+P5.5 technical media QA + P6 single-command orchestration of the verified
+chain: `python -m ayce run <script.json>`).
 
 ## Stack
 
@@ -30,7 +32,9 @@ src/ayce/        engine package
   timeline.py    renderer-neutral timeline/composition stage (P4)
   render.py      FFmpeg renderer smoke stage (P4.5)
   health.py      baseline diagnostics (`python -m ayce health`)
-  cli.py         CLI entry point
+  media_qa.py    technical media QA stage (P5.5)
+  pipeline.py    Golden Path pipeline runner (P6 orchestration only)
+  cli.py         CLI entry point (`health`, `run`)
 docs/
   scene_contract.md   Scene Contract architecture & boundaries
   script_to_scene.md  P1-B stage: input/output contracts & lifecycle
@@ -53,6 +57,12 @@ python -m pytest
 # baseline health / diagnostics (no installation required)
 ./scripts/health.ps1              # or: $env:PYTHONPATH='src'; python -m ayce health
 python -m ayce health --json
+
+# Golden Path pipeline: script → scenes → assets → narration → timeline
+# → production render → technical media QA, in one command
+$env:PYTHONPATH='src'; python -m ayce run tests/fixtures/script_to_scene/documentary.json `
+  --assets-dir tests/fixtures/asset_provider `
+  --narration-dir tests/fixtures/narration_fixtures
 ```
 
 ## Configuration
@@ -215,6 +225,35 @@ duration, dimensions, sha256).
 - **P5 is one bounded stage — not Hermes**, and does not implement
   captions, transitions, motion, or audio processing.
   See [`docs/render.md`](docs/render.md).
+
+## Golden Path Pipeline Runner (P6)
+
+`src/ayce/pipeline.py` adds the first **production-executable Golden
+Path**: one command turns a script JSON into a ffprobe-validated
+production MP4 plus a persisted technical QA report, by composing the
+already-verified P1-B → P5.5 stage functions — no stage logic is
+duplicated and no stage implementation was modified.
+
+- Stages, in order: `script_to_scene` → `asset_resolution` →
+  `narration_audio` → `timeline` → `production_render` → `media_qa`,
+  sharing ONE `RunState` and ONE `ArtifactRegistry` per run.
+- Run identity: **every invocation creates a new run** under
+  `<data_dir>/runs/<run_id>` (`state.json` + `artifacts.json` + all
+  artifacts). Previous runs are never overwritten or globally
+  deduplicated; within a run, each stage's own idempotency remains
+  authoritative.
+- Failure semantics: the first stage execution failure stops the
+  pipeline; completed stages stay `succeeded` with their artifacts
+  persisted; later stages never execute. No rollback, no faked
+  completion. A deterministic QA **FAIL verdict is NOT a pipeline
+  failure** — it is truthful evidence from a succeeded stage; only a QA
+  execution error fails the pipeline.
+- **This is orchestration, not autonomous production**: assets remain
+  fixture-backed (`FileBackedAssetProvider`), narration remains the
+  documented silence/TTS architectural stub
+  (`FileBackedNarrationProvider`). Research, captions, real TTS, repair,
+  publishing, analytics, and Hermes orchestration are still future
+  capabilities. `run` is Hermes-callable glue, not Hermes.
 
 ## Technical Media QA (P5.5)
 
