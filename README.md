@@ -4,11 +4,12 @@ A scratch-built autonomous production engine (trend discovery → research →
 script → scenes → assets → audio → compositing → QA → publishing), grown
 from a verified minimal foundation, one bounded capability at a time.
 
-**Status: P6 — Golden Path pipeline runner VERIFIED** (P0 + P1-A Scene
+**Status: P6.5 — scene-level captions VERIFIED** (P0 + P1-A Scene
 Contract + P1-B Script → Scene + P2 assets + P3 narration + P4 timeline
 + P4.5 single-scene render + P5 complete multi-scene production MP4 +
 P5.5 technical media QA + P6 single-command orchestration of the verified
-chain: `python -m ayce run <script.json>`).
+chain (`python -m ayce run <script.json>`) + P6.5 deterministic
+scene-level captions artifact (captions.json + captions.srt)).
 
 ## Stack
 
@@ -31,6 +32,8 @@ src/ayce/        engine package
   asset_resolution.py file-backed asset resolution stage (P2)
   timeline.py    renderer-neutral timeline/composition stage (P4)
   render.py      FFmpeg renderer smoke stage (P4.5)
+  captions.py    scene-level captions stage (P6.5; captions.json + captions.srt)
+  tts_piper.py   opt-in Piper TTS narration provider (P7; external CLI subprocess)
   health.py      baseline diagnostics (`python -m ayce health`)
   media_qa.py    technical media QA stage (P5.5)
   pipeline.py    Golden Path pipeline runner (P6 orchestration only)
@@ -226,6 +229,32 @@ duration, dimensions, sha256).
   captions, transitions, motion, or audio processing.
   See [`docs/render.md`](docs/render.md).
 
+## Scene-Level Captions (P6.5)
+
+`src/ayce/captions.py` produces the first real `ArtifactKind.CAPTIONS`
+artifact (reserved since P0): deterministic, truthful scene-level
+captions built from already-verified contracts — one stage between
+`timeline` and `production_render` in the Golden Path.
+
+- **Cue text is the Scene Contract's `narration.text` VERBATIM** — never
+  reflowed, split, or rewritten.
+- **Cue intervals are the timeline's narration-element intervals**
+  `[start, start + audio_duration]` — the truthful spoken-audio window,
+  NOT the full scene interval. No timing is invented: no phrase-level or
+  word-level timing exists upstream, so none is produced here.
+- Outputs: `captions.json` (structured `CaptionsManifest`, registered as
+  kind `captions`) + `captions.srt` (standard SubRip serialization of the
+  same cues — a directly uploadable deliverable).
+- Byte-deterministic idempotency (scene-manifest pattern): identical
+  inputs reuse the registered artifact; a missing SRT is restored.
+- Fail-fast: any production-identity mismatch, missing timeline scene,
+  or ambiguous narration element fails the stage and publishes no
+  artifact. Upstream manifests are never mutated.
+- **Captions are NOT burned into the render** — the render contract is
+  untouched. Word timing, styling, translation, and burn-in are future
+  capabilities.
+- See [`docs/captions.md`](docs/captions.md).
+
 ## Golden Path Pipeline Runner (P6)
 
 `src/ayce/pipeline.py` adds the first **production-executable Golden
@@ -235,8 +264,9 @@ already-verified P1-B → P5.5 stage functions — no stage logic is
 duplicated and no stage implementation was modified.
 
 - Stages, in order: `script_to_scene` → `asset_resolution` →
-  `narration_audio` → `timeline` → `production_render` → `media_qa`,
-  sharing ONE `RunState` and ONE `ArtifactRegistry` per run.
+  `narration_audio` → `timeline` → `captions` (P6.5) →
+  `production_render` → `media_qa`, sharing ONE `RunState` and ONE
+  `ArtifactRegistry` per run.
 - Run identity: **every invocation creates a new run** under
   `<data_dir>/runs/<run_id>` (`state.json` + `artifacts.json` + all
   artifacts). Previous runs are never overwritten or globally

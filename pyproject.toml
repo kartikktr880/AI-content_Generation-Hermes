@@ -17,5 +17,6 @@ pythonpath = ["src"]
 addopts = "-q"
 markers = [
     "integration: process-level tests (invoke the CLI as a subprocess)",
+    "live: opt-in tests requiring external tooling configured via AYCE_* env (skipped otherwise)",
 ]
 

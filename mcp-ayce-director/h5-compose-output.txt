@@ -1,0 +1,48 @@
+### TASK 1 (DISCOVERY)
+Server: `ayce-director`
+- `mcp__ayce_director__execute_research_slice` - research
+- `mcp__ayce_director__get_prompt` - read-only
+- `mcp__ayce_director__list_prompts` - read-only
+- `mcp__ayce_director__list_resources` - read-only
+- `mcp__ayce_director__propose_script_brief` - brief-conversion
+- `mcp__ayce_director__read_resource` - read-only
+- `mcp__ayce_director__trigger_golden_path` - write
+
+Server: `ayce-readonly`
+- `mcp__ayce_readonly__get_prompt` - read-only
+- `mcp__ayce_readonly__get_run_artifacts` - read-only
+- `mcp__ayce_readonly__get_run_state` - read-only
+- `mcp__ayce_readonly__list_prompts` - read-only
+- `mcp__ayce_readonly__list_resources` - read-only
+- `mcp__ayce_readonly__list_runs` - read-only
+- `mcp__ayce_readonly__read_resource` - read-only
+
+### TASK 2 (PROPOSE)
+- `ok`: true
+- `script_id`: `brief-e8f295ac6ec8`
+- `script_sha256`: `3dec7a4de6d0baf675375b8d6ac05d06daab3a45ff98d35cd08261e3e730e38b`
+- `duplicate`: true
+
+### TASK 3 (DIRECT)
+- `ok`: true
+- `status`: `succeeded`
+- `run_id`: `run-20260921T145430Z-2df765dcb1e4`
+- `job_id`: `job-20260921T145430Z-02d84b6805d4`
+- `qa_verdict`: `PASS`
+
+### TASK 4 (OBSERVE)
+Stage Statuses:
+- `script_to_scene`: succeeded
+- `asset_resolution`: succeeded
+- `narration_audio`: succeeded
+- `timeline`: succeeded
+- `captions`: succeeded
+- `production_render`: succeeded
+- `media_qa`: succeeded
+
+Artifact Count: 9
+QA Verdict (`qa_report` metadata): `PASS` (15 total checks, 0 failed checks)
+
+### TASK 5 (VERDICT)
+- **Research-derived video directed end-to-end and QA-verified?** Yes. The research artifact `res-20260920T090318Z-e8f295ac6ec8` was converted to a script brief and successfully executed through all 7 pipeline stages, resulting in a rendered video and a passing QA verdict (`PASS`).
+- **Ready to be sealed and handed to the publishing boundary?** Yes. All stages succeeded with a PASS verdict and 9 persisted artifacts, making the run ready to enter the Stage 5 publishing boundary.

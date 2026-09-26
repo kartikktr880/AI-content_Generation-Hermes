@@ -1,0 +1,6 @@
+# Standalone AYCE read-only MCP server dependencies (H2 experiment).
+# Deliberately NOT part of the AYCE package/venv — this environment is
+# independently removable. mcp<2 pinned: the 2.x SDK renamed FastMCP to
+# MCPServer with breaking API changes (revisit when migrating).
+mcp<2
+pytest

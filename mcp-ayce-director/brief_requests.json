@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "requests": [
+    {
+      "kind": "brief",
+      "research_id": "res-20260920T090318Z-e8f295ac6ec8",
+      "script_id": "brief-e8f295ac6ec8",
+      "digest": "610c732dda6ab30d778f5180db91db517ed73b66998c8c216036de03f945727d",
+      "status": "succeeded",
+      "requested_at": "2026-09-20T14:46:20.846Z",
+      "result": {
+        "ok": true,
+        "research_id": "res-20260920T090318Z-e8f295ac6ec8",
+        "script_id": "brief-e8f295ac6ec8",
+        "production_id": "res-20260920T090318Z-e8f295ac6ec8",
+        "title": "Research brief: Identify outlier opening-hook formats in the AI productivity tools niche",
+        "scene_count": 4,
+        "warnings": [
+          "outlier_multiplier unavailable (insufficient baseline); ranked by hook confidence, velocity proxy and view count instead",
+          "research slice status is PARTIAL; the brief inherits that degraded evidence state truthfully"
+        ],
+        "script_path": "mcp-ayce-director/generated_scripts/brief-e8f295ac6ec8.json",
+        "script_sha256": "3dec7a4de6d0baf675375b8d6ac05d06daab3a45ff98d35cd08261e3e730e38b",
+        "next_step": "trigger_golden_path with command='trigger_golden_path' and script_id='brief-e8f295ac6ec8' to produce this video"
+      },
+      "finished_at": "2026-09-20T14:46:21.254Z"
+    }
+  ]
+}

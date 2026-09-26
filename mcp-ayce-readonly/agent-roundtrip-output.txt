@@ -1,0 +1,16 @@
+AYCE Run Inspection Summary:
+
+1. run_id: run-20260919T110027Z-bc687f6516ac
+2. job_id: job-20260919T110027Z-896d98d95bc6
+3. number of stages: 7
+4. successful stage count and failed stage count: 7 succeeded, 0 failed
+5. artifact count: 7
+6. each artifact kind and its producing stage:
+   - Kind: scene_manifest | Producing stage: scene_manifest
+   - Kind: asset_manifest | Producing stage: asset_manifest
+   - Kind: audio | Producing stage: audio
+   - Kind: timeline | Producing stage: timeline
+   - Kind: captions | Producing stage: captions
+   - Kind: rendered_video | Producing stage: production_render
+   - Kind: qa_report | Producing stage: media_qa
+7. final run status: succeeded (all 7 stages succeeded: script_to_scene, asset_resolution, narration_audio, timeline, captions, production_render, media_qa)

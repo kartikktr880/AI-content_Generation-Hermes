@@ -1,0 +1,93 @@
+{
+  "ok": true,
+  "research_id": "res-20260920T090318Z-e8f295ac6ec8",
+  "status": "PARTIAL",
+  "candidate_count": 6,
+  "artifact_path": "C:\\VSCODE\\AI-Content-Generation\\data\\research\\res-20260920T090318Z-e8f295ac6ec8.json",
+  "artifact": {
+    "schema_version": "1.0",
+    "research_id": "res-20260920T090318Z-e8f295ac6ec8",
+    "objective": "Identify outlier opening-hook formats in the AI productivity tools niche",
+    "niche": "AI productivity tools",
+    "query": "AI productivity tools",
+    "collected_at": "2026-09-20T09:03:18.260Z",
+    "status": "PARTIAL",
+    "tiers": [
+      "OBSERVED_FACT",
+      "DERIVED_METRIC",
+      "MODEL_INFERENCE",
+      "CREATIVE_HYPOTHESIS"
+    ],
+    "candidate_count": 6,
+    "outliers": [
+      {
+        "video_id": "IrQZ638_IrY",
+        "url": "https://www.youtube.com/watch?v=IrQZ638_IrY",
+        "title": "Top AI Tools To Boost Productivity In 2025 | AI Tools",
+        "channel": "Ayat's UK🇬🇧",
+        "published_at": "2025-04-21",
+        "view_count": 8087,
+        "outlier_multiplier": null,
+        "velocity_proxy": 15.6,
+        "hook_summary": null,
+        "cluster_id": 0,
+        "confidence": 0.75,
+        "observed_facts": [
+          "view_count: 8087",
+          "published_at: 2025-04-21",
+          "channel: Ayat's UK🇬🇧"
+        ],
+        "derived_metrics": [
+          "outlier_multiplier: None (insufficient_baseline; channel median baseline unavailable)",
+          "velocity_proxy_views_per_day: 15.6"
+        ],
+        "model_inferences": [
+          "topic cluster 0 via lexical_cosine_dbscan"
+        ],
+        "creative_hypotheses": [],
+        "captions_status": "not_attempted"
+      },
+      {
+        "video_id": "ZLYKh5HOjZw",
+        "url": "https://www.youtube.com/watch?v=ZLYKh5HOjZw",
+        "title": "Top 5 AI Productivity Tools for Managers and Professionals | 2026 Ultimate Guide",
+        "channel": "Business Training Media",
+        "published_at": "2025-12-09",
+        "view_count": 1255,
+        "outlier_multiplier": null,
+        "velocity_proxy": 4.4,
+        "hook_summary": null,
+        "cluster_id": 0,
+        "confidence": 0.75,
+        "observed_facts": [
+          "view_count: 1255",
+          "published_at: 2025-12-09",
+          "channel: Business Training Media"
+        ],
+        "derived_metrics": [
+          "outlier_multiplier: None (insufficient_baseline; channel median baseline unavailable)",
+          "velocity_proxy_views_per_day: 4.4"
+        ],
+        "model_inferences": [
+          "topic cluster 0 via lexical_cosine_dbscan"
+        ],
+        "creative_hypotheses": [],
+        "captions_status": "not_attempted"
+      }
+    ],
+    "provenance": {
+      "worker_version": "1.0",
+      "ytdlp_version": "2026.08.19",
+      "clustering": {
+        "method": "lexical_cosine_dbscan",
+        "capability_status": "fallback_lexical",
+        "n_clusters": 1,
+        "detail": "deterministic lexical vectors + local DBSCAN (fastembed not installed)"
+      },
+      "warnings": [
+        "[jG9aLEawV7Y] caption fetch failed for jG9aLEawV7Y: ERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests\n"
+      ]
+    }
+  },
+  "duplicate": true
+}

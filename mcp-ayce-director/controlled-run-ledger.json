@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "requests": [
+    {
+      "request_id": "req-20260920T000000Z-diag-hang-01",
+      "command": "trigger_golden_path",
+      "script_id": "documentary",
+      "reason": "diagnostic: interpreter without pydantic; no production run possible",
+      "requested_by": "hermes",
+      "status": "succeeded",
+      "argv": [
+        "C:\\VSCODE\\AI-Content-Generation\\mcp-ayce-director\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ayce",
+        "run",
+        "C:\\VSCODE\\AI-Content-Generation\\tests\\fixtures\\script_to_scene\\documentary.json",
+        "--assets-dir",
+        "C:\\VSCODE\\AI-Content-Generation\\tests\\fixtures\\asset_provider",
+        "--narration-dir",
+        "C:\\VSCODE\\AI-Content-Generation\\tests\\fixtures\\narration_fixtures",
+        "--json"
+      ],
+      "timeout_s": 45.0,
+      "requested_at": "2026-09-20T06:39:04.235Z",
+      "finished_at": "2026-09-20T06:39:07.651Z",
+      "exit_code": 0,
+      "run_id": "run-20260920T063905Z-00f855b75dca",
+      "job_id": "job-20260920T063905Z-e0e3d0c06a9d",
+      "qa_verdict": "PASS"
+    }
+  ]
+}

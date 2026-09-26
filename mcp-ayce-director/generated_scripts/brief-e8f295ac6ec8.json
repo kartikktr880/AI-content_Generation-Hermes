@@ -1,0 +1,32 @@
+{
+  "production_id": "res-20260920T090318Z-e8f295ac6ec8",
+  "title": "Research brief: Identify outlier opening-hook formats in the AI productivity tools niche",
+  "scenes": [
+    {
+      "narration_text": "Here is an opening hook recorded by the research worker, quoted verbatim: \"I use around 10 AI tools for 90% of my work, [music] and each one excels in one specific area. But figuring out which tool works best for what task usually takes months of trial and error.\"",
+      "visual_description": "High-contrast opening title card referencing: The Only AI Tools You Need (12-Minute Guide).",
+      "asset_requirement": {
+        "kind": "image",
+        "description": "Opening visual representing: The Only AI Tools You Need (12-Minute Guide)",
+        "requires_provenance": true
+      }
+    },
+    {
+      "narration_text": "This video is built directly from research evidence, with no invented facts. The research objective: Identify outlier opening-hook formats in the AI productivity tools niche. Niche: AI productivity tools. Query: AI productivity tools. Evidence base: research artifact res-20260920T090318Z-e8f295ac6ec8, status PARTIAL.",
+      "visual_description": "Clean text card naming the research objective for res-20260920T090318Z-e8f295ac6ec8."
+    },
+    {
+      "narration_text": "The top-ranked candidate, \"The Only AI Tools You Need (12-Minute Guide)\", channel field reports Jeff Su, 874,065 views, velocity proxy of 3591.4 views per day. A second ranked candidate is \"10 AI Productivity Tools for Everyday Life (Work Less)\", with 9,233 views.",
+      "visual_description": "Side-by-side comparison graphic of the top-ranked research candidates.",
+      "asset_requirement": {
+        "kind": "image",
+        "description": "Chart-style graphic comparing the top research candidates",
+        "requires_provenance": true
+      }
+    },
+    {
+      "narration_text": "The research suggests one opening-hook angle worth testing, quoted from its hypothesis tier: \"opening-hook angle: I use around 10 AI tools for 90% of my work, [music] and each one excels in one specific area. But figuring out which tool works best for wh\"",
+      "visual_description": "Closing card visualising the suggested hook angle."
+    }
+  ]
+}

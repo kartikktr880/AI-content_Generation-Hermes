@@ -1,0 +1,6 @@
+# Standalone AYCE director MCP server dependencies (H4 experiment).
+# Deliberately NOT part of the AYCE package/venv — independently removable.
+# mcp<2 pinned: the 2.x SDK renamed FastMCP to MCPServer with breaking API
+# changes (same pin as mcp-ayce-readonly).
+mcp<2
+pytest

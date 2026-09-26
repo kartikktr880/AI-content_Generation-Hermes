@@ -13,6 +13,7 @@ from pathlib import Path
 import pytest
 
 from ayce.artifacts import ArtifactKind, ArtifactRegistry
+from ayce.captions import CAPTIONS_FILENAME, SRT_FILENAME
 from ayce.config import Config
 from ayce.media_qa import QA_REPORT_FILENAME
 from ayce.pipeline import PIPELINE_STAGES, STATE_FILENAME, run_pipeline
@@ -29,6 +30,7 @@ EXPECTED_KINDS = {
     ArtifactKind.ASSET_MANIFEST,
     ArtifactKind.AUDIO,
     ArtifactKind.TIMELINE,
+    ArtifactKind.CAPTIONS,
     ArtifactKind.RENDERED_VIDEO,
     ArtifactKind.QA_REPORT,
 }
@@ -69,6 +71,9 @@ def test_pipeline_happy_path_end_to_end(tmp_path):
     kinds = {ref.kind for ref in registry.all()}
     assert kinds == EXPECTED_KINDS
 
+    # captions files exist in the run directory (captions stage output)
+    assert (result.run_dir / CAPTIONS_FILENAME).is_file()
+    assert (result.run_dir / SRT_FILENAME).is_file()
     # rendered MP4 exists on disk and is validated by the real renderer
     render_ref = next(
         ref for ref in registry.all() if ref.kind is ArtifactKind.RENDERED_VIDEO
@@ -104,16 +109,22 @@ def test_pipeline_stops_at_failed_stage_and_media_qa_never_executes(tmp_path):
     executed = [o.stage for o in result.stages]
     assert executed == [
         "script_to_scene", "asset_resolution", "narration_audio",
-        "timeline", "production_render",
+        "timeline", "captions", "production_render",
     ]
     by_stage = {o.stage: o for o in result.stages}
-    for stage in ("script_to_scene", "asset_resolution", "narration_audio", "timeline"):
+    for stage in (
+        "script_to_scene", "asset_resolution", "narration_audio",
+        "timeline", "captions",
+    ):
         assert by_stage[stage].ok is True
     assert by_stage["production_render"].ok is False
 
     # durable state: earlier stages succeeded, render failed, media_qa never ran
     run = RunState.load(result.run_dir / STATE_FILENAME)
-    for stage in ("script_to_scene", "asset_resolution", "narration_audio", "timeline"):
+    for stage in (
+        "script_to_scene", "asset_resolution", "narration_audio",
+        "timeline", "captions",
+    ):
         assert run.stage(stage).status.value == "succeeded"
     assert run.stage("production_render").status.value == "failed"
     with pytest.raises(Exception):
@@ -127,6 +138,7 @@ def test_pipeline_stops_at_failed_stage_and_media_qa_never_executes(tmp_path):
         ArtifactKind.ASSET_MANIFEST,
         ArtifactKind.AUDIO,
         ArtifactKind.TIMELINE,
+        ArtifactKind.CAPTIONS,
     }
     assert not (result.run_dir / QA_REPORT_FILENAME).exists()
 
@@ -205,6 +217,7 @@ def test_pipeline_artifact_completeness_and_reload(tmp_path):
 
     # per-kind artifact provenance matches the verified producing-stage labels
     from ayce.asset_resolution import ARTIFACT_STAGE as ASSET_STAGE
+    from ayce.captions import ARTIFACT_STAGE as CAPTIONS_STAGE
     from ayce.media_qa import ARTIFACT_STAGE as QA_STAGE
     from ayce.narration_audio import ARTIFACT_STAGE as AUDIO_STAGE
     from ayce.render import PRODUCTION_ARTIFACT_STAGE as RENDER_STAGE
@@ -216,6 +229,7 @@ def test_pipeline_artifact_completeness_and_reload(tmp_path):
     assert stage_kinds[ArtifactKind.ASSET_MANIFEST] == ASSET_STAGE
     assert stage_kinds[ArtifactKind.AUDIO] == AUDIO_STAGE
     assert stage_kinds[ArtifactKind.TIMELINE] == TIMELINE_STAGE
+    assert stage_kinds[ArtifactKind.CAPTIONS] == CAPTIONS_STAGE
     assert stage_kinds[ArtifactKind.RENDERED_VIDEO] == RENDER_STAGE
     assert stage_kinds[ArtifactKind.QA_REPORT] == QA_STAGE
 

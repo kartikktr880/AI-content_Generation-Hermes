@@ -1,0 +1,1384 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://docs.google.com/document/u/0/d/1rY50nq--cZ841-OQcVcTNouChJBXxqhH2YAtooMBlAk/mobilebasic?hl=en-US&pli=1
+Subject: Visual Asset Intelligence Research
+Date: Sun, 20 Sep 2026 10:52:07 GMT
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--ZeAx03APvJADZjAQVFBVHGBZAyba8o455tuFs2SGfX----"
+
+
+------MultipartBoundary--ZeAx03APvJADZjAQVFBVHGBZAyba8o455tuFs2SGfX----
+Content-Type: text/html
+Content-ID: <frame-02F8DAA322EAB7EF0006A0E3BA4D708B@mhtml.blink>
+Content-Transfer-Encoding: binary
+Content-Location: https://docs.google.com/document/u/0/d/1rY50nq--cZ841-OQcVcTNouChJBXxqhH2YAtooMBlAk/mobilebasic?hl=en-US&pli=1
+
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="cid:css-4b6ea58b-a482-4608-af75-ef765c074034@mhtml.blink" /><link rel="stylesheet" type="text/css" href="cid:css-76206e97-1f15-4a22-a23f-6a5df8e7787b@mhtml.blink" /><link rel="stylesheet" type="text/css" href="cid:css-a82fdfee-ac5e-4d12-b2cd-7d6062616679@mhtml.blink" /><title>Visual Asset Intelligence Research</title><link rel="shortcut icon" href="https://ssl.gstatic.com/docs/documents/images/docs-favicon-2026-v2.ico"><meta property="og:title" content="Visual Asset Intelligence Research"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/document/u/0/d/1rY50nq--cZ841-OQcVcTNouChJBXxqhH2YAtooMBlAk/mobilebasic?hl=en-US&amp;pli=1&amp;usp=embed_facebook"><meta property="og:description" content="Autonomous Visual Asset Resolution and Media Retrieval Infrastructure for the Hermes Video Production Engine 1. Executive Summary The Hermes Video Production Engine requires an enterprise-grade visual asset resolution layer capable of satisfying production scene contracts using existing, legally ..."><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0"><meta name="referrer" content="strict-origin-when-cross-origin"></head><body jsaction="u0pjoe:.CLIENT"><div><div class="docs-ml-promotion docs-ml-promotion-off-screen" role="alertdialog" aria-labelledby="docs-ml-promotion-aria-label" aria-hidden="true"><div id="docs-ml-promotion-aria-label" style="display:none;">Alert message displayed.</div><div class="docs-ml-promotion-content"><div class="docs-ml-promotion-header"><span class="docs-ml-promotion-app-icon-container" aria-hidden="true"><div class="docs-ml-icon docs-ml-promotion-app-icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><mask id="docs-mobileweb-promo-a" width="24" height="32" x="6" y="2" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#3186ff" d="M24.44 34H11.55c-1.68 0-2.52 0-3.18-.26a3.8 3.8 0 0 1-2.1-2.11C6 30.97 6 30.13 6 28.45V7.55c0-1.68 0-2.52.26-3.18a3.8 3.8 0 0 1 2.11-2.1C9.03 2 9.87 2 11.55 2h7.2l10.27 10.27c.32.32.47.47.59.65q.27.38.35.84c.04.21.04.43.04.88l-.01 13.8c0 1.68 0 2.53-.27 3.2a3.8 3.8 0 0 1-2.1 2.1c-.67.26-1.5.26-3.18.26"></path></mask><g mask="url(#docs-mobileweb-promo-a)"><path fill="#3186ff" d="M29.99 34H6V2h12.75L30 13.25z"></path><g filter="url(#docs-mobileweb-promo-b)"><path fill="url(#docs-mobileweb-promo-c)" d="M8.06 36.5h19.88V4.25H8.06z"></path></g></g><path fill="#76bbff" d="M29.06 12.31a2.8 2.8 0 0 0-1.68-.56h-6.23a2.4 2.4 0 0 1-2.4-2.4V2z"></path><rect width="12" height="2" x="12" y="21" fill="#fff" rx="1"></rect><rect width="9" height="2" x="12" y="26" fill="#fff" rx="1"></rect><defs><linearGradient id="docs-mobileweb-promo-c" x1="18" x2="10.24" y1="11.62" y2="32.63" gradientUnits="userSpaceOnUse"><stop offset=".33" stop-color="#3186ff"></stop><stop offset="1" stop-color="#a9a8ff"></stop></linearGradient><filter id="docs-mobileweb-promo-b" width="24.38" height="36.75" x="5.81" y="2" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur result="effect1_foregroundBlur_38733_8621" stdDeviation="1.13"></feGaussianBlur></filter></defs></svg></div></span><span class="docs-ml-promotion-text"><div class="docs-ml-promotion-text-heading">Edit with the Docs app</div><div class="docs-ml-promotion-text-body">Make tweaks, leave comments, and share with others to edit at the same time.</div></span></div><div class="docs-ml-promotion-action-row"><span class="docs-ml-promotion-action-container"><span class="docs-ml-promotion-action-button-wrapper docs-ml-promotion-no-button-wrapper" role="button" tabindex="0"><span class="docs-ml-promotion-action-button docs-ml-promotion-no-button">NO THANKS</span></span></span><span class="docs-ml-promotion-action-container"><span class="docs-ml-promotion-action-button-wrapper docs-ml-promotion-yes-button-wrapper" role="button" tabindex="0"><span class="docs-ml-promotion-action-button docs-ml-promotion-yes-button">USE THE APP</span></span></span></div></div></div></div><div id="docs-ml-header-id" class="docs-ml-header"><span class="docs-ml-header-item docs-ml-header-drive-link"><div id="docs-ml-header-drive-link-aria-label" style="display:none;">Go to Drive</div><a href="https://drive.google.com/u/0?usp=docs_web" aria-labelledby="docs-ml-header-drive-link-aria-label" role="button"><div class="docs-ml-header-icon-container"><div class="docs-ml-icon docs-ml-header-icon docs-ml-arrow-back-dir"><div class="docs-ml-img-container docs-ml-img docs-ml-arrow-back-icon"></div></div></div></a></span><span class="docs-ml-header-item docs-ml-header-document-title"><div class="docs-ml-header-document-title-text">Visual Asset Intelligence Research</div></span><div id="docs-ml-header-edit-button-aria-label" style="display:none;">Edit</div><span class="docs-ml-header-item docs-ml-header-edit-button" aria-labelledby="docs-ml-header-edit-button-aria-label" role="button" tabindex="0"><div class="docs-ml-header-icon-container"><div class="docs-ml-icon docs-ml-header-icon"><div class="docs-ml-img-container docs-ml-img docs-ml-edit-icon"></div></div></div></span></div><div class="app-container"><div class="doc-container"><div class="doc"><div class="doc-content" style="background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt"><h1 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:24pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:24pt;font-family:&quot;Arial&quot;;font-style:normal">Autonomous Visual Asset Resolution and Media Retrieval Infrastructure for the Hermes Video Production Engine</span></h1><h2 style="padding-top:0pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">1. Executive Summary</span></h2><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">The Hermes Video Production Engine requires an enterprise-grade visual asset resolution layer capable of satisfying production scene contracts using existing, legally compliant media before invoking AI generation pipelines. Generating synthetic imagery or video for every scene introduces severe computational latency, elevated API costs, visual hallucinations, and stylistic inconsistencies across production outputs. In contrast, leveraging existing historical, archival, public-domain, and stock media sources maximizes production efficiency, guarantees historical and factual accuracy, and lowers overall rendering overhead.</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">This research establishes the technical architecture, operational APIs, licensing frameworks, and software integrations required to build the visual asset resolution ecosystem for Hermes. Between 70% and 80% of standard non-fiction, documentary, educational, and commentary video scenes can be resolved automatically through verified existing visual sources. By establishing an automated visual waterfall that systematically queries open archives, public domain libraries, free stock platforms, and licensed enterprise media, Hermes can locate, verify, normalize, and ingest production-ready visuals autonomously.</span></p><p style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:11pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">A foundational principle of this engine is strict legal safety and provenance tracking. Every retrieved visual asset must undergo machine-readable rights classification, checksum hashing, metadata extraction, and license verification before entering the local asset store. Assets with ambiguous, non-commercial, or restricted licensing are filtered out dynamically, ensuring that all generated video outputs remain fully compliant with commercial broadcast standards and YouTube monetization policies.</span></p><h2 style="padding-top:0pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">2. Existing Visual Source Ecosystem</span></h2><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">The visual asset resolution system operates as an upstream intelligence filter for the rendering pipeline. Given a structured Scene Contract emitted by the Hermes Script and Scene Planning Engine, the resolution layer attempts to locate an exact or conceptually appropriate existing visual asset. Only when the search across all available media tiers yields no compliant candidates does the pipeline delegate the requirement to the AI media generation module.</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">The system enforces a strict capability waterfall that determines source priority during asset discovery:</span></p><ol class="lst-kix_list_1-0 start" start="1" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Exact Existing Project Asset</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Direct matches previously ingested or cached in the local asset store.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Archival / Public-Domain Source</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Historical archives, government repositories, and open cultural libraries.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Licensed / Subscription Stock</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Enterprise media platforms offering guaranteed commercial indemnification.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Free Stock Media</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Royalty-free stock repositories operating under custom open licenses.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Public / Open Media Index</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Encyclopedic databases and open media indexes containing Creative Commons content.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Specialized Visual Source</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Niche repositories, scientific institutions, and specialized image catalogs.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Existing Project Resource</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Secondary project assets requiring minor cropping or re-encoding.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">AI Media Generation</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Synthetic image or video generation triggered as a secondary fallback.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Custom Visual Pipeline</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Procedural animation or custom programmatic rendering used only when necessary.</span></li></ol><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">The resolution engine processes scene requirements through a deterministic multi-stage discovery and ingestion workflow:</span></p><ul class="lst-kix_list_2-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Scene Contract Parsing</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: The engine extracts visual directives, entity names, temporal bounds, required aspect ratios, and scene duration from the scene contract.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Query Expansion &amp; Search Routing</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: A reasoning skill expands raw scene descriptions into tailored query arrays optimized for specific target APIs.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Multi-Source Discovery</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Expanded queries are broadcast concurrently across API connectors, gathering candidate metadata records.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Rights &amp; Licensing Verification</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Candidates are evaluated against an automated rights matrix to ensure commercial compatibility on YouTube.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Asset Ingestion &amp; Integrity Check</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: High-resolution media files are downloaded, validated for file integrity, scanned for frame corruption, and checked for visual duplicates via perceptual hashing.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Provenance Registration</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Complete metadata, attribution details, license URLs, and source hashes are written to the local provenance database.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Asset Store Handoff</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Normalized files are placed in the production asset store, ready for worker node consumption.</span></li></ul><h2 style="padding-top:11.2pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">3. Archival/Public-Domain Sources</span></h2><p style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:11pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Archival and public-domain media sources serve as the primary visual tier for historical, documentary, scientific, and news-based video production. These repositories offer vast collections of authentic footage, photography, and illustrations that cannot be accurately replicated by AI media generators.</span></p><h3 style="padding-top:0pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Internet Archive (archive.org)</span></h3><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">The Internet Archive provides access to tens of millions of public domain moving images, historical photographs, government films, and news archives.</span></p><ul class="lst-kix_list_3-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">API Endpoints &amp; Capabilities</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Searches are executed via the advancedsearch.php REST endpoint, which returns JSON-formatted item metadata. Detailed file listings and structural records are retrieved using the Metadata API endpoint (https://archive.org/metadata/{identifier}).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Query Syntax &amp; Filtering</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Supports Solr/Lucene query syntax, allowing precise filtering by media type (mediatype:movies, mediatype:image), collection (collection:prelinger), creator, and date range (date:[1950-01-01 TO 1959-12-31]).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Pagination Ceiling</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: The search index caps results at 10,000 items per query string. To bypass this ceiling during large-scale harvesting, queries must be partitioned by date intervals or sub-collections.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Download &amp; Rate Limits</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: File download URLs follow the structure https://archive.org/download/{identifier}/{file_name}. Automated harvesters must incorporate a 500ms delay between requests to comply with rate-limiting guidelines. File paths inside subdirectories (such as .thumbs/) must have individual path segments percent-encoded without encoding forward slashes to avoid HTTP 404 errors.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Client Integration</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: The official AGPL-3.0 licensed Python library internetarchive and dedicated Model Context Protocol (MCP) servers (such as dthen/internet-archive-mcp) enable direct Hermes integration.</span></li></ul><h3 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Wikimedia Commons</span></h3><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Wikimedia Commons is an essential repository for high-resolution encyclopedic imagery, historical diagrams, and open-licensed video clips.</span></p><ul class="lst-kix_list_4-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">API Endpoints</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Operates via the MediaWiki Action API (https://commons.wikimedia.org/w/api.php). Querying file metadata requires action=query, prop=imageinfo, and iiprop=extmetadata|url|size|mime.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Metadata &amp; Licensing</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Structured Data on Commons (SDC) provides machine-readable Wikibase statements. Metadata extracted via extmetadata returns structured license short-names (e.g., cc-by-sa-4.0, pd), author attribution strings, and usage restrictions.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Python Integration</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: The open-source pyWikiCommons package provides a lightweight wrapper for searching and downloading high-resolution assets directly.</span></li></ul><h3 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Smithsonian Open Access</span></h3><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">The Smithsonian Institution provides access to over 3 million CC0 public domain collection items across 19 museums.</span></p><ul class="lst-kix_list_5-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">API Endpoints</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Accessible via https://api.si.edu/openaccess/api/v1.0. Requires an API key issued by api.data.gov.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Filtering &amp; Search</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Supports Lucene field searching (e.g., online_media_type:Images, unit_code:NASM for National Air and Space Museum).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Known API Limitations</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Current production implementations show that while the search API correctly filters objects by media type, detailed object content responses frequently omit direct image URLs. To resolve this gap, Hermes must extract thumbnail URLs from search response records or utilize web parsing wrappers to resolve the primary asset file path.</span></li></ul><h3 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Europeana</span></h3><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Europeana aggregates digital cultural heritage media from thousands of European galleries, libraries, archives, and museums.</span></p><ul class="lst-kix_list_6-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">API Endpoints</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: REST API endpoints allow search and record retrieval using JSON responses. A SPARQL 1.1 endpoint is also available for Linked Open Data queries.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Rights Filtering</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: The API supports strict licensing filters via the reusability and rights parameters (e.g., filtering strictly for open or permission assets under Creative Commons or Public Domain marks).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Rate Limits</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Non-commercial API keys are limited to 3,000 requests per day. Commercial usage requires partner registration and API key tier elevation.</span></li></ul><h3 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">NASA Image and Video Library</span></h3><ul class="lst-kix_list_7-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">API Endpoints</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Operates via https://images-api.nasa.gov without mandatory authentication for basic queries.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Capabilities</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Provides direct search across official NASA photographs, space mission footage, and historic audiovisual archives.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Licensing</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: NASA media is generally public domain and free for educational and commercial video production, provided official logos or astronaut personalities are not implied as commercial endorsements.</span></li></ul><h3 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Library of Congress (loc.gov)</span></h3><ul class="lst-kix_list_8-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">API Endpoints</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Provides structured JSON responses by appending fo=json to search and collection URLs (e.g., https://www.loc.gov/pictures/search/?q=apollo&amp;fo=json).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Capabilities</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Offers millions of high-resolution historical prints, photographs, architectural drawings, and historic posters.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Licensing</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Media records contain specific rights fields. Public-domain collections (such as the Farm Security Administration photograph archive) are explicitly flagged.</span></li></ul><h3 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Flickr Commons &amp; Open Licenses</span></h3><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Flickr hosts vast repositories of public domain and Creative Commons media contributed by global institutions and photographers.</span></p><ul class="lst-kix_list_9-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">API Endpoints</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Operates via https://www.flickr.com/services/rest/ using the method flickr.photos.search. Requires an API key (api_key).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Licensing Filters</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: The search API includes a dedicated license parameter. Parameter values 4 (CC BY 2.0), 5 (CC BY-SA 2.0), 7 (No known copyright restrictions), 9 (CC0 1.0), and 10 (Public Domain Mark) must be set to ensure commercial usability.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Metadata &amp; Extra Fields</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Passing extras=license,url_o,media,date_taken,owner_name in API requests returns direct download URLs for original-resolution files along with complete creator attribution strings.</span></li></ul><h2 style="padding-top:11.2pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">4. Free Stock Sources</span></h2><p style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:11pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Free stock platforms provide modern footage, b-roll, and illustrative photography under customized royalty-free terms. While highly accessible, these platforms enforce specific API rate limits and terms of service that must be respected by automated agents.</span></p><h3 style="padding-top:0pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Pexels API</span></h3><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Pexels is a primary source for high-definition stock photography and b-roll video clips.</span></p><ul class="lst-kix_list_a-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">API Endpoints</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: REST API supporting /v1/search (photos) and /videos/search. Requires an API key passed in the Authorization HTTP header.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Rate Limits</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: The default free tier allows 200 requests per hour. Higher limits require manual application and approval.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Media &amp; Resolution</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Video search responses contain an array of video_files specifying explicit dimensions (width, height), file format (video/mp4), quality tier (hd, sd), and direct download links.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Licensing Rules</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: The Pexels license permits commercial reuse and adaptation without mandatory attribution. However, redistribution of raw media files or selling unmodified copies is prohibited. MCP server wrappers (e.g., hanoak/pexels-mcp-server) enable direct integration with Hermes agent tools.</span></li></ul><h3 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Pixabay API</span></h3><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Pixabay offers over 4 million photos, vectors, illustrations, and video clips.</span></p><ul class="lst-kix_list_b-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">API Endpoints</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: REST API accepting key-authenticated GET requests (https://pixabay.com/api/ and https://pixabay.com/api/videos/).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Rate Limits &amp; Caching Rules</span><span>: The API enforces a strict rate limit of 100 requests per 60 seconds. A mandatory term of service requirement states that API search responses </span><span style="font-weight:700">must be cached locally for at least 24 hours</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp;to minimize upstream server load.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Hotlinking Prohibition</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Pixabay strictly prohibits permanent media hotlinking. All assets identified by Hermes must be downloaded directly to local storage before production rendering.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Licensing Rules</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Pixabay's license allows commercial use across digital platforms like YouTube, provided assets do not contain recognizable trade names, logos, or public figures without explicit releases.</span></li></ul><h3 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Unsplash API</span></h3><ul class="lst-kix_list_c-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">API Endpoints</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: REST API (https://api.unsplash.com/search/photos) requiring OAuth2 or client ID header authentication.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Rate Limits</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Demo applications are restricted to 50 requests per hour. Production applications can be upgraded to 5,000 requests per hour upon approval.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Licensing &amp; Usage</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Free commercial use is permitted. However, the API terms require triggering a specific GET request to the location URL returned in the asset's download_location endpoint to increment artist download metrics correctly.</span></li></ul><h3 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Coverr, Mixkit, and Videvo</span></h3><ul class="lst-kix_list_d-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Coverr</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Offers completely free stock video footage for commercial use. Assets can be indexed via structured web endpoints or catalog manifests.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Mixkit</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Provides free b-roll footage, sound effects, and video templates. Licensing allows commercial video use, but prohibits mass harvesting or rehosting.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Videvo</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Hosts a mix of free and premium video clips. Free clips fall under three distinct licenses: Videvo Attribution License (requires credit), Creative Commons 3.0 Unported (requires credit), and Royalty-Free (no credit required). Automations must parse the explicit license tag attached to each clip record before selection.</span></li></ul><h2 style="padding-top:11.2pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">5. Licensed/Subscription Sources</span></h2><p style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:11pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">When free and archival tiers fail to yield adequate visual content, enterprise stock media platforms provide expansive repositories with legal indemnification and guaranteed commercial licensing.</span></p><h3 style="padding-top:0pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Adobe Stock API</span></h3><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Adobe Stock provides access to over 300 million high-resolution photos, vectors, illustrations, and 4K/HD video assets.</span></p><ul class="lst-kix_list_e-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">API Endpoints</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Built on Adobe I/O REST architecture using https://stock.adobe.io/Rest/Media/1/Search/Files. Licensing is executed via Content/License and bulk metadata via Media/1/Files.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Headers &amp; Authentication</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Requests require x-api-key, x-Product (identifying the application name), and an Authorization Bearer token for account license validation.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Search Filters</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Supports deep filtering by content type (filters[content_type:photo]=1, filters[content_type:video]=1, filters[content_type:zip_vector]=1), resolution in megapixels (filters[area_m_pixels]), video duration in seconds (filters[video_duration]), orientation, dominant color hex values, and price tier (price[$]=1 for standard core assets).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Pagination &amp; Rate Limits</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Pagination is controlled via limit (max 100 per request) and offset parameters. Unlike legacy services, Adobe Stock does not enforce restrictive per-minute API request caps on authenticated enterprise keys.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Licensing Workflow</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Assets return an is_licensed attribute (Standard, Extended, Video_HD, Video_4K, or empty). If unlicensed, the engine can fetch watermarked preview comps via comp_url for temp-track editing before initiating an automated license request.</span></li></ul><h3 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Shutterstock API</span></h3><ul class="lst-kix_list_f-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">API Endpoints</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: RESTful API (https://[span_200](start_span)[span_200](end_span)[span_206](start_span)[span_206](end_span)api.shutterstock.com/v2/images/search and /v2/videos/search). Authentication via Basic Auth (Consumer Key/Secret) or OAuth2 Bearer tokens.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Search Capabilities</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Features advanced computer vision filters, visual similarity search, conditional licensing checks, and category classification.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Automation Restrictions</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Commercial plans permit programmatic licensing and download, provided usage stays within contractual seat limits and annual download caps.</span></li></ul><h3 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Getty Images API</span></h3><ul class="lst-kix_list_10-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">API Endpoints</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: OAuth 2.0 authorized REST API (https://api.gettyimages.com/v3/search/images and /v3/search/videos).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Capabilities</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Provides editorial imagery, historical news footage, sports photography, and commercial stock.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Financial &amp; Commercial Constraints</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Getty Images enforces high per-asset licensing costs ($200+ per asset) and requires manual enterprise contract onboarding. It acts exclusively as a high-tier fallback for specialized editorial or historical documentary scenes where cheaper alternatives do not exist.</span></li></ul><h2 style="padding-top:11.2pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">6. YouTube / Online Video Asset Sources</span></h2><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Identifying usable video content from online platforms like YouTube requires strict adherence to legal frameworks and platform Terms of Service. Public visibility on a streaming platform does not equate to reusable footage, and attempting to bypass access controls or platform restrictions is prohibited.</span></p><ul class="lst-kix_list_11-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">YouTube Data API v3</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: The only authorized mechanism for discovering videos and parsing public metadata. Searches are performed using the search.list endpoint with parameters such as type=video, videoLicense=creativeCommon, and videoSyndicated=true.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Creative Commons Filter</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: When querying the YouTube Data API with videoLicense=creativeCommon, the system identifies videos published under the Creative Commons Attribution license (CC BY 3.0). Videos under the standard YouTube license remain strictly excluded.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Authorized Downloading &amp; Usage Restrictions</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Even when a video is tagged CC BY 3.0, automated engines cannot assume full reusability. The engine must verify that the publishing channel is the actual copyright owner and not a re-uploader of third-party copyrighted media.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Compliance Checks</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Downloading media via authorized tools (yt-dlp) is restricted strictly to verified CC BY content or public domain material. Re-using content without verifying channel ownership introduces severe copyright strike risks.</span></li></ul><h2 style="padding-top:11.2pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">7. Search &amp; Matching Tools</span></h2><p style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:11pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Automating visual asset discovery requires translating abstract scene descriptions into structured keyword queries and matching returned candidates against visual scene contracts using semantic embeddings.</span></p><h3 style="padding-top:0pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Asset Search Intelligence &amp; Query Expansion</span></h3><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span>Raw scene descriptions written in production scripts (e.g., </span><span style="font-style:italic">"1960s moon landing control room"</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">) are rarely optimal for search engine endpoints. The search intelligence layer performs query expansion by extracting key entities, temporal markers, visual themes, and spatial attributes.</span></p><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span>For example, a raw scene requirement specifying </span><span style="font-style:italic">"1960s moon landing control room"</span><span>&nbsp;undergoes entity and temporal extraction into structured parameters: Entity = </span><span style="font-style:italic">"Apollo Mission Control"</span><span>, Temporal = </span><span style="font-style:italic">"1969"</span><span>, Visual Concept = </span><span style="font-style:italic">"NASA control room"</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">. The intelligence layer then generates an expanded query array routed to specific APIs:</span></p><ul class="lst-kix_list_12-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Internet Archive</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Query formatted as collection:NASA "Apollo control room" 1969.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Wikimedia Commons</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Query formatted as Apollo 11 Mission Control Center Houston.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Pexels / Stock</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Query formatted as retro control room computer vintage space mission.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Flickr Commons</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Query formatted as NASA Mission Control Center 1960s.</span></li></ul><p style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:11pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span>This mapping task is executed by a dedicated </span><span style="font-weight:700">Hermes Search Intelligence Skill</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">. The skill leverages LLM-based reasoning for semantic concept extraction combined with deterministic template formatting for API-specific syntax (e.g., formatting Solr parameters for Internet Archive or Lucene syntax for Smithsonian).</span></p><h3 style="padding-top:0pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Semantic &amp; Embedding-Based Asset Matching</span></h3><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">To verify whether a retrieved asset visually matches the scene contract without relying solely on noisy uploader text, Hermes uses local open-source vision-language models.</span></p><ul class="lst-kix_list_13-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">CLIP-Retrieval Framework</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Hermes integrates clip-retrieval, an open-source Python tool capable of indexing and searching visual assets using OpenAI CLIP embeddings.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Inference Performance</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: clip-retrieval achieves processing speeds of ~1,500 samples per second on modern consumer GPUs (e.g., RTX 3080).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Local Operation &amp; Indexing</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: The tool computes vector embeddings for images and video keyframes locally. These vectors are indexed using approximate nearest neighbor algorithms such as Annoy or Faiss.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Semantic Query Matching</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: When evaluating candidate assets, Hermes computes the text embedding of the scene requirement and calculates cosine similarity against the candidate image vector index. Candidates falling below a predefined similarity threshold (e.g., cos(\theta) &lt; 0.28) are discarded automatically.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Duplicate &amp; Near-Duplicate Detection</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Local CLIP vector indices prevent re-ingesting identical or slightly cropped images across different production runs, conserving local disk storage.</span></li></ul><h2 style="padding-top:11.2pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">8. Download / Integrity / Metadata Tools</span></h2><p style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:11pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Once candidate visual assets are selected and approved, they pass into an automated ingestion pipeline that handles file retrieval, codec validation, metadata extraction, and corruption detection.</span></p><h3 style="padding-top:0pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Download &amp; Ingestion Stack</span></h3><ul class="lst-kix_list_14-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">yt-dlp</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Serves as the primary engine for downloading open, public-domain, or Creative Commons video streams from authorized video platforms, educational channels, and web archives. yt-dlp handles dynamic adaptive streaming (DASH/HLS), extracts original metadata streams, and automatically retries failed chunks.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">HTTP/REST Ingestion Utilities</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: For direct API file downloads (Pexels, Adobe Stock, Internet Archive), Hermes uses Python httpx and aria2c multi-connection downloading. This setup enforces exponential backoff, connection pooling, and stream chunking for large video files.</span></li></ul><h3 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Local Metadata Extraction</span></h3><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Upon file landing, local inspection tools verify technical parameters to ensure compatibility with the production editing layout:</span></p><ul class="lst-kix_list_15-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Video Inspection (ffprobe / pymediainfo)</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Parses video container codecs (H.264, HEVC, VP9, AV1), pixel dimensions, aspect ratio (16:9, 4:3), frame rate (23.976 fps, 29.97 fps, 60 fps), total duration, and average bitrate.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Image Inspection (Pillow / ExifTool)</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Extracts pixel dimensions, DPI resolution, color profile (sRGB, Display P3), and EXIF camera metadata.</span></li></ul><h3 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Asset Integrity &amp; Corruption Verification</span></h3><ul class="lst-kix_list_16-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Checksum Verification</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Computes SHA-256 and MD5 cryptographic hashes immediately upon download. Hashes are compared against upstream headers (such as ETag or API payload hashes) to detect transport corruption.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Decode Validation</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Video files undergo frame decode testing via FFmpeg (ffmpeg -v error -i input.mp4 -f null -). An exit code of 0 indicates no corrupt frames or missing atom headers.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Perceptual Hashing (pHash)</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Images and extracted video keyframes are processed using the Python imagehash library. Computing dHash (difference hash) or pHash (perceptual hash) values allows the system to identify near-duplicate visual content, scaled variations, or watermarked comp images.</span></li></ul><h2 style="padding-top:11.2pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">9. Provenance &amp; Rights</span></h2><p style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:11pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Maintaining legal compliance across commercial YouTube channels requires strict, non-ambiguous rights tracking. Assets must never be treated as legally safe simply because an API returns them in a search query.</span></p><h3 style="padding-top:0pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Machine-Readable Rights Classification</span></h3><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Hermes normalizes all incoming license claims into a single deterministic taxonomy:</span></p><ul class="lst-kix_list_17-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">PUBLIC_DOMAIN: Works whose copyright has expired or government works created by federal employees in an official capacity (e.g., NASA, US National Archives).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">CC0: Creative Commons Zero universal public domain dedications. Free commercial use without attribution requirements.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">CC_BY: Creative Commons Attribution (2.0, 3.0, 4.0). Commercial use permitted provided credit is explicitly retained.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">CC_BY_SA: Creative Commons Attribution-ShareAlike. Requires strict evaluation: using CC BY-SA video clips in a larger composite project can trigger copyleft obligations on the final video output.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">LICENSED: Paid commercial stock media acquired under a verified license agreement (e.g., Adobe Stock Standard/Video license).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">EDITORIAL: Editorial-only media (e.g., news photography, celebrity images). Prohibited for standard commercial promotion; usable only in news/commentary contexts under fair-use evaluation.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">RESTRICTED: Assets containing personal biometric data, unreleased recognizable individuals, proprietary branding, or explicit non-commercial restrictions (CC BY-NC).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">UNKNOWN: Unverified or ambiguous licensing metadata. Automatically blocked from production pipelines.</span></li></ul><h3 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Standardized Provenance Metadata Schema</span></h3><p style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:11pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Every ingested asset is paired with a JSON-LD compliant provenance record stored in the local SQLite/PostgreSQL system registry. This record preserves crucial operational fields including Asset ID, Source Provider, Original URL, Downloaded URL, Author/Creator, Rights Status, License Identifier, License URL, Attribution String, Acquisition Timestamp, Search Query Used, Scene Contract ID, SHA-256 Checksum, Local File Path, and Pipeline Transformation History.</span></p><h2 style="padding-top:0pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">10. Existing Project Resource Reassessment</span></h2><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">To maximize development speed and avoid duplicating existing software, known project resources and open-source libraries are re-evaluated below:</span></p><ul class="lst-kix_list_18-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Scrapling</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: EXTEND ‚Äî Utility web scraping engine. Extend to handle fallback visual harvesting from archives lacking clean REST endpoints (e.g., scraping Smithsonian object web pages when API JSON records omit direct media links).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">yt-dlp</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: KEEP ‚Äî Industry-standard media stream downloader. Keep for fetching authorized public, CC, and educational online video streams.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Internet Archive API &amp; MCP</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: KEEP / WRAP ‚Äî Primary archival endpoint. Wrap Python internetarchive library and adopt existing MCP servers (dthen/internet-archive-mcp) for agent tool execution.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Wikimedia Commons API</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: KEEP ‚Äî Direct integration using pyWikiCommons and MediaWiki Action API (iiprop=extmetadata).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Library of Congress</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: KEEP ‚Äî Native JSON search integration.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Pexels API</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: KEEP ‚Äî Primary free stock footage resolver. Integrate via official REST API or hanoak/pexels-mcp-server.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Pixabay API</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: W[span_82](start_span)[span_82](end_span)RAP ‚Äî Secondary free stock platform. Requires a custom local wrapper to enforce the mandatory 24-hour response caching rule and hotlinking prohibition.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">clip-retrieval</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: EXTEND ‚Äî Local open-source vector similarity search engine. Extend to index all local asset directories for automated visual deduplication and semantic similarity matching.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">FFmpeg / ffprobe</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: KEEP ‚Äî Core local tools for media probing, decode verification, aspect ratio normalization, and video transcoding.</span></li></ul><p style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:11pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">---</span></p><h2 style="padding-top:0pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">11. Hermes Integration Architecture</span></h2><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">The visual asset resolution system integrates into the Hermes platform as a modular pipeline layer. Responsibility is distributed strictly across architecture layers to maintain separation of concerns:</span></p><ul class="lst-kix_list_19-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Hermes Core / Script Engine</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Owns the Scene Contract. Emits visual specifications without managing API calls or download mechanics.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Hermes Search Intelligence Skill</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Owns query expansion, entity extraction, semantic prompt engineering, and source waterfall routing.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">MCP / API Connector Layer</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Owns raw API communication, key management, response parsing, and pagination handling.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Rights &amp; Licensing Filter Engine</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Owns legal rights classification, license taxonomy mapping, non-commercial asset filtering, and YouTube compliance verification.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Ingestion Worker</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Owns stream retrieval, rate-limit throttling, exponential backoff, and byte-level file writes.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Integrity &amp; Verification Engine</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Owns format inspection, FFmpeg frame decode testing, exiftool parsing, SHA-256 hashing, and pHash duplicate checking.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Local Asset Store &amp; Provenance DB</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Owns persistent file storage, directory structure management, and JSON-LD provenance metadata recording.</span></li></ul><h3 style="padding-top:12pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Capability Waterfall</span></h3><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">When fulfilling technical requirements, Hermes evaluates integration options in the following hierarchical order:</span></p><ol class="lst-kix_list_1a-0 start" start="1" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Hermes Native</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: In-process Python/TypeScript logic within the core engine.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Hermes Skill</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Specialized LLM prompts and reasoning modules for search mapping.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Existing Tool</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Pre-built tools available in the Hermes environment.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">MCP / Plugin</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Model Context Protocol servers interfacing with external services.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">API / CLI</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Direct REST API client integrations or command-line wrappers.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Existing OSS</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Established open-source Python packages (clip-retrieval, internetarchive, pyWikiCommons).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Free Resource</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Open web services and public domain digital libraries.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Existing Subscription</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Enterprise paid stock media APIs (Adobe Stock).</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Custom</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: In-house software modules developed only when no existing solution exists.</span></li></ol><h2 style="padding-top:11.2pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">12. Strong Existing Candidates</span></h2><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">The following systems are fully validated and recommended for immediate deployment in the primary production stack:</span></p><ul class="lst-kix_list_1b-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Pexels API</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Best-in-class free commercial stock video and photography API. Features direct media URL extraction, well-documented endpoints, simple commercial licensing, and low integration friction.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Internet Archive API &amp; Python Library</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Premier archival repository. Solr-based advancedsearch.php endpoint combined with internetarchive Python client provides access to historic films, newsreels, and public domain images.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Wikimedia Commons MediaWiki API</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Indispensable resource for high-resolution encyclopedic and historical visuals. The extmetadata parameter provides reliable machine-readable CC/PD licensing data.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Adobe Stock REST API</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: The most robust enterprise subscription platform. Provides unthrottled API searches, comprehensive filtering, watermarked preview comps, and automated license acquisition.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">clip-retrieval Local Inference Engine</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Outstanding open-source semantic visual search tool. Executes local CLIP embeddings at high speed (~1,500 samples/sec), enabling visual similarity checks and automated deduplication.</span></li></ul><h2 style="padding-top:11.2pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">13. Candidates Requiring Targeted Validation</span></h2><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">The following platforms offer substantial media value but exhibit technical edge cases that require engineering validation before full production release:</span></p><ul class="lst-kix_list_1c-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Smithsonian Open Access API</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Although hosting over 3 million CC0 assets, recent API behavior shows that content detail calls omit direct image download URLs. Engineering must validate whether thumbnail links extracted from primary search responses or a secondary HTML parser (built on Scrapling) can reliably extract full-resolution image URLs.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Europeana REST API</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Offers rich European cultural heritage data. However, integration requires validating commercial API key authorization and building automated parsers for the complex edm:rights metadata field.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Flickr API (Creative Commons Search)</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Excellent source for niche imagery. Requires automated validation of the license parameter filter to ensure strict exclusion of non-commercial (CC BY-NC) or all-rights-reserved photos.</span></li></ul><h2 style="padding-top:11.2pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">14. Genuine Gaps</span></h2><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Applying the Custom-Build Test (evaluating Hermes Native, Skills, Tools, MCPs, APIs, CLIs, OSS, Free Resources, and Existing Implementations) confirms that three specific technical gaps require lightweight custom development within the Hermes engine:</span></p><ul class="lst-kix_list_1d-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Unified Multi-Source License Normalizer</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: External APIs express licensing using disparate formats (e.g., Pexels returns proprietary strings, Wikimedia returns extmetadata HTML templates, Europeana uses URI links, and Flickr uses numeric license IDs). A lightweight custom Python module is required to map these distinct payloads into the internal 8-state rights classification taxonomy.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Automated Visual Aspect Ratio &amp; FPS Normalizer</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Raw stock and archival media arrive in varied aspect ratios (4:3 historical, 1:1, 21:9 ultra-wide) and frame rates (23.976 fps, 29.97 fps, 50 fps, 60 fps). A custom FFmpeg execution wrapper is necessary to automatically crop, pad (with blurred background fill), and transcode incoming heterogeneous assets into standard 16:9 1080p/4K master timelines.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Local pHash Vector Index Builder</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: While clip-retrieval handles semantic vector search, a fast, lightweight local perceptual hash index (pHash) is required to detect exact visual duplicates, watermarked preview comps, and minor crops instantly across the local asset cache without invoking GPU inference.</span></li></ul><h2 style="padding-top:11.2pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">15. Legal / ToS / Licensing Risks</span></h2><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">Automated media ingestion presents distinct legal and platform risks that must be mitigated algorithmically:</span></p><ul class="lst-kix_list_1e-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Terms of Service Violations</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Exceeding API rate limits (e.g., Pexels' 200 req/hr tier or Pixabay's 100 req/min tier) risks IP bans. Violating caching clauses (e.g., Pixabay's mandatory 24-hour response caching rule) or hotlinking forbidden media assets instead of ingesting files locally introduces platform liability.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Commercial Indemnification Gaps on Free Stock</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Free stock platforms (Pexels, Pixabay) generally exclude liability for copyright infringement if an uploader illegally submits proprietary content. High-risk, high-visibility commercial production scenes should prioritize Adobe Stock or official government archives (NASA, LOC) that provide clear provenance or legal indemnification.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Creative Commons Share-Alike (CC BY-SA) Infection</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Utilizing CC BY-SA video clips inside a composite video project can legally require the final output video to be distributed under an identical Share-Alike license. The rights engine must flag CC BY-SA video assets and require human review before insertion.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">YouTube Commercial Monetization Restrictions</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: YouTube Monetization Policies prohibit monetizing channels that utilize non-commercial Creative Commons media (CC BY-NC) or unreleased recognizable individuals without model releases. The rights filter must strictly reject all non-commercial content.</span></li></ul><h2 style="padding-top:11.2pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:11.2pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">16. Targeted Validation Queue</span></h2><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">The following validation sprint queue defines the engineering tasks required to finalize the visual asset resolution layer:</span></p><ul class="lst-kix_list_1f-0 start" style="padding:0;margin:0"><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Internet Archive Search Ceiling &amp; Encoding Validation</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Benchmark advancedsearch.php pagination past 10,000 items using date range splits. Validate percent-encoding rules for nested subdirectory file paths.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Smithsonian API Image URL Resolution Test</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Execute search queries via https://api.si.edu/openaccess/api/v1.0. Build and test fallback Scrapling parser logic if detailed content endpoints omit high-resolution media URLs.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Local clip-retrieval Performance Benchmarking</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Benchmark CLIP image/text embedding calculation speeds on target GPU infrastructure. Test vector similarity threshold precision on archival photography datasets.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Pixabay Caching &amp; Local Storage Enforcement</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Implement Redis/SQLite caching layers for Pixabay search responses to comply with the 24-hour caching mandate. Verify zero hotlinking compliance during production rendering.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">Adobe Stock API Licensing &amp; Comp Workflow Test</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Authenticate search requests using Adobe I/O Bearer tokens. Test watermarked preview comp downloads (comp_url) and automated Content/License endpoint execution.</span></li><li style="padding:0;color:#000000;font-size:11pt;line-height:1.0;margin-right:0;margin-left:30pt;font-family:&quot;Arial&quot;;margin-top:0;margin-bottom:0;text-align:left"><span style="font-weight:700">FFmpeg Integrity &amp; Decode Check Stress Test</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">: Run batch corrupt-frame detection across ingested archival videos (ffmpeg -v error). Benchmark pHash near-duplicate visual filtering efficiency on local disk stores.</span></li></ul><h2 style="padding-top:11.2pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:18pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:&quot;Arial&quot;;font-style:normal">17. System Tables &amp; Deployment Matrices</span></h2><h3 style="padding-top:0pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Candidate Matrix</span></h3><p style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:11pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span>| Resource | Asset Type | API | Automation | License Metadata | Commercial Use | Download | Hermes Integration | Maintenance | Risk | Confidence | | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | | </span><span style="font-style:italic">Pexels</span><span>&nbsp;| Image / Video | REST API | Excellent (200 req/hr) | High (Pexels License) | Yes (Commercial allowed) | Direct MP4/JPG URLs | Native MCP / API Connector | Low (Maintained) | Low | High | | </span><span style="font-weight:700">Internet Archive</span><span>&nbsp;| Image / Video / Audio | REST API | High (Paginated, 500ms delay) | Medium (Item dependent) | Yes (Public Domain / CC) | Direct HTTP file links | Python Client / MCP Wrapper | Low (Stable core) | Medium (Incomplete metadata) | High | | </span><span style="font-weight:700">Wikimedia Commons</span><span>&nbsp;| Image / Video | MediaWiki REST | High (Unthrottled with UA) | High (extmetadata structured) | Yes (CC BY / CC BY-SA / PD) | Direct Upload URLs | pyWikiCommons Package | Low (Community core) | Low | High | | </span><span style="font-weight:700">Pixabay</span><span>&nbsp;| Image / Video | REST API | Medium (100 req/min, 24h cache rule) | High (Pixabay License) | Yes (Commercial allowed) | Direct HTTP links (No hotlinks) | Custom Caching Wrapper | Low | Medium (Strict ToS) | High | | </span><span style="font-weight:700">Adobe Stock</span><span>&nbsp;| Image / Video / Vector | REST API | High (Enterprise tokens) | High (Structured [span_136](start_span)[span_136](end_span)is_li[span_146](start_span)[span_146](end_span)[span_153](start_span)[span_153](end_span)censed) | Yes (Commercial licensed) | Enterprise licensing API | API Connector / REST Plugin | Low (Enterprise) | Low | High | | </span><span style="font-weight:700">Smithsonian</span><span>&nbsp;| Image / 3D | REST API | Medium (Search filtering works) | High (CC0 Public Domain) | Yes (CC0 Commercial) | Web fallback / Scrapling required | Custom Scrapling Connector | Medium | Medium (Missing URL bug) | Medium | | </span><span style="font-weight:700">Europeana</span><span>&nbsp;| Image / Text | REST / SPARQL | Medium (3,000 req/day key limit) | High (edm:rights structured) | Conditional (License filter dependent) | Direct Media URLs | REST API Plugin | Low | Low | High | | </span><span style="font-weight:700">Flickr Commons</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">&nbsp;| Image | REST API | High (Key required) | High (Numeric license IDs) | Conditional (license filter) | Direct Original URLs (url_o) | REST API Plugin | Low | Medium (License parse risk) | High |</span></p><h3 style="padding-top:0pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:14pt;padding-bottom:12pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Arial&quot;;font-style:normal">Asset-Resolution Matrix</span></h3><p style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:11pt;padding-bottom:12.8pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span>| Capability | Existing Solution | Integration Layer | Free/Local? | Rights Support | Limitation | Custom Need? | Confidence | | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | | </span><span style="font-weight:700">Image Search</span><span>&nbsp;| Pexels, Wikimedia, Adobe Stock APIs | MCP / API Connectors | Hybrid (Free &amp; Sub) | High (extmetadata, Pexels, Stock) | Rate limits on free tiers | No | High | | </span><span style="font-weight:700">Video Search</span><span>&nbsp;| Pexels Video, Internet Archive, Adobe Stock | MCP / API Connectors | Hybrid (Free &amp; Sub) | High (Metadata tags &amp; API flags) | Archive video resolution varies | No | High | | </span><span style="font-weight:700">Archival Search</span><span>&nbsp;| Internet Archive, Library of Congress, NASA | Python internetarchive / MCP | Free / Public Domain | Medium (Requires license parsing) | Solr 10,000 search ceiling | No | High | | </span><span style="font-weight:700">Stock Search</span><span>&nbsp;| Adobe Stock API, Pixabay API | API Connectors | Hybrid | High (Strict licensing APIs) | Subscription cost for high-res paid stock | No | High | | </span><span style="font-weight:700">Semantic Matching</span><span>| clip-retr[span_86](start_span)[span_86](end_span)ieval | Local Python Skill | Free / Local | N/A (Visual similarity only) | Requires GPU for rapid vector index | No | High | | </span><span style="font-weight:700">Query Expansion</span><span>&nbsp;| Hermes Search Intelligence Skill | LLM Skill / Prompt Template | Free / Local | N/A | Prompt quality dependent | No | High | | </span><span style="font-style:italic">Metadata Extraction</span><span>| ffprobe, pymediainfo, Pillow | Local Worker Utility | Free / Local | N/A | Requires local binary installation | No | High | | </span><span style="font-weight:700">Downloading</span><span>&nbsp;| yt-dlp, ht[span_253](start_span)[span_253](end_span)tpx, aria2c | Local Worker Utility | Free / Local | N/A | Stream throttling on some platforms | No | High | | </span><span style="font-weight:700">Integrity Check</span><span>&nbsp;| FFmpeg decode test, hashlib (SHA-256) | Local Worker Utility | Free / Local | N/A | CPU execution overhead during batch ingest | No | High | | </span><span style="font-weight:700">Duplicate Detection</span><span>| imagehash (pHash/dHash), clip-retrieval| Local Worker Utility | Free / Local | N/A | Needs pre-indexed disk directory | Yes (Lightweight Indexer) | High | | </span><span style="font-weight:700">Provenance Tracking</span><span>| SQLite / PostgreSQL JSON-LD Schema | Local Asset Registry DB | Free / Local | High (Schema-enforced DB records) | None | Yes (Schema &amp; DB logic) | High | | </span><span style="font-weight:700">Rights Classification</span><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">| Multi-Source Rights Filter Engine | Python Middleware | Free / Local | High (8-state normalized taxonomy) | Heterogeneous API license formats | Yes (Normalizer module) | High |</span></p><h4 style="padding-top:0pt;margin:0;color:#000000;font-weight:700;padding-left:0;font-size:12pt;padding-bottom:12.8pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left;padding-right:0"><span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:12pt;font-family:&quot;Arial&quot;;font-style:normal">Works cited</span></h4><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal">1. Internet Archive API ‚Äî Search, Metadata &amp; Files - Apify, https://apify.com/insight.solutions/internet-archive-api 2. Archive.org Scraper - Apify, https://apify.com/lulzasaur/archive-org-scraper 3. internetarchive/internetarchive/item.py at master - GitHub, https://github.com/jjjake/internetarchive/blob/master/internetarchive/item.py 4. MCP server for the Internet Archive ‚Äî search, metadata ... - GitHub, https://github.com/dthen/internet-archive-mcp 5. Commons:Machine-readable data, https://commons.wikimedia.org/wiki/Commons:Machine-readable_data 6. pyWikiCommons - PyPI, https://pypi.org/project/pyWikiCommons/ 7. cyanheads/smithsonian-mcp-server - GitHub, https://github.com/cyanheads/smithsonian-mcp-server 8. GitHub - molanojustin/smithsonian-mcp: A Model Context Protocol, https://github.com/molanojustin/smithsonian-mcp 9. Museums and the machine-processable web / Museum APIs, http://museum-api.pbworks.com/w/page/21933420/Museum%C2%A0APIs 10. apideposu/public-api-deposu - GitHub, https://github.com/MertMURAT/public-api-deposu 11. "Description of Work" | Europeana PRO, https://pro.europeana.eu/files/Europeana_Professional/Projects/Project_list/Europeana_Cloud/Contract/eCloud%20Description%20of%20Work%20amended.pdf 12. geo - code.flickr.com, https://code.flickr.net/category/geo/ 13. File:Free high-resolution pictures you can use on your personal and, https://commons.wikimedia.org/wiki/File:Free_high-resolution_pictures_you_can_use_on_your_personal_and_commercial_projects._(14355732205).jpg 14. How to map the photo location of Flickr using python and QGIS., https://fivequestionz.home.blog/2020/07/30/how-to-map-the-photo-location-of-flickr-using-python-and-qgis/ 15. Creating your first application with Flickr API - w3resource, https://www.w3resource.com/API/flickr/tutorial.php 16. Using the Flickr API: We Don't Need No Stinkin' Badges | Viget, https://www.viget.com/articles/using-the-flickr-api 17. pexels-ai-video-downloader/README.md at main - GitHub, https://github.com/addyosmani/pexels-ai-video-downloader/blob/main/README.md 18. The best stock image and video footage APIs (2024) - Shotstack, https://shotstack.io/learn/best-stock-image-video-apis/ 19. Automating Image Search and Download with the Pexels API Module, https://medium.com/@minhlenguyen02/automating-image-search-and-download-with-the-pexels-api-module-7b50ad9e0ec1 20. Pexels MCP Server | Awesome MCP Servers, https://mcpservers.org/servers/hanoak/pexels-mcp-server 21. i want to build a bulk image downloader for pexels using python, https://www.reddit.com/r/learnpython/comments/144w4hr/i_want_to_build_a_bulk_image_downloader_for/ 22. Pexels Scraper - Free Stock Photos &amp; Videos (No API Key) - Apify, https://apify.com/memo23/pexels-scraper 23. Exploring Pixabay: Comprehensive Review of Features, License, https://www.itechguides.com/exploring-pixabay-a-comprehensive-review-of-features-and-functionality/ 24. Pixabay MCP Server, https://mcpservers.org/servers/Unlock-MCP/pixabay-mcp-server 25. GitHub - haanhduclinh/pixabay_api, https://github.com/haanhduclinh/pixabay_api 26. Stock API FAQs and supplemental info - Adobe Developer, https://developer.adobe.com/stock/docs/faq/18-fotolia-migration-resources 27. Search for assets - Stock APIs, https://developer.adobe.com/stock/docs/getting-started/apps/05-search-for-assets 28. Bulk metadata Files API reference - Adobe Developer, https://developer.adobe.com/stock/docs/api/19-bulk-metadata-files-reference 29. Search API reference - Adobe Developer, https://developer.adobe.com/stock/docs/api/11-search-reference 30. Authorization | Getty Images API, https://developer.gettyimages.com/docs/authorization/ 31. Integrate Free images with Webflow | Quick connect guide, https://webflow.com/integrations/free-images 32. clip-retrieval - PyPI, https://pypi.org/project/clip-retrieval/ 33. ADAPTIVE REPRESENTATIONS FOR SEMANTIC SEARCH, https://pml4dc.github.io/iclr2023/pdf/PML4DC_ICLR2023_31.pdf 34. Creative Commons Biometrics - Adam Harvey Studio, https://adam.harvey.studio/creative-commons/ 35. Detecting creative commons license violations on images on the, https://www.researchgate.net/publication/228531004_Detecting_creative_commons_license_violations_on_images_on_the_world_wide_web</span></p></div></div></div></div></body></html>
+------MultipartBoundary--ZeAx03APvJADZjAQVFBVHGBZAyba8o455tuFs2SGfX----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-a82fdfee-ac5e-4d12-b2cd-7d6062616679@mhtml.blink
+
+@charset "utf-8";
+
+.lst-kix_list_14-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_14-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_14-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_14-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_14-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_14-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_14-6 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_9-3 { list-style-type: none; }
+
+ul.lst-kix_list_9-4 { list-style-type: none; }
+
+ul.lst-kix_list_9-1 { list-style-type: none; }
+
+ul.lst-kix_list_9-2 { list-style-type: none; }
+
+ul.lst-kix_list_9-7 { list-style-type: none; }
+
+ul.lst-kix_list_9-8 { list-style-type: none; }
+
+ul.lst-kix_list_9-5 { list-style-type: none; }
+
+ul.lst-kix_list_9-6 { list-style-type: none; }
+
+ul.lst-kix_list_9-0 { list-style-type: none; }
+
+.lst-kix_list_14-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1f-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_1f-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_1f-2 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_17-1 { list-style-type: none; }
+
+ul.lst-kix_list_17-0 { list-style-type: none; }
+
+.lst-kix_list_1f-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1f-6 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_17-8 { list-style-type: none; }
+
+ul.lst-kix_list_17-7 { list-style-type: none; }
+
+ul.lst-kix_list_17-6 { list-style-type: none; }
+
+.lst-kix_list_1f-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1f-8 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_17-5 { list-style-type: none; }
+
+ul.lst-kix_list_17-4 { list-style-type: none; }
+
+.lst-kix_list_1f-5 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_17-3 { list-style-type: none; }
+
+.lst-kix_list_14-8 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_17-2 { list-style-type: none; }
+
+.lst-kix_list_1f-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_5-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_5-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_5-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_5-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_5-7 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_8-4 { list-style-type: none; }
+
+ul.lst-kix_list_8-5 { list-style-type: none; }
+
+.lst-kix_list_5-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_5-8 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_8-2 { list-style-type: none; }
+
+ul.lst-kix_list_8-3 { list-style-type: none; }
+
+ul.lst-kix_list_8-8 { list-style-type: none; }
+
+ul.lst-kix_list_1f-0 { list-style-type: none; }
+
+ul.lst-kix_list_8-6 { list-style-type: none; }
+
+ul.lst-kix_list_1f-1 { list-style-type: none; }
+
+ul.lst-kix_list_8-7 { list-style-type: none; }
+
+ul.lst-kix_list_1f-2 { list-style-type: none; }
+
+.lst-kix_list_5-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_5-5 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_8-0 { list-style-type: none; }
+
+ul.lst-kix_list_8-1 { list-style-type: none; }
+
+.lst-kix_list_6-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_6-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_6-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_6-4 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_16-2 { list-style-type: none; }
+
+ul.lst-kix_list_16-1 { list-style-type: none; }
+
+ul.lst-kix_list_16-0 { list-style-type: none; }
+
+.lst-kix_list_6-2 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_16-8 { list-style-type: none; }
+
+ul.lst-kix_list_16-7 { list-style-type: none; }
+
+ul.lst-kix_list_16-6 { list-style-type: none; }
+
+ul.lst-kix_list_16-5 { list-style-type: none; }
+
+ul.lst-kix_list_16-4 { list-style-type: none; }
+
+.lst-kix_list_6-8 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_16-3 { list-style-type: none; }
+
+.lst-kix_list_6-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_6-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_6-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_7-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_7-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_7-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1e-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_1e-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_13-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1e-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_7-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1e-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_15-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_4-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_15-7 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_19-7 { list-style-type: none; }
+
+ul.lst-kix_list_19-6 { list-style-type: none; }
+
+.lst-kix_list_4-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_4-5 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_19-5 { list-style-type: none; }
+
+ul.lst-kix_list_19-4 { list-style-type: none; }
+
+ul.lst-kix_list_19-3 { list-style-type: none; }
+
+ul.lst-kix_list_19-2 { list-style-type: none; }
+
+ul.lst-kix_list_19-1 { list-style-type: none; }
+
+ul.lst-kix_list_19-0 { list-style-type: none; }
+
+.lst-kix_list_15-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_15-3 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_19-8 { list-style-type: none; }
+
+.lst-kix_list_12-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_12-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_13-3 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_18-0 { list-style-type: none; }
+
+.lst-kix_list_13-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_12-5 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_18-8 { list-style-type: none; }
+
+ul.lst-kix_list_18-7 { list-style-type: none; }
+
+ul.lst-kix_list_18-6 { list-style-type: none; }
+
+ul.lst-kix_list_18-5 { list-style-type: none; }
+
+.lst-kix_list_12-7 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_18-4 { list-style-type: none; }
+
+ul.lst-kix_list_18-3 { list-style-type: none; }
+
+ul.lst-kix_list_18-2 { list-style-type: none; }
+
+ul.lst-kix_list_18-1 { list-style-type: none; }
+
+.lst-kix_list_13-1 > li::before { content: "‚óã  "; }
+
+ul.lst-kix_list_f-7 { list-style-type: none; }
+
+ul.lst-kix_list_f-6 { list-style-type: none; }
+
+ul.lst-kix_list_f-5 { list-style-type: none; }
+
+ul.lst-kix_list_f-4 { list-style-type: none; }
+
+ul.lst-kix_list_f-8 { list-style-type: none; }
+
+.lst-kix_list_1d-7 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_f-3 { list-style-type: none; }
+
+.lst-kix_list_3-0 > li::before { content: "‚óè  "; }
+
+ul.lst-kix_list_f-2 { list-style-type: none; }
+
+ul.lst-kix_list_f-1 { list-style-type: none; }
+
+ul.lst-kix_list_f-0 { list-style-type: none; }
+
+ul.lst-kix_list_5-7 { list-style-type: none; }
+
+ul.lst-kix_list_5-8 { list-style-type: none; }
+
+ul.lst-kix_list_5-5 { list-style-type: none; }
+
+ul.lst-kix_list_1c-0 { list-style-type: none; }
+
+ul.lst-kix_list_5-6 { list-style-type: none; }
+
+ul.lst-kix_list_1c-1 { list-style-type: none; }
+
+ul.lst-kix_list_1c-2 { list-style-type: none; }
+
+ul.lst-kix_list_1c-3 { list-style-type: none; }
+
+ul.lst-kix_list_1c-4 { list-style-type: none; }
+
+ul.lst-kix_list_1c-5 { list-style-type: none; }
+
+ul.lst-kix_list_5-0 { list-style-type: none; }
+
+.lst-kix_list_3-4 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_5-3 { list-style-type: none; }
+
+.lst-kix_list_3-3 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_5-4 { list-style-type: none; }
+
+ul.lst-kix_list_5-1 { list-style-type: none; }
+
+.lst-kix_list_8-0 > li::before { content: "‚óè  "; }
+
+ul.lst-kix_list_5-2 { list-style-type: none; }
+
+.lst-kix_list_8-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_3-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_f-6 > li::before { content: "‚ñ†  "; }
+
+ol.lst-kix_list_1a-0 { list-style-type: none; }
+
+.lst-kix_list_a-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_f-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_8-3 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_13-5 { list-style-type: none; }
+
+ul.lst-kix_list_1d-5 { list-style-type: none; }
+
+ul.lst-kix_list_13-4 { list-style-type: none; }
+
+ul.lst-kix_list_1d-6 { list-style-type: none; }
+
+ul.lst-kix_list_13-3 { list-style-type: none; }
+
+ul.lst-kix_list_1d-7 { list-style-type: none; }
+
+ul.lst-kix_list_13-2 { list-style-type: none; }
+
+ul.lst-kix_list_1d-8 { list-style-type: none; }
+
+ul.lst-kix_list_13-1 { list-style-type: none; }
+
+.lst-kix_list_3-7 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_13-0 { list-style-type: none; }
+
+.lst-kix_list_8-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_a-2 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_13-8 { list-style-type: none; }
+
+.lst-kix_list_a-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_11-1 > li::before { content: "‚óã  "; }
+
+ul.lst-kix_list_13-7 { list-style-type: none; }
+
+ul.lst-kix_list_13-6 { list-style-type: none; }
+
+.lst-kix_list_f-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_a-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_f-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_11-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_8-8 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_e-8 { list-style-type: none; }
+
+.lst-kix_list_16-8 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_e-7 { list-style-type: none; }
+
+ul.lst-kix_list_e-6 { list-style-type: none; }
+
+.lst-kix_list_16-7 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_e-5 { list-style-type: none; }
+
+.lst-kix_list_e-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_e-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_e-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_e-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_4-8 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_e-0 { list-style-type: none; }
+
+.lst-kix_list_4-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_17-0 > li::before { content: "‚óè  "; }
+
+ul.lst-kix_list_e-4 { list-style-type: none; }
+
+ul.lst-kix_list_e-3 { list-style-type: none; }
+
+ul.lst-kix_list_e-2 { list-style-type: none; }
+
+ul.lst-kix_list_e-1 { list-style-type: none; }
+
+ul.lst-kix_list_4-8 { list-style-type: none; }
+
+.lst-kix_list_16-0 > li::before { content: "‚óè  "; }
+
+ul.lst-kix_list_1b-0 { list-style-type: none; }
+
+ul.lst-kix_list_4-6 { list-style-type: none; }
+
+ul.lst-kix_list_1b-1 { list-style-type: none; }
+
+ul.lst-kix_list_4-7 { list-style-type: none; }
+
+ul.lst-kix_list_1b-2 { list-style-type: none; }
+
+ul.lst-kix_list_1b-3 { list-style-type: none; }
+
+ul.lst-kix_list_1b-4 { list-style-type: none; }
+
+ul.lst-kix_list_1b-5 { list-style-type: none; }
+
+ul.lst-kix_list_1b-6 { list-style-type: none; }
+
+ul.lst-kix_list_4-0 { list-style-type: none; }
+
+.lst-kix_list_16-4 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_4-1 { list-style-type: none; }
+
+.lst-kix_list_16-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1c-3 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_4-4 { list-style-type: none; }
+
+ul.lst-kix_list_4-5 { list-style-type: none; }
+
+ul.lst-kix_list_4-2 { list-style-type: none; }
+
+ul.lst-kix_list_4-3 { list-style-type: none; }
+
+.lst-kix_list_1c-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1c-6 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_12-6 { list-style-type: none; }
+
+ul.lst-kix_list_1c-6 { list-style-type: none; }
+
+ul.lst-kix_list_12-5 { list-style-type: none; }
+
+ul.lst-kix_list_1c-7 { list-style-type: none; }
+
+.lst-kix_list_17-7 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_12-4 { list-style-type: none; }
+
+ul.lst-kix_list_1c-8 { list-style-type: none; }
+
+ul.lst-kix_list_12-3 { list-style-type: none; }
+
+ul.lst-kix_list_12-2 { list-style-type: none; }
+
+ul.lst-kix_list_12-1 { list-style-type: none; }
+
+.lst-kix_list_17-8 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_12-0 { list-style-type: none; }
+
+.lst-kix_list_17-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_17-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1d-2 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_12-8 { list-style-type: none; }
+
+ul.lst-kix_list_12-7 { list-style-type: none; }
+
+.lst-kix_list_1d-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_7-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_1d-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_2-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_2-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_7-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1e-2 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_7-5 { list-style-type: none; }
+
+.lst-kix_list_1a-0 > li { counter-increment: lst-ctn-kix_list_1a-0 1; }
+
+.lst-kix_list_10-0 > li::before { content: "‚óè  "; }
+
+ul.lst-kix_list_7-6 { list-style-type: none; }
+
+ul.lst-kix_list_7-3 { list-style-type: none; }
+
+ul.lst-kix_list_7-4 { list-style-type: none; }
+
+.lst-kix_list_13-8 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_1e-0 { list-style-type: none; }
+
+ul.lst-kix_list_1e-1 { list-style-type: none; }
+
+.lst-kix_list_b-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_b-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_18-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_18-7 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_7-7 { list-style-type: none; }
+
+ul.lst-kix_list_1e-2 { list-style-type: none; }
+
+ul.lst-kix_list_7-8 { list-style-type: none; }
+
+ul.lst-kix_list_1e-3 { list-style-type: none; }
+
+ul.lst-kix_list_7-1 { list-style-type: none; }
+
+ul.lst-kix_list_7-2 { list-style-type: none; }
+
+.lst-kix_list_1e-6 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_7-0 { list-style-type: none; }
+
+.lst-kix_list_7-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_15-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_10-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_10-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_4-0 > li::before { content: "‚óè  "; }
+
+ul.lst-kix_list_1f-3 { list-style-type: none; }
+
+ul.lst-kix_list_15-3 { list-style-type: none; }
+
+ul.lst-kix_list_1f-4 { list-style-type: none; }
+
+ul.lst-kix_list_15-2 { list-style-type: none; }
+
+ul.lst-kix_list_1f-5 { list-style-type: none; }
+
+.lst-kix_list_15-0 > li::before { content: "‚óè  "; }
+
+ul.lst-kix_list_15-1 { list-style-type: none; }
+
+.lst-kix_list_15-8 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_1f-6 { list-style-type: none; }
+
+ul.lst-kix_list_15-0 { list-style-type: none; }
+
+ul.lst-kix_list_1f-7 { list-style-type: none; }
+
+ul.lst-kix_list_1f-8 { list-style-type: none; }
+
+.lst-kix_list_4-4 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_15-8 { list-style-type: none; }
+
+ul.lst-kix_list_15-7 { list-style-type: none; }
+
+ul.lst-kix_list_15-6 { list-style-type: none; }
+
+.lst-kix_list_9-3 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_15-5 { list-style-type: none; }
+
+ul.lst-kix_list_15-4 { list-style-type: none; }
+
+.lst-kix_list_1b-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_9-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_11-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_12-4 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_6-6 { list-style-type: none; }
+
+ul.lst-kix_list_6-7 { list-style-type: none; }
+
+ul.lst-kix_list_6-4 { list-style-type: none; }
+
+ul.lst-kix_list_6-5 { list-style-type: none; }
+
+ul.lst-kix_list_1d-0 { list-style-type: none; }
+
+ul.lst-kix_list_1d-1 { list-style-type: none; }
+
+ul.lst-kix_list_1d-2 { list-style-type: none; }
+
+ul.lst-kix_list_6-8 { list-style-type: none; }
+
+ul.lst-kix_list_1d-3 { list-style-type: none; }
+
+ul.lst-kix_list_1d-4 { list-style-type: none; }
+
+.lst-kix_list_1-0 > li::before { content: "" counter(lst-ctn-kix_list_1-0) ". "; }
+
+.lst-kix_list_1a-3 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_6-2 { list-style-type: none; }
+
+.lst-kix_list_11-8 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_6-3 { list-style-type: none; }
+
+ul.lst-kix_list_6-0 { list-style-type: none; }
+
+.lst-kix_list_12-0 > li::before { content: "‚óè  "; }
+
+ul.lst-kix_list_6-1 { list-style-type: none; }
+
+.lst-kix_list_1-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_13-0 > li::before { content: "‚óè  "; }
+
+ul.lst-kix_list_14-4 { list-style-type: none; }
+
+ul.lst-kix_list_1e-4 { list-style-type: none; }
+
+ul.lst-kix_list_14-3 { list-style-type: none; }
+
+ul.lst-kix_list_1e-5 { list-style-type: none; }
+
+ul.lst-kix_list_14-2 { list-style-type: none; }
+
+ul.lst-kix_list_1e-6 { list-style-type: none; }
+
+.lst-kix_list_13-4 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_14-1 { list-style-type: none; }
+
+ul.lst-kix_list_1e-7 { list-style-type: none; }
+
+ul.lst-kix_list_14-0 { list-style-type: none; }
+
+ul.lst-kix_list_1e-8 { list-style-type: none; }
+
+ul.lst-kix_list_14-8 { list-style-type: none; }
+
+ul.lst-kix_list_14-7 { list-style-type: none; }
+
+.lst-kix_list_2-0 > li::before { content: "‚óè  "; }
+
+ul.lst-kix_list_14-6 { list-style-type: none; }
+
+ul.lst-kix_list_14-5 { list-style-type: none; }
+
+.lst-kix_list_1-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_12-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_c-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_19-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_19-1 > li::before { content: "‚óã  "; }
+
+ul.lst-kix_list_b-8 { list-style-type: none; }
+
+.lst-kix_list_c-1 > li::before { content: "‚óã  "; }
+
+ul.lst-kix_list_b-3 { list-style-type: none; }
+
+ul.lst-kix_list_b-2 { list-style-type: none; }
+
+.lst-kix_list_c-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_c-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_19-4 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_b-1 { list-style-type: none; }
+
+ul.lst-kix_list_b-0 { list-style-type: none; }
+
+ul.lst-kix_list_b-7 { list-style-type: none; }
+
+ul.lst-kix_list_b-6 { list-style-type: none; }
+
+.lst-kix_list_c-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_19-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_19-3 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_b-5 { list-style-type: none; }
+
+ul.lst-kix_list_b-4 { list-style-type: none; }
+
+ul.lst-kix_list_1-3 { list-style-type: none; }
+
+ul.lst-kix_list_1-4 { list-style-type: none; }
+
+ul.lst-kix_list_1-1 { list-style-type: none; }
+
+ul.lst-kix_list_1-2 { list-style-type: none; }
+
+ul.lst-kix_list_1-7 { list-style-type: none; }
+
+ul.lst-kix_list_1-8 { list-style-type: none; }
+
+ul.lst-kix_list_1-5 { list-style-type: none; }
+
+ul.lst-kix_list_1-6 { list-style-type: none; }
+
+.lst-kix_list_1a-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1a-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1a-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_19-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1a-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_19-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_19-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_19-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1b-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1b-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1b-7 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_a-4 { list-style-type: none; }
+
+ul.lst-kix_list_a-3 { list-style-type: none; }
+
+.lst-kix_list_1b-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1b-8 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_a-2 { list-style-type: none; }
+
+ul.lst-kix_list_a-1 { list-style-type: none; }
+
+ul.lst-kix_list_a-8 { list-style-type: none; }
+
+ul.lst-kix_list_a-7 { list-style-type: none; }
+
+ul.lst-kix_list_a-6 { list-style-type: none; }
+
+ul.lst-kix_list_a-5 { list-style-type: none; }
+
+.lst-kix_list_d-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_d-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_d-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_d-2 > li::before { content: "‚ñ†  "; }
+
+ol.lst-kix_list_1-0.start { counter-reset: lst-ctn-kix_list_1-0 0; }
+
+.lst-kix_list_18-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_d-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_d-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_18-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_18-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_d-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_d-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_c-7 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_a-0 { list-style-type: none; }
+
+.lst-kix_list_c-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_c-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_d-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_c-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_2-7 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_d-8 { list-style-type: none; }
+
+ul.lst-kix_list_d-7 { list-style-type: none; }
+
+ul.lst-kix_list_d-6 { list-style-type: none; }
+
+ol.lst-kix_list_1-0 { list-style-type: none; }
+
+.lst-kix_list_2-5 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_d-1 { list-style-type: none; }
+
+ul.lst-kix_list_d-0 { list-style-type: none; }
+
+.lst-kix_list_b-8 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_d-5 { list-style-type: none; }
+
+ul.lst-kix_list_d-4 { list-style-type: none; }
+
+ul.lst-kix_list_d-3 { list-style-type: none; }
+
+ul.lst-kix_list_d-2 { list-style-type: none; }
+
+ul.lst-kix_list_1a-1 { list-style-type: none; }
+
+.lst-kix_list_b-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_18-6 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_3-7 { list-style-type: none; }
+
+ul.lst-kix_list_1a-2 { list-style-type: none; }
+
+ul.lst-kix_list_3-8 { list-style-type: none; }
+
+ul.lst-kix_list_1a-3 { list-style-type: none; }
+
+ul.lst-kix_list_1a-4 { list-style-type: none; }
+
+.lst-kix_list_10-1 > li::before { content: "‚óã  "; }
+
+ul.lst-kix_list_1a-5 { list-style-type: none; }
+
+.lst-kix_list_18-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_18-8 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_1a-6 { list-style-type: none; }
+
+ul.lst-kix_list_1a-7 { list-style-type: none; }
+
+ul.lst-kix_list_3-1 { list-style-type: none; }
+
+ul.lst-kix_list_3-2 { list-style-type: none; }
+
+ul.lst-kix_list_3-0 { list-style-type: none; }
+
+ul.lst-kix_list_3-5 { list-style-type: none; }
+
+ul.lst-kix_list_3-6 { list-style-type: none; }
+
+.lst-kix_list_b-6 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_3-3 { list-style-type: none; }
+
+ul.lst-kix_list_3-4 { list-style-type: none; }
+
+.lst-kix_list_10-7 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_10-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1c-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_10-3 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_11-7 { list-style-type: none; }
+
+ul.lst-kix_list_1b-7 { list-style-type: none; }
+
+ul.lst-kix_list_11-6 { list-style-type: none; }
+
+ul.lst-kix_list_1b-8 { list-style-type: none; }
+
+.lst-kix_list_b-0 > li::before { content: "‚óè  "; }
+
+ul.lst-kix_list_11-5 { list-style-type: none; }
+
+ul.lst-kix_list_11-4 { list-style-type: none; }
+
+ul.lst-kix_list_11-3 { list-style-type: none; }
+
+ul.lst-kix_list_11-2 { list-style-type: none; }
+
+.lst-kix_list_b-2 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_11-1 { list-style-type: none; }
+
+ul.lst-kix_list_11-0 { list-style-type: none; }
+
+.lst-kix_list_1c-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_9-2 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_11-8 { list-style-type: none; }
+
+.lst-kix_list_9-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_1b-2 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_c-8 { list-style-type: none; }
+
+ul.lst-kix_list_c-7 { list-style-type: none; }
+
+.lst-kix_list_9-6 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_c-2 { list-style-type: none; }
+
+ul.lst-kix_list_c-1 { list-style-type: none; }
+
+.lst-kix_list_1b-0 > li::before { content: "‚óè  "; }
+
+ul.lst-kix_list_c-0 { list-style-type: none; }
+
+.lst-kix_list_9-4 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_c-6 { list-style-type: none; }
+
+.lst-kix_list_a-0 > li::before { content: "‚óè  "; }
+
+ul.lst-kix_list_c-5 { list-style-type: none; }
+
+.lst-kix_list_11-3 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_c-4 { list-style-type: none; }
+
+ul.lst-kix_list_c-3 { list-style-type: none; }
+
+ul.lst-kix_list_2-8 { list-style-type: none; }
+
+.lst-kix_list_11-5 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_2-2 { list-style-type: none; }
+
+.lst-kix_list_1a-4 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_2-3 { list-style-type: none; }
+
+ul.lst-kix_list_2-0 { list-style-type: none; }
+
+ul.lst-kix_list_2-1 { list-style-type: none; }
+
+.lst-kix_list_9-8 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_2-6 { list-style-type: none; }
+
+.lst-kix_list_1a-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1-1 > li::before { content: "‚óã  "; }
+
+ul.lst-kix_list_2-7 { list-style-type: none; }
+
+.lst-kix_list_11-7 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_2-4 { list-style-type: none; }
+
+ul.lst-kix_list_2-5 { list-style-type: none; }
+
+ul.lst-kix_list_10-0 { list-style-type: none; }
+
+.lst-kix_list_1a-0 > li::before { content: "" counter(lst-ctn-kix_list_1a-0) ". "; }
+
+.lst-kix_list_1-3 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_10-8 { list-style-type: none; }
+
+ul.lst-kix_list_1a-8 { list-style-type: none; }
+
+ul.lst-kix_list_10-7 { list-style-type: none; }
+
+.lst-kix_list_1-7 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_10-6 { list-style-type: none; }
+
+ul.lst-kix_list_10-5 { list-style-type: none; }
+
+ul.lst-kix_list_10-4 { list-style-type: none; }
+
+ul.lst-kix_list_10-3 { list-style-type: none; }
+
+.lst-kix_list_1-5 > li::before { content: "‚ñ†  "; }
+
+ul.lst-kix_list_10-2 { list-style-type: none; }
+
+ul.lst-kix_list_10-1 { list-style-type: none; }
+
+.lst-kix_list_2-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_2-3 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1d-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1d-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_3-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_3-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1d-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_8-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_8-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_3-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_f-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_8-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_8-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_3-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_f-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_a-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_f-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_11-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_a-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_f-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_a-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_a-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_f-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_e-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_16-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_17-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_e-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_16-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_16-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_e-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_16-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_e-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_1c-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1c-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1c-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_17-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1e-0 > li::before { content: "‚óè  "; }
+
+.lst-kix_list_17-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1d-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_17-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1d-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_2-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_7-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_7-5 > li::before { content: "‚ñ†  "; }
+
+ol.lst-kix_list_1a-0.start { counter-reset: lst-ctn-kix_list_1a-0 0; }
+
+.lst-kix_list_b-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_18-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_13-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1e-4 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_15-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1e-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_b-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_1c-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_10-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_4-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_4-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_15-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_10-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_9-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_e-8 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1b-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_9-5 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_12-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_11-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_1a-1 > li::before { content: "‚óã  "; }
+
+.lst-kix_list_1-0 > li { counter-increment: lst-ctn-kix_list_1-0 1; }
+
+.lst-kix_list_1-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_12-6 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_2-2 > li::before { content: "‚ñ†  "; }
+
+.lst-kix_list_13-2 > li::before { content: "‚ñ†  "; }
+------MultipartBoundary--ZeAx03APvJADZjAQVFBVHGBZAyba8o455tuFs2SGfX----
+Content-Type: image/png
+Content-Transfer-Encoding: binary
+Content-Location: https://ssl.gstatic.com/docs/common/mobileweb_sprite1.png
+
+âPNG
+
+   IHDR   $   ú   ô	Ä  	UIDAThﬁÌ[[lW˛ŒôŸõ«nù∏8Ik'm\ö*V“EBj∏51/T¢5⁄P•†ZÂ&—áJ·	Ñ*cÇh§ ‹ÄÄBõÚ¬Â)I+îìÊ!†ÜÑXNH”brÒ:ÔÆwÊ¸<ÏmvvŒÃ9«ìx#ˆè6û=s˚Êˇ˛ˇ?Á|{h2ca;á~ˇΩ˛i7◊GBTèDTŸvI‘∂ßzﬁ∆ˆèl ≈
+hÛÔæΩ„b~f Ñ“Ωâ*[•∂
+>*>ªzÀÖ€¶ªzû,Ë‚≤Û3?0u˙≤∂%K/›ö=±sl,  ùÔòXGf—™‰⁄éÍÇí"™ÅÒ“‘∑UË
+≤L*›üπ∑˝∞(9 œ?/ò(áëœ•…db}€ΩÌáTAq(‹¿& c~≥ˆ@ÚûÃ∏
+(Æ$LáDÉ«“©Ù:ª?slxt4eHY˝'L];ˇòöé©tzMÁ∆Œ…Ìc;•û≤#)Û˘ ä>b¿¡s«{SSËL.#Ç®T<∆@†ÂóS˘c Ó“$ÿTæ±À	«ù)Ï9∞ú0*e,•öOk¥=DíDAiÔ?ñ3àÃb‡é'_	 OåP&˜^`–W⁄XÈ?—nÅf0«[◊ò> 2†P_"cÅÂ‡T¸dà"©$ç`i6' WjîE≈íF≠	V*4Æ†  ‡ì+7I˚æ œÓ;Ûf˝ı,òRlﬂxL´◊ﬂwÊMœ√ï=f13 dt˝b‚ ˆûzΩ˙˝ÖM€ ﬂ©Í°Ì}b˚Í-ç`"@õ2 ò)Êq.w©JQ¡- ﬁôΩX=Ór1/c‘aOÚÃ⁄≠xfÌ÷ÜˆÔ
+x Ωû≠”èUÏÁßbÔƒ¡Í˛ë˚ü¯˙¯Xıº'Wo¡}ÜfÂºÎPÂb3≈\=~ *«»kULi_±·˛mÓﬂ÷pÏIe≤Îå=$∑Ωß‡•S5 ~∏È ÄØçˇ¨zÃÁ≤ÃS0McHˆ§^ ‡°Ï‹Ï≈Z&:9≠	¡¸([ª√k∑5¥ü|¯«°±8Ø¥ó=ÀÆ˛I¯$;©=®e?:˛áHoFy≈,ÀF≤XQcC°7 aóñNÉÑ#≤Q3ZøGH:ß£˙È9—%m@	ÿ√äƒ¶™è8ÙU#¡™˚'èı⁄ñ’KÇòN‡{≈´∫vF¬±01ÛïﬂúFÀÆá∆¯¸ØÛ˝”≥N,PcºT^ñ>z_€˛°Õ<^çÒKªØÓ»òGcÙ§5yõÍ€â›g_∏”IˆÚ¯4∆È9f¶1·÷≈|ÈY˚⁄â±±…¯4FFÛ”ó,N≠¢ï›GuA)jåUX°õ…d˝º˜ˆ√:†î´∫õí∫8A$lkΩµÍ∂C™†¢5∆ 0‘'Ö µSˆ [Ÿ=Æä+	Ñ√ç≠âtbù≥bŸ±——ìfcPg%„˚˛ØwÊì°-ì\c≠Ìô‹‚)m¡*
+¿Ò÷È"Œ˝Á<⁄”%i™∫è1 l˘ïB Dc™1ñµ(‚ﬁÀ/¬ôÛ3s˘íbÊŒôâ∆4 „ C≤£≈kW!úBUÙde•6Vçú‚—√ $∑£ò∑ ú9•iæ˙òö¬ÎMX\Ÿ©\∆AN1BaÛ©>ï˛ŸO¶ \'¥;2£LVá(\ïÂv" ]LeÉŸ6 \ƒñeø| ’ÍıávÛ∆$`ñ©`’hØΩ≈’ Ç)Ã…ÙgÆºzÑEN©2’Ëˇå≥ÏW_V£¨nh∑ß∆ÿh˚ép…~`·µ*û,#ºrDvÏN¬jU,b√ÀO-a‚—-≠ß∂S‘T?õ¢®ÎÃ+®%ˆ ﬂòqw2Øíù˘Ú”—Yˆ»ãñ<÷#jëe\˝(‹É±Pˆ€ TºbC§1ˇBD¨P1§<É&Õ è∏x»‹ûeUßGçcH∂‡¿@cd≈¬p√Õ	c#ê†‘g≈93çÒ#;≥Ω∞ù^K@Kct$„ ¨π‘ƒÎﬂø••1∂¨©Ì Æi0yOÜÔZh@œî§ëÖÚÃ„ÂÌÁ}Ä..M.Ä'|†f|ÏFÇÙ≈å‘s∆ÍÒMìÃÇ–¥ÌfìkÅi0[o&0ø—È›T`–l` Û–B'ö
+LÀZfb°S‰¸·¡~ß8›«XÌ'7"œÍlÔ∂[S÷⁄“ﬁœ7èƒªˆ„ÍÅı;ò3µßA6 ˇØ˘ıÌÇÄƒ˚øx·ﬂgWÙ‹5¯l|k?X·øFk?H <≥tÈÌwº{‚@».⁄Ä`Qg§∫bÈdÁ™ÅMÏ®.(]#·£%@ëËm©TˇÜ¨√ì† ˘¡DÆpÙy*±æÎÉâC™û‚—AA`¢÷À¯ËKÅÅ˚Ÿ∏äß∏ê0A+>Ö”p^[:πnŸ∆‚±?éßb†,
+LÌ/c@·“±¿+&3ã÷lﬁíû<0∂]Í)·úÇøKhd œˇ¶ŒVWmI7+Ìc\,øª˚≤˛⁄)êê¨ï<d[.“Ù6f≥NÆ¥•≤‚ì	ÁXc‡!˘M£⁄‚ O$∫ÄπÀÄ[`uûa/+{ÉBºVæ)+ıKÈBÒAôJBÜ˝<Eˇµ€néPJ>„Á›ÆP*?Z/0«p≈πu|‘æ¨≤UB)Å]˘+ê˝Kç∆î 8s„Úƒ›?¨åZó+r`áÔ¨ªûe√M≤‘∂2ÍCû©ˇy∏|MfS&9—ΩÊÃÑüi/¨%⁄ù≥fPó'ΩªÏÏ«’Ω¬µÚ[=ﬂå»¬X≤Ã?VÚ/$ 5Íc•,àb1ùØáÍﬁHàÍB¬ˆSÃÔó»øˆEΩª°ÿ+5@Ô{
+Ë˛4(‰≤:Ω¶]©<«€A…vùìî„RcƒX˛àº˙,T‰"˙ª*5?˛9P˚µæLFÿÃ!≠…Äe,˚Xˆçx#ÚÃ—ıf(∂iíuæ—uÈ:dô˙@No¶.6≤°Ûµ¿yv-u5à‰BÌáS‡√7§± ∫E√˜À≤Ø¶zÙÇ≈≥ˆÉÑ+l`‚ñœ‡tK+lYÀ$ˆùÚßi¿Ä"Ä{ö	Ãßö	Ã#-00è6ßô¿ò~Êe7ây)jÅjÅ˙ u›:W[  o∑Fb-kV˚ù`ac%`    IENDÆB`Ç
+------MultipartBoundary--ZeAx03APvJADZjAQVFBVHGBZAyba8o455tuFs2SGfX----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: https://fonts.googleapis.com/css?family=Google+Sans
+
+@charset "utf-8";
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl1pynAESo4b4o.woff2") format("woff2"); unicode-range: U+308, U+530-58F, U+2010, U+2024, U+25CC, U+FB13-FB17; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl3pynAESo4b4o.woff2") format("woff2"); unicode-range: U+951-952, U+964-965, U+980-9FE, U+1CD0, U+1CD2, U+1CD5-1CD6, U+1CD8, U+1CE1, U+1CEA, U+1CED, U+1CF2, U+1CF5-1CF7, U+200C-200D, U+20B9, U+25CC, U+A8F1; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlKpynAESo4b4o.woff2") format("woff2"); unicode-range: U+2C7, U+2D8-2D9, U+2DB, U+307, U+1400-167F, U+18B0-18F5, U+25CC, U+11AB0-11ABF; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlopynAESo4b4o.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlhpynAESo4b4o.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlkpynAESo4b4o.woff2") format("woff2"); unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl0pynAESo4b4o.woff2") format("woff2"); unicode-range: U+30E, U+1200-1399, U+2D80-2DDE, U+AB01-AB2E, U+1E7E0-1E7E6, U+1E7E8-1E7EB, U+1E7ED-1E7EE, U+1E7F0-1E7FE; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl6pynAESo4b4o.woff2") format("woff2"); unicode-range: U+589, U+10A0-10FF, U+1C90-1CBA, U+1CBD-1CBF, U+205A, U+2D00-2D2F, U+2E31; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlppynAESo4b4o.woff2") format("woff2"); unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlmpynAESo4b4o.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl-pynAESo4b4o.woff2") format("woff2"); unicode-range: U+951-952, U+964-965, U+A80-AFF, U+200C-200D, U+20B9, U+25CC, U+A830-A839; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlGpynAESo4b4o.woff2") format("woff2"); unicode-range: U+951-952, U+964-965, U+A01-A76, U+200C-200D, U+20B9, U+25CC, U+262C, U+A830-A839; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlnpynAESo4b4o.woff2") format("woff2"); unicode-range: U+307-308, U+590-5FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlupynAESo4b4o.woff2") format("woff2"); unicode-range: U+1780-17FF, U+19E0-19FF, U+200C-200D, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlspynAESo4b4o.woff2") format("woff2"); unicode-range: U+E81-EDF, U+200C-200D, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl9pynAESo4b4o.woff2") format("woff2"); unicode-range: U+307, U+323, U+951-952, U+964-965, U+D00-D7F, U+1CDA, U+1CF2, U+200C-200D, U+20B9, U+25CC, U+A830-A832; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl8pynAESo4b4o.woff2") format("woff2"); unicode-range: U+951-952, U+964-965, U+B01-B77, U+1CDA, U+1CF2, U+200C-200D, U+20B9, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl4pynAESo4b4o.woff2") format("woff2"); unicode-range: U+964-965, U+D81-DF4, U+1CF2, U+200C-200D, U+25CC, U+111E1-111F4; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJkLpynAESo4b4o.woff2") format("woff2"); unicode-range: U+1-C, U+E-1F, U+7F-9F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlzpynAESo4b4o.woff2") format("woff2"); unicode-range: U+964-965, U+B82-BFA, U+200C-200D, U+20B9, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJl5pynAESo4b4o.woff2") format("woff2"); unicode-range: U+951-952, U+964-965, U+C00-C7F, U+1CDA, U+1CF2, U+200C-200D, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlxpynAESo4b4o.woff2") format("woff2"); unicode-range: U+2D7, U+303, U+331, U+E01-E5B, U+200C-200D, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlqpynAESo4b4o.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlrpynAESo4b4o.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 400; src: local("Google Sans Regular"), local("GoogleSans-Regular"), url("https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJllpynAESo4.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+------MultipartBoundary--ZeAx03APvJADZjAQVFBVHGBZAyba8o455tuFs2SGfX----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-76206e97-1f15-4a22-a23f-6a5df8e7787b@mhtml.blink
+
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css?family=Google+Sans");
+
+.docs-ml-promotion { z-index: 1002; }
+
+.docs-ml-header { z-index: 1; }
+
+.docs-ml-icon { direction: ltr; display: inline-block; text-align: left; overflow: hidden; position: relative; vertical-align: middle; }
+
+.docs-ml-img::before { content: url("https://ssl.gstatic.com/docs/common/mobileweb_sprite1.png"); }
+
+.docs-ml-img-container { height: 156px; position: absolute; width: 36px; }
+
+.docs-ml-docs-logo-icon { left: 0px; top: -36px; }
+
+.docs-ml-sheets-logo-icon { left: 0px; top: 0px; }
+
+.docs-ml-slides-logo-icon { left: 0px; top: -96px; }
+
+.docs-ml-arrow-back-icon { left: 0px; top: -132px; }
+
+.docs-ml-edit-icon { left: 0px; top: -72px; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .docs-ml-img { content: url("https://ssl.gstatic.com/docs/common/mobileweb_sprite1.png"); }
+  .docs-ml-img-container { height: 156px; position: absolute; width: 36px; }
+  .docs-ml-docs-logo-icon { left: 0px; top: -36px; }
+  .docs-ml-sheets-logo-icon { left: 0px; top: 0px; }
+  .docs-ml-slides-logo-icon { left: 0px; top: -96px; }
+  .docs-ml-arrow-back-icon { left: 0px; top: -132px; }
+  .docs-ml-edit-icon { left: 0px; top: -72px; }
+}
+
+.docs-ml-header { background: var(--gm3-sys-color-surface-container-low,#f8fafd); border-bottom: 1px solid var(--gm3-sys-color-outline-variant,#c4c7c5); box-shadow: 0 1px 1px color-mix(in sRGB,var(--gm3-sys-color-shadow,#000) 10%,transparent); box-sizing: border-box; font-family: "Google Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; padding: 4px 0px; position: fixed; left: 0px; top: 0px; width: 100%; }
+
+.docs-ml-header-icon { height: 24px; opacity: 0.6; width: 24px; }
+
+.docs-ml-header-icon-container { padding: 12px; }
+
+.docs-ml-header-item { display: inline-block; vertical-align: middle; }
+
+.docs-ml-header-drive-link { padding-left: 4px; }
+
+body[dir="rtl"] .docs-ml-arrow-back-dir { transform: scaleX(-1); }
+
+.docs-ml-header-document-title { box-sizing: border-box; line-height: 1.5rem; padding: 0px 12px; width: calc(100% - 104px); }
+
+.docs-ml-header-document-title-text { font-size: 20px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.docs-ml-header-edit-button { float: right; padding-right: 4px; }
+
+.docs-ml-promotion { background: var(--gm3-sys-color-surface,#fff); bottom: 0px; box-shadow: 0 4px 12px color-mix(in sRGB,var(--gm3-sys-color-shadow,#000) 40%,transparent); font-family: Arial, Helvetica, sans-serif; left: 0px; position: fixed; width: 100%; }
+
+.docs-ml-promotion-off-screen { transform: translateY(100%); }
+
+.docs-ml-promotion-shown { transform: translateY(0px); transition: transform 333ms cubic-bezier(0.4, 0, 0.2, 1); }
+
+.docs-ml-promotion-dismissed { transform: translateY(100%); box-shadow: none; }
+
+.docs-ml-promotion-no-horizontal-scroll { overflow-x: hidden; }
+
+.docs-ml-promotion-header { display: table; padding: 24px 24px 0px; }
+
+.docs-ml-promotion-app-icon-container { display: table-cell; }
+
+.docs-ml-promotion-app-icon { height: 36px; width: 36px; }
+
+@media (min-width: 600px) {
+  .docs-ml-promotion-app-icon { transform: scale(1.33); }
+}
+
+.docs-ml-promotion-text { display: table-cell; padding-left: 20px; vertical-align: top; }
+
+.docs-ml-promotion-text-heading { color: var(--gm3-sys-color-on-surface,#1f1f1f); font-size: 1rem; font-weight: 700; padding-bottom: 7px; }
+
+.docs-ml-promotion-text-body { color: var(--gm3-sys-color-on-surface,#1f1f1f); font-size: 0.875rem; }
+
+.docs-ml-promotion-action-row { float: right; margin-top: 6px; padding: 8px 24px; }
+
+.docs-ml-promotion-action-row-desktop { margin-top: 6px; }
+
+.docs-ml-promotion-action-container { display: inline-block; height: 48px; margin: 6px 4px; vertical-align: middle; }
+
+.docs-ml-promotion-action-button { display: inline-block; font-size: 0.875rem; font-weight: 500; padding: 9px 12px; vertical-align: middle; }
+
+.docs-ml-promotion-action-button-wrapper:focus { outline-color: var(--gm3-sys-color-outline-variant,#c4c7c5); }
+
+.docs-ml-promotion-action-button.docs-ml-promotion-yes-button { background-color: var(--gm3-sys-color-primary,#0b57d0); border-radius: 4px; color: var(--gm3-sys-color-on-primary,#fff); border: 1px solid transparent; }
+
+.docs-ml-promotion-action-button.docs-ml-promotion-yes-button:active { background-color: color-mix(in srgb,var(--gm3-sys-color-on-primary,#fff) 10%,var(--gm3-sys-color-primary,#0b57d0)); }
+
+.docs-ml-promotion-action-button.docs-ml-promotion-no-button { background-color: var(--gm3-sys-color-surface-container-low,#f8fafd); color: var(--gm3-sys-color-on-surface-variant,#444746); border-radius: 4px; border: 1px solid var(--gm3-sys-color-outline-variant,#c4c7c5); }
+
+.docs-ml-promotion-action-button.docs-ml-promotion-no-button:active { background-color: color-mix(in srgb,var(--gm3-sys-color-on-surface,#1f1f1f) 10%,var(--gm3-sys-color-surface-container-low,#f8fafd)); }
+
+.docs-ml-promotion.desktop { text-align: center; }
+
+@media (orientation: portrait) {
+  .docs-ml-promotion.desktop { padding-top: 56px; padding-bottom: 80px; }
+}
+
+@media (orientation: landscape) {
+  .docs-ml-promotion.desktop { padding-top: 36px; padding-bottom: 56px; }
+}
+
+.docs-ml-promotion-heading-desktop { font-family: "Google Sans"; font-size: 18px; font-weight: 700; color: var(--gm3-sys-color-on-surface,#1f1f1f); padding-top: 18px; padding-bottom: 10px; line-height: 1.5; max-width: 360px; margin: 0px auto; }
+
+@media (orientation: landscape) {
+  .docs-ml-promotion-heading-desktop { padding-top: 0px; max-width: none; }
+}
+
+.docs-ml-promotion-text-body-desktop { font-size: 0.875rem; line-height: 1.5; color: var(--gm3-sys-color-on-surface-variant,#444746); padding-bottom: 10px; }
+
+.docs-icon.docs-ml-promotion-desktop-icon { height: 40px; width: 40px; transform: scale(2.5); transform-origin: center top; }
+
+.docs-icon-ml-promotion-icon-container-desktop { height: 100px; width: 100px; margin-left: auto; margin-right: auto; }
+
+@media (orientation: landscape) {
+  .docs-icon-ml-promotion-icon-container-desktop { display: inline-block; vertical-align: top; }
+  .docs-ml-promotion-description-desktop { display: inline-block; vertical-align: top; text-align: left; padding-left: 39px; max-width: 645px; }
+}
+
+@media (orientation: landscape) {
+  .docs-ml-promotion-action-row-desktop { margin-left: -8px; }
+}
+
+.docs-ml-promotion-action-row-desktop .docs-ml-promotion-action-container { margin: 6px 8px; font-family: "Google Sans"; }
+
+.docs-ml-promotion-action-row-desktop .docs-ml-promotion-action-button-wrapper:focus { outline: none; }
+
+.docs-ml-promotion-action-button.docs-ml-promotion-yes-button.docs-ml-promotion-app-themed { border-radius: 4px; box-shadow: none; box-sizing: border-box; font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 0.875rem; height: 36px; letter-spacing: 0.25px; line-height: 1rem; padding: 9px 24px 11px; background: var(--gm3-sys-color-primary,#0b57d0); color: var(--gm3-sys-color-on-primary,#fff); border: 1px solid transparent !important; }
+
+.docs-ml-promotion-action-button.docs-ml-promotion-no-button.docs-ml-promotion-app-themed { border-radius: 4px; box-shadow: none; box-sizing: border-box; font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 0.875rem; height: 36px; letter-spacing: 0.25px; line-height: 1rem; padding: 9px 24px 11px; background: var(--gm3-sys-color-surface,#fff); color: var(--gm3-sys-color-primary,#0b57d0); border: 1px solid var(--gm3-sys-color-outline-variant,#c4c7c5) !important; }
+
+.docs-ml-promotion-action-button-wrapper:focus .docs-ml-promotion-action-button.docs-ml-promotion-yes-button.docs-ml-promotion-app-themed { color: var(--gm3-sys-color-on-primary,#fff); background: linear-gradient(rgba(var(--gm3-sys-color-on-primary-rgb,255,255,255),.1),rgba(var(--gm3-sys-color-on-primary-rgb,255,255,255),.1)),var(--gm3-sys-color-primary,#0b57d0); box-shadow: 0 1px 3px 1px rgba(var(--gm3-sys-color-primary-rgb,11,87,208),.15); }
+
+.docs-ml-promotion-action-button-wrapper:focus .docs-ml-promotion-action-button.docs-ml-promotion-no-button.docs-ml-promotion-app-themed { border-radius: 4px; box-shadow: none; box-sizing: border-box; font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 0.875rem; height: 36px; letter-spacing: 0.25px; line-height: 1rem; padding: 9px 24px 11px; background: linear-gradient(rgba(var(--gm3-sys-color-on-primary-container-rgb,8,66,160),.1),rgba(var(--gm3-sys-color-on-primary-container-rgb,8,66,160),.1)),var(--gm3-sys-color-primary-container,#d3e3fd); border: 1px solid var(--gm3-sys-color-primary-container,#d3e3fd) !important; }
+
+.docsshared-no-download .docsshared-no-select-when-no-download, .docsshared-no-select { -webkit-user-drag: none; user-select: none; }
+
+.docsshared-disable-image-copy canvas, .docsshared-disable-image-copy image, .docsshared-disable-image-copy img { pointer-events: none; }
+------MultipartBoundary--ZeAx03APvJADZjAQVFBVHGBZAyba8o455tuFs2SGfX----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-4b6ea58b-a482-4608-af75-ef765c074034@mhtml.blink
+
+@charset "utf-8";
+
+html { overflow: auto; }
+
+body { margin: 0px; overflow: hidden; overflow-wrap: break-word; }
+
+.app-container { height: 100%; margin-top: 57px; overflow: auto; }
+
+.doc { padding: 20px 12px 0px; position: relative; }
+
+.doc .doc-content { margin: auto; padding: 24px 0px !important; max-width: 770px !important; }
+------MultipartBoundary--ZeAx03APvJADZjAQVFBVHGBZAyba8o455tuFs2SGfX------

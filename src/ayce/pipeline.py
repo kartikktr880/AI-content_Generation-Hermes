@@ -10,6 +10,7 @@ step delegates to the existing, individually verified stage callables
         ↓ run_asset_resolution_stage     → asset_manifest.json
         ↓ run_narration_audio_stage      → narration_manifest.json
         ↓ run_timeline_stage             → timeline.json
+        ↓ run_captions_stage             → captions.json + captions.srt (CAPTIONS)
         ↓ run_production_render_stage    → production MP4 (rendered_video)
         ↓ run_media_qa_stage             → qa_report.json (QA_REPORT)
 
@@ -43,15 +44,19 @@ from typing import Any
 
 from .asset_resolution import FileBackedAssetProvider, run_asset_resolution_stage
 from .artifacts import ArtifactRegistry
+from .captions import run_captions_stage
 from .config import Config
 from .ids import new_job_id, new_run_id
+from .lineage import discover as discover_lineage
+from .lineage import register_lineage
 from .logging import StructuredLogger
 from .media_qa import run_media_qa_stage
-from .narration_audio import FileBackedNarrationProvider, run_narration_audio_stage
+from .narration_audio import run_narration_audio_stage
 from .render import FFmpegRenderer, Renderer, run_production_render_stage
 from .script_to_scene import load_script_input, run_script_to_scene_stage
 from .state import RunState
 from .timeline import run_timeline_stage
+from .tts_piper import select_narration_provider
 
 __all__ = [
     "PIPELINE_STAGES",
@@ -67,6 +72,7 @@ PIPELINE_STAGES: tuple[str, ...] = (
     "asset_resolution",
     "narration_audio",
     "timeline",
+    "captions",
     "production_render",
     "media_qa",
 )
@@ -106,6 +112,9 @@ class PipelineResult:
     qa_artifact_id: str | None = None
     failed_stage: str | None = None
     error: str | None = None
+    #: Stage 3 (additive): durable lineage references when the run is
+    #: research-derived; None for fixture/manual runs.
+    lineage: dict | None = None
 
 
 
@@ -188,10 +197,31 @@ def run_pipeline(
 
     log.info("pipeline_started", stages=list(PIPELINE_STAGES), run_dir=str(resolved_run_dir))
 
-    # ---- stage 1: script → scene manifest (P1-B) ----------------------------
+    # ---- lineage capture (Stage 3; additive, NEVER fails production) --------
+    # The script input bytes are read BEFORE the P1-B stage loads the
+    # contract. Only research-derived scripts (production_id = res-…, the
+    # documented Stage 1/2 convention) get lineage; fixture/manual runs are
+    # untouched (their artifact kind-sets stay byte-identical).
+    script_bytes: bytes | None = None
     if isinstance(script_input, (str, Path)):
+        script_path = Path(script_input)
+        try:
+            script_bytes = script_path.read_bytes()
+        except OSError:
+            script_bytes = None
         # filesystem path → load through the existing P1-B loader
-        script_input = load_script_input(script_input)
+        script_input = load_script_input(script_path)
+    production_lineage = discover_lineage(
+        script_input, config=config, script_bytes=script_bytes
+    )
+    if production_lineage is not None:
+        run.lineage = production_lineage.to_dict()
+        persist()
+        register_lineage(run, registry, production_lineage, script_bytes)
+        result = replace(result, lineage=production_lineage.to_dict())
+        log.info("lineage_captured", **production_lineage.to_dict())
+
+    # ---- stage 1: script → scene manifest (P1-B) ----------------------------
     scene_result = run_script_to_scene_stage(script_input, run, registry, logger=log)
     record("script_to_scene", scene_result.ok, scene_result.error)
     if not scene_result.ok:
@@ -213,12 +243,10 @@ def run_pipeline(
         return stopped("asset_resolution", asset_result.error or "unknown error")
     asset_manifest = asset_result.manifest
 
-    # ---- stage 3: narration audio (P3, fixture-backed provider) -------------
-    narration_provider = (
-        FileBackedNarrationProvider(config, narration_dir)
-        if narration_dir is not None
-        else FileBackedNarrationProvider(config)
-    )
+    # ---- stage 3: narration audio (P3; provider is OPT-IN via config) -------
+    # Default: deterministic file-backed fixture provider (unchanged verified
+    # behavior). Piper is selected ONLY when AYCE_PIPER_MODEL is configured.
+    narration_provider = select_narration_provider(config, narration_dir=narration_dir)
     narration_result = run_narration_audio_stage(
         scene_manifest, run, registry, narration_provider, logger=log
     )
@@ -241,7 +269,23 @@ def run_pipeline(
         return stopped("timeline", timeline_result.error or "unknown error")
     timeline_manifest = timeline_result.manifest
 
-    # ---- stage 5: multi-scene production render (P5) ------------------------
+    # ---- stage 5: scene-level captions (P6.5) -------------------------------
+    # Captions derive from verified contracts only: narration text comes
+    # VERBATIM from the Scene Contract, cue intervals from the timeline's
+    # narration elements. Fail-fast; no timing is invented.
+    captions_result = run_captions_stage(
+        scene_manifest,
+        timeline_manifest,
+        narration_manifest,
+        run,
+        registry,
+        logger=log,
+    )
+    record("captions", captions_result.ok, captions_result.error)
+    if not captions_result.ok:
+        return stopped("captions", captions_result.error or "unknown error")
+
+    # ---- stage 6: multi-scene production render (P5) ------------------------
     selected_renderer = renderer if renderer is not None else FFmpegRenderer(config)
     render_result = run_production_render_stage(
         timeline_manifest, run, registry, selected_renderer, logger=log
@@ -251,7 +295,7 @@ def run_pipeline(
         return stopped("production_render", render_result.error or "unknown error")
     result = replace(result, rendered_artifact_id=render_result.artifact.artifact_id)
 
-    # ---- stage 6: technical media QA (P5.5) ---------------------------------
+    # ---- stage 7: technical media QA (P5.5) ---------------------------------
     # QA verdict FAIL is truthful evidence from a SUCCEEDED stage — the
     # pipeline completes. Only a QA EXECUTION ERROR (ok=False) fails it.
     qa_result = run_media_qa_stage(

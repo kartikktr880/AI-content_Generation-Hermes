@@ -39,6 +39,16 @@ class StageStatus(str, Enum):
     RETRYING = "retrying"
 
 
+def _load_lineage(value: Any) -> dict[str, Any] | None:
+    """Tolerant lineage reload (Stage 3): absent/None → None (old state
+    files); a JSON object passes through; anything else is corrupt state."""
+    if value is None:
+        return None
+    if isinstance(value, dict):
+        return value
+    raise StateError(f"corrupt state: lineage must be a JSON object or null, got {type(value).__name__}")
+
+
 _ALLOWED_TRANSITIONS: dict[StageStatus, frozenset[StageStatus]] = {
     StageStatus.PENDING: frozenset({StageStatus.RUNNING}),
     StageStatus.RUNNING: frozenset({StageStatus.SUCCEEDED, StageStatus.FAILED, StageStatus.RETRYING}),
@@ -67,13 +77,22 @@ class StageRecord:
 
 @dataclass
 class RunState:
-    """State of one run: identity plus per-stage status."""
+    """State of one run: identity plus per-stage status.
+
+    ``lineage`` (Stage 3, optional) holds the durable production lineage
+    references ({script_id, script_sha256, research_id, research_sha256,
+    objective_id, objective_text}) when the run is research-derived. It is
+    ADDITIVE: old state files without the field load unchanged
+    (``lineage=None``), and it is serialized only when present so re-saved
+    legacy state keeps its historical shape.
+    """
 
     run_id: str
     job_id: str
     created_at: str = field(default_factory=_utcnow_iso)
     updated_at: str = field(default_factory=_utcnow_iso)
     stages: dict[str, StageRecord] = field(default_factory=dict)
+    lineage: dict[str, Any] | None = None
 
     def stage(self, name: str) -> StageRecord:
         validate_stage_name(name)
@@ -108,7 +127,7 @@ class RunState:
     # ---- serialization -------------------------------------------------
 
     def to_dict(self) -> dict[str, Any]:
-        return {
+        payload: dict[str, Any] = {
             "run_id": self.run_id,
             "job_id": self.job_id,
             "created_at": self.created_at,
@@ -123,6 +142,11 @@ class RunState:
                 for name, rec in self.stages.items()
             },
         }
+        if self.lineage is not None:
+            # additive Stage 3 field; serialized ONLY when present so a
+            # re-saved legacy state keeps its historical shape
+            payload["lineage"] = self.lineage
+        return payload
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> "RunState":
@@ -147,6 +171,7 @@ class RunState:
                 created_at=data.get("created_at", _utcnow_iso()),
                 updated_at=data.get("updated_at", _utcnow_iso()),
                 stages=stages,
+                lineage=_load_lineage(data.get("lineage")),
             )
         except KeyError as exc:
             raise StateError(f"corrupt state: missing required field {exc}") from None

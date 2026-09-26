@@ -1,0 +1,20 @@
+{
+  "_comment": "AYCE Director script allowlist (H4 experiment). Operator-maintained mapping: script_id -> approved Golden Path input. The caller supplies ONLY the identifier; paths below are resolved by the server relative to the repository root and are NEVER caller-controlled. Exactly one entry is approved in H4.",
+  "documentary": {
+    "script": "tests/fixtures/script_to_scene/documentary.json",
+    "assets_dir": "tests/fixtures/asset_provider",
+    "narration_dir": "tests/fixtures/narration_fixtures",
+    "description": "The verified documentary fixture (Iron Road) \u2014 the exact Golden Path input exercised by AYCE's own integration tests and the H2.5-verified runs."
+  },
+  "brief-e8f295ac6ec8": {
+    "script": "mcp-ayce-director/generated_scripts/brief-e8f295ac6ec8.json",
+    "assets_dir": "tests/fixtures/asset_provider",
+    "narration_dir": "tests/fixtures/narration_fixtures",
+    "description": "Generated ScriptInput (Stage 2.5) from research artifact res-20260920T090318Z-e8f295ac6ec8 \u2014 deterministic evidence brief.",
+    "generated": {
+      "research_id": "res-20260920T090318Z-e8f295ac6ec8",
+      "script_sha256": "3dec7a4de6d0baf675375b8d6ac05d06daab3a45ff98d35cd08261e3e730e38b",
+      "registered_at": "2026-09-20T14:46:21.252Z"
+    }
+  }
+}

@@ -86,7 +86,7 @@ def test_run_command_golden_path(tmp_path):
     for name in (
         "state.json", "artifacts.json", "scene_manifest.json",
         "asset_manifest.json", "narration_manifest.json", "timeline.json",
-        "qa_report.json",
+        "captions.json", "captions.srt", "qa_report.json",
     ):
         assert (run_dir / name).is_file(), name
 
@@ -105,8 +105,14 @@ def test_run_command_golden_path(tmp_path):
     assert {s["status"] for s in state["stages"].values()} == {"succeeded"}
     assert set(state["stages"]) == {
         "script_to_scene", "asset_resolution", "narration_audio",
-        "timeline", "production_render", "media_qa",
+        "timeline", "captions", "production_render", "media_qa",
     }
+
+    # the SRT serialization exists and its cue text matches the scene contract
+    srt_text = (run_dir / "captions.srt").read_text(encoding="utf-8")
+    scene_manifest = json.loads((run_dir / "scene_manifest.json").read_text(encoding="utf-8"))
+    for scene in scene_manifest["scenes"]:
+        assert scene["narration"]["text"] in srt_text
 
     assert "qa_verdict: PASS" in proc.stdout
 
@@ -132,7 +138,7 @@ def test_run_command_json_output(tmp_path):
     assert report["failed_stage"] is None
     assert [s["stage"] for s in report["stages"]] == [
         "script_to_scene", "asset_resolution", "narration_audio",
-        "timeline", "production_render", "media_qa",
+        "timeline", "captions", "production_render", "media_qa",
     ]
 
 

@@ -40,6 +40,10 @@ class ArtifactKind(str, Enum):
     TIMELINE = "timeline"
     RENDERED_VIDEO = "rendered_video"
     QA_REPORT = "qa_report"
+    # Stage 10 — decision-time policy consumption evidence (observability
+    # ONLY: the artifact records WHICH policy version a decision consumed;
+    # it is never policy state and never writable through Hermes).
+    POLICY_CONSUMPTION = "policy_consumption"
 
 
 def _utcnow_iso() -> str:

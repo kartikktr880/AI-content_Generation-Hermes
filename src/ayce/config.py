@@ -59,6 +59,26 @@ class Config:
     #: in source — set AYCE_FFMPEG_PATH / AYCE_FFPROBE_PATH instead.
     ffmpeg_path: str | None = None
     ffprobe_path: str | None = None
+    #: Optional Piper TTS configuration (P6.6 selection; GPL-3.0 — Piper is
+    #: invoked as an EXTERNAL CLI tool in its own environment, never imported
+    #: into AYCE). All keys optional; when AYCE_PIPER_MODEL is unset the
+    #: deterministic file-backed narration provider remains the default.
+    #: AYCE_PIPER_PYTHON: python executable of the environment that has
+    #:   piper-tts installed (may be a name resolved via PATH or an absolute path).
+    #: AYCE_PIPER_MODEL: path to the .onnx voice model.
+    #: AYCE_PIPER_CONFIG: optional path to the model's .onnx.json config.
+    #: AYCE_PIPER_LENGTH_SCALE: optional speech-rate control (>0; Piper default 1.0).
+    #: AYCE_PIPER_LICENSE: explicit voice-model license string recorded in
+    #:   narration provenance (never guessed — stays unset when unverified).
+    piper_python: str | None = None
+    piper_model: str | None = None
+    piper_config: str | None = None
+    piper_length_scale: float | None = None
+    piper_license: str | None = None
+    #: Optional yt-dlp executable for the Stage 2 research worker (the
+    #: external CLI is invoked as a subprocess, Piper/FFmpeg convention).
+    #: When unset, PATH lookup applies (AYCE_YTDLP_PATH).
+    ytdlp_path: str | None = None
 
     @property
     def resolved_data_dir(self) -> Path:
@@ -109,9 +129,29 @@ class Config:
         if not data_dir_raw:
             raise ConfigError(f"{ENV_PREFIX}DATA_DIR must not be empty")
 
+        length_scale_raw = source.get(ENV_PREFIX + "PIPER_LENGTH_SCALE")
+        piper_length_scale: float | None = None
+        if length_scale_raw:
+            try:
+                piper_length_scale = float(length_scale_raw)
+            except ValueError:
+                raise ConfigError(
+                    f"invalid {ENV_PREFIX}PIPER_LENGTH_SCALE={length_scale_raw!r}; must be a number"
+                ) from None
+            if piper_length_scale <= 0:
+                raise ConfigError(
+                    f"invalid {ENV_PREFIX}PIPER_LENGTH_SCALE={length_scale_raw!r}; must be > 0"
+                )
+
         return cls(
             log_level=log_level,
             data_dir=Path(data_dir_raw),
             ffmpeg_path=source.get(ENV_PREFIX + "FFMPEG_PATH") or None,
             ffprobe_path=source.get(ENV_PREFIX + "FFPROBE_PATH") or None,
+            piper_python=source.get(ENV_PREFIX + "PIPER_PYTHON") or None,
+            piper_model=source.get(ENV_PREFIX + "PIPER_MODEL") or None,
+            piper_config=source.get(ENV_PREFIX + "PIPER_CONFIG") or None,
+            piper_length_scale=piper_length_scale,
+            piper_license=source.get(ENV_PREFIX + "PIPER_LICENSE") or None,
+            ytdlp_path=source.get(ENV_PREFIX + "YTDLP_PATH") or None,
         )
