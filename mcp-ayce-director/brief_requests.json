@@ -24,6 +24,16 @@
         "next_step": "trigger_golden_path with command='trigger_golden_path' and script_id='brief-e8f295ac6ec8' to produce this video"
       },
       "finished_at": "2026-09-20T14:46:21.254Z"
+    },
+    {
+      "kind": "brief",
+      "research_id": "res-does-not-exist-proof",
+      "status": "rejected",
+      "error": {
+        "code": "unknown_artifact",
+        "message": "no persisted research artifact 'res-does-not-exist-proof' in the research store"
+      },
+      "requested_at": "2026-09-27T13:23:40.881Z"
     }
   ]
 }
