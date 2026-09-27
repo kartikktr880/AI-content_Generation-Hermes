@@ -72,8 +72,16 @@ def _build_parser() -> argparse.ArgumentParser:
                               help="print the Google consent URL (operator opens it in a browser)")
     publish_auth.add_argument("--auth-code", default=None,
                               help="the authorization code from the consent redirect")
-    publish_auth.add_argument("--redirect-uri", default="urn:ietf:wg:oauth:2.0:oob",
-                              help="the redirect URI used in the consent request")
+    publish_auth.add_argument(
+        "--redirect-uri",
+        # WEB-client loopback redirect (Google rejects the obsolete OOB flow
+        # for WEB clients). Keep in sync with
+        # ayce.publishing.oauth.DEFAULT_REDIRECT_URI (drift-guard test).
+        default="http://localhost:8080",
+        help="the redirect URI used in the consent request (WEB-client "
+             "loopback redirect; must be registered EXACTLY in Google Cloud "
+             "Console; the SAME URI is used for the authorization-code "
+             "exchange)")
     analytics = sub.add_parser(
         "analytics",
         help="OBSERVATION-ONLY analytics ingestion for published videos (Stage 6)",

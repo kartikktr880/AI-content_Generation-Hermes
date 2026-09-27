@@ -28,10 +28,25 @@ import os
 from pathlib import Path
 from typing import Any
 
-__all__ = ["DEFAULT_TOKEN_URL", "TokenProvider", "GoogleTokenClient"]
+__all__ = ["DEFAULT_TOKEN_URL", "DEFAULT_REDIRECT_URI", "TokenProvider",
+           "GoogleTokenClient"]
 
 #: Google's OAuth 2.0 token endpoint (the only fixed external URL here).
 DEFAULT_TOKEN_URL = "https://oauth2.googleapis.com/token"
+
+#: Default redirect URI for the ONE-TIME operator-driven consent flow.
+#:
+#: Google WEB-application OAuth clients reject the obsolete out-of-band flow
+#: (``urn:ietf:wg:oauth:2.0:oob``). The legitimate operator-driven equivalent
+#: for a WEB client without a hosted endpoint is a LOOPBACK redirect: the
+#: operator registers ``http://localhost:8080`` EXACTLY in Google Cloud
+#: Console (Authorized redirect URIs), opens the consent URL, approves, and
+#: copies the authorization code from the ``http://localhost:8080/?code=…``
+#: address bar (the browser shows a connection error because AYCE
+#: intentionally runs no web server — no automation, no credential capture).
+#: Google enforces an exact match: the SAME URI must be used for the
+#: authorization request AND the authorization-code exchange.
+DEFAULT_REDIRECT_URI = "http://localhost:8080"
 
 #: Urlopen seam (tests substitute a fake; production uses urllib).
 URLOpen = Any
