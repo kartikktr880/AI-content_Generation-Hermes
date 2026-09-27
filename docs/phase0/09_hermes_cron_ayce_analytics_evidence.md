@@ -313,3 +313,69 @@ and diagnostics deleted after evidence capture).
 ## PHASE_0_7B_IMPLEMENTATION = complete
 
 ## HERMES_CRON_AYCE_ANALYTICS = VERIFIED
+
+---
+
+# ADDENDUM 2 — PHASE 0.7B TARGET RESOLUTION FIX
+
+**Starting HEAD:** `6789b5a`. Issue: the cron-fired wrapper exited 2 with
+"no collection target configured" — cron mode had no authoritative target
+source. Task: make cron obtain `<video_id|run_id>` from EXISTING project
+state without inventing or hard-coding one.
+
+## Authoritative target source discovered
+
+| Item | Evidence |
+|---|---|
+| Source of truth | **The Stage 5 publish ledger** `data\publishing\ledger.sqlite3` (`publish_attempts` table). Already treated as authoritative by the project itself: `mcp-ayce-readonly/server.py:129-136` resolves exactly this file as "the AUTHORITATIVE run → video mapping" (opened READ-ONLY, `AYCE_PUBLISH_LEDGER` env override honored) and the analytics collector docstring §24 states "The ledger is AUTHORITATIVE for the publication". |
+| Eligibility rule (existing, not invented) | `src/ayce/analytics/collector.py:233` `_resolve_from_record`: only `status == "published"` records WITH a `youtube_video_id` carry analytics. The wrapper query mirrors exactly this rule: `SELECT youtube_video_id FROM publish_attempts WHERE status='published' AND youtube_video_id IS NOT NULL`. |
+| Existing selection rule for multiple eligible records | NONE exists in the project (each video has its own tri-tier cadence). Therefore the wrapper does NOT invent ranking: 0 eligible → truthful refusal; 1 eligible → collect it; >1 eligible → refusal requiring operator disambiguation via TARGET. |
+| Real current state | Production ledger exists, **0 rows** (verified read-only before AND after every run) — no eligible published target exists. |
+
+## Wrapper change (surgical, same file)
+
+`%LOCALAPPDATA%\hermes\scripts\ayce_analytics_collect.py`:
+- NEW `_resolve_cron_target()`: opens the ledger **read-only** (`file:…?mode=ro` — the file is never created or mutated by the wrapper; missing file → "no video has ever been published" refusal), applies the collector's own eligibility rule, returns the single eligible `youtube_video_id`, or a truthful refusal (0 eligible / >1 eligible requiring operator disambiguation).
+- Cron mode (no argv): `TARGET` operator override first (unchanged semantics), else ledger auto-resolution. Manual mode (`argv[1]`) UNCHANGED (regression-verified: same structured `analytics_lineage_invalid` output, exit 1).
+- `sqlite3` is stdlib — no dependency added. No new state file/table/DB.
+
+## Verification (real existing state only — no fabricated ID)
+
+| Proof | Command | Observed |
+|---|---|---|
+| Cron-mode ledger resolution (real empty ledger) | wrapper, no args, under Hermes' own python 3.14 | stderr `publish ledger contains no published video - nothing to collect (no target is ever invented)` — **EXIT=2** |
+| Ledger untouched by resolution | read-only row count after | `publish_attempts rows: 0` (mode=ro; file never written) |
+| Manual mode regression | wrapper `vidFake12345678` | same structured `analytics_lineage_invalid` JSON, **EXIT=1** (unchanged) |
+| Cron-fired end-to-end | `hermes cron resume` → `hermes cron run` → `hermes cron tick` → `hermes cron runs` | durable record `a818d36b…` (`source=direct`): "Script exited with code 2" + the ledger-based refusal message on stderr — i.e. Hermes cron → wrapper → authoritative ledger read → truthful no-target decision, captured by Hermes |
+| Job safety | `hermes cron pause` → `hermes cron list` (checked twice) | `19a6cce6796c [paused]` — persists; gateway still NOT running (nothing can fire) |
+
+## What is still missing (exact blocker)
+
+**At least one real published record** in the production publish ledger
+(`publish_attempts` row with `status='published'` and a real
+`youtube_video_id`). Producing one requires a REAL Stage 5 publication
+(OAuth + operator-approved publish) — explicitly out of scope and not
+fabricated. The moment such a record exists (and only one is eligible), the
+paused cron job will resolve it automatically; with multiple eligible records
+the operator must set TARGET (no invented ranking).
+
+`AUTHENTICATED_COLLECTION = BLOCKED` (unchanged).
+
+## Files changed
+
+| Path | Change |
+|---|---|
+| `%LOCALAPPDATA%\hermes\scripts\ayce_analytics_collect.py` | target-resolution change only (ledger read-only resolution; manual mode untouched) |
+| `docs/phase0/09_hermes_cron_ayce_analytics_evidence.md` | this addendum |
+| Hermes cron store | job `19a6cce6796c` remains PAUSED; one new durable run record (`a818d36b…`) from the verification tick |
+| `src/ayce/**`, MCPs, Hermes config, dependencies | UNTOUCHED |
+
+Rollback (unchanged mechanism): `hermes cron remove 19a6cce6796c` + delete the
+wrapper script.
+
+## TARGET_RESOLUTION = BLOCKED
+(blocker: zero eligible published records in the authoritative publish
+ledger — mechanism implemented, no-target path proven through the real cron
+path; no fabricated target)
+
+## PHASE_0_7B_TARGET_RESOLUTION = BLOCKED
