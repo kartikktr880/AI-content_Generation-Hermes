@@ -173,3 +173,143 @@ YES — all four legs of the intended chain are evidenced:
 ## PHASE_0_7B = evidence gate complete; no implementation performed
 
 ## HERMES_CRON_AYCE_ANALYTICS = READY_FOR_IMPLEMENTATION
+
+---
+
+# ADDENDUM — PHASE 0.7B IMPLEMENTATION (executed, behaviorally proven)
+
+**Starting HEAD:** `a63f10f` (working tree: only the pre-existing untracked
+`docs/phase0/00–05` evidence files — preserved untouched).
+
+## Implementation
+
+| Item | Value |
+|---|---|
+| Wrapper path | `%LOCALAPPDATA%\hermes\scripts\ayce_analytics_collect.py` (INSIDE Hermes' script security boundary; created via editor, NOT hand-copied into Hermes config) |
+| Exact behavior | Requires a collection target (argv[1] for manual runs, or the operator-maintained `TARGET` constant for cron mode — cron `--script --no-agent` passes no arguments; empty target → truthful exit 2, no target is ever invented); ALWAYS invokes the existing AYCE CLI with `--dry-run --json` (live collection is a later, auth-gated decision — the wrapper never contacts YouTube); spawns the pinned interpreter with argv-list (no shell, stdin=DEVNULL), `cwd` pinned to the repo (data_dir resolves from cwd), `PYTHONPATH` **replaced** with `<repo>\src` (src layout; ayce is not pip-installed — appending inherited scheduler paths broke imports, see bug-fix below); forwards child stdout/stderr verbatim and returns the child's exit code; fails with exit 3 if the interpreter or repo is missing |
+| AYCE invocation | `C:\...\AI-Content-Generation\.venv\Scripts\python.exe -m ayce analytics collect <target> --dry-run --json [extra args…]` with `PYTHONPATH=<repo>\src`, `cwd=<repo>` |
+| Cron job | id `19a6cce6796c`, name `ayce-analytics-collect`, schedule `every 360m` (within the research fast tier "Cron: 30m to 6h"), mode `no-agent`, deliver `local`, **PAUSED** |
+| Gateway state | NOT running (unchanged, pre-existing); job is paused so nothing fires; the one-shot proof used `hermes cron run` + `hermes cron tick` (native manual mechanism) |
+
+Bug found and fixed during proof (behavioral, not guessed): the first
+cron-fired run crashed with `ModuleNotFoundError: pydantic_core._pydantic_core`
+— the scheduler's inherited `PYTHONPATH` (Hermes runtime site-packages, Python
+3.14) shadowed the project venv's (Python 3.12) imports. The wrapper now
+REPLACES `PYTHONPATH` with `<repo>\src` (never appends) — the exact
+`mcp-ayce-director` runner convention. The second cron-fired run reached the
+real AYCE CLI correctly.
+
+## Behavioral evidence
+
+| Proof | Command | Observed |
+|---|---|---|
+| Wrapper dry-run SUCCESS (valid non-production target) | wrapper run under **Hermes' own python 3.14** (the cron interpreter) with `AYCE_DATA_DIR=<isolated sandbox>` + `vidFake12345678` | JSON `{"ok": true, "dry_run": true, "youtube_video_id": "vidFake12345678", "lineage": {package/pkg_seal/run/research/script/objective ids}, "would_collect": [DATA_API_V3 + ANALYTICS_API_V2 plans], "message": "dry run: … NO API call was made and NOTHING was stored"}` — **EXIT=0** |
+| Production-mode truthful rejection | same wrapper, NO `AYCE_DATA_DIR` (production config), same target | `{"ok": false, "error": {"code": "analytics_lineage_invalid", "message": "no publication ledger entry for this video id; nothing is attributed"}}` — **EXIT=1** (correct: no video is published yet) |
+| No-target refusal (cron-mode default) | wrapper with no args, TARGET empty | stderr "no collection target configured … Nothing was executed." — **EXIT=2** |
+| Missing-interpreter safety | wrapper guard | interpreter/repo checked before spawn (exit 3 path) — present here, so not exercised |
+| No external API contact | all runs above | `--dry-run` hardcoded; collector docstring §27 + observed `dry_run: true`; no credentials present anywhere |
+| No unwanted DB mutation | filesystem checks | production `data\analytics` absent (never created); `data\runs` absent; `data\publishing\ledger.sqlite3` exists but is SCHEMA-ONLY — **0 rows** (verified read-only: `publish_attempts rows: 0`); the file was created by the CLI's own `PublishLedger()` instantiation during the production-mode rejection run (pre-existing CLI behavior, no records) |
+| Sandbox store absence | `Test-Path …p07b_sandbox\data\analytics` → **False** | dry-run persisted nothing even where a store would exist |
+| Exit-code propagation | exit codes 0 / 1 / 2 / 3 mapped (observed 0, 1, 2) | — |
+
+**Sandbox fixture (for the "valid non-production test invocation"):** built in
+`.tmp\p07b_sandbox\` using the project's OWN test harness
+(`tests/unit/test_analytics.py` helpers loaded by path): real pipeline run
+(`run-20260927T145357Z-7f08f94db73f`, QA PASS) → real seal → REAL Stage 5
+publisher with the FAKE transport → published record `vidFake12345678` in the
+sandbox ledger. No network, no real credentials, production `data/` untouched.
+Hermes-managed FFmpeg (`…\hermes\tools\ffmpeg-9.0.1-win32-x64\bin`) was added
+to PATH for the fixture run (same toolchain the H4/H5 verified runs used).
+
+## Hermes evidence (actual outputs)
+
+- `hermes cron create "every 6h" --name ayce-analytics-collect --script
+  ayce_analytics_collect.py --no-agent --paused --paused-reason "…" --deliver
+  local` → `Created job: 19a6cce6796c … Created PAUSED — resume to schedule,
+  or explicitly run now.` (EXIT=0)
+- `hermes cron list` → exactly ONE job: `19a6cce6796c [paused]`,
+  `ayce-analytics-collect`, `every 360m`, `Deliver: local`,
+  `Script: ayce_analytics_collect.py`, `Mode: no-agent` — **no duplicates, no
+  unrelated jobs**.
+- `hermes cron status` → "No gateway is running on this host — cron jobs will
+  NOT fire. Scheduler last ticked…" (pre-existing operational state).
+- **Tick proof (one-shot):** `hermes cron resume` → `hermes cron run` →
+  `hermes cron tick` → job executed by the scheduler. First attempt exposed
+  the PYTHONPATH bug (see above); after the fix the durable record shows the
+  full chain — `hermes cron runs 19a6cce6796c`:
+  `263425df… failed … Script exited with code 1` with the AYCE CLI's
+  structured JSON (`analytics_lineage_invalid — no publication ledger entry
+  for this video id; nothing is attributed`) on **stdout** — i.e. Hermes cron
+  → wrapper script → pinned interpreter → EXISTING AYCE CLI → structured
+  truthful result, exit code propagated end-to-end.
+- Final safe state: TARGET reset to `""` (the fired-run failure above is the
+  correct production behavior for a not-yet-published video); job re-paused
+  (`hermes cron pause` → "Paused job: ayce-analytics-collect"); wrapper
+  TARGET is empty so any accidental resume truthfully exits 2 instead of
+  inventing a target.
+- Post-fix wrapper dry-run re-verified from a CLEAN environment
+  (no inherited PYTHONPATH): `ok: true, dry_run: true`, **EXIT=0**.
+- Dashboard visibility: the dashboard renders the same jobs store this CLI
+  reads; the Commander should see ONE paused job `ayce-analytics-collect`
+  (script mode, every 360m). Independent check: `hermes cron list`.
+
+## Authentication
+
+`AUTHENTICATED_COLLECTION = BLOCKED` — no YouTube OAuth credentials are
+configured (production publish ledger has 0 rows and was only created
+schema-only by the CLI; `data/analytics` and `data/runs` do not exist). No
+credentials were fabricated. The wrapper is hard-wired to `--dry-run`, so even
+an accidental resume performs NO API call and NO storage.
+
+## Files changed
+
+| Path | Change |
+|---|---|
+| `%LOCALAPPDATA%\hermes\scripts\ayce_analytics_collect.py` | NEW (repo-external, Hermes scripts boundary) — the only functional artifact |
+| `docs/phase0/09_hermes_cron_ayce_analytics_evidence.md` | this addendum |
+| Hermes cron store | ONE paused job created via native CLI (job `19a6cce6796c`); two durable tick-proof run records (documented above) |
+| `src/ayce/**`, `ayce-readonly`, `ayce-director`, Hermes config | UNTOUCHED |
+
+Repository-side: only this evidence document is committed (the wrapper lives
+inside Hermes' scripts directory by design and is covered by the rollback
+below, not by git).
+
+## Rollback
+
+```text
+hermes cron remove 19a6cce6796c
+Remove-Item %LOCALAPPDATA%\hermes\scripts\ayce_analytics_collect.py
+```
+Nothing else to revert (no repo source/config/test changes; `.tmp/` sandbox
+and diagnostics deleted after evidence capture).
+
+## Known limitations
+
+- `Authenticated collection = BLOCKED` (no OAuth configured; wrapper is
+  dry-run-only by design for now).
+- The paused job will truthfully fail with "no collection target configured"
+  if resumed before an operator sets TARGET to a real published video — by
+  design (no target is ever invented).
+- Production-level tri-tier scheduling (30m–6h fast tier, daily harvest,
+  Day 7/14/30 backfill; Reporting-API bulk CSV) remains future work — this
+  phase proves the SINGLE integration path with the smallest safe cadence.
+- The Hermes gateway is not installed/running (pre-existing); enabling
+  scheduled firing is an explicit operational decision recorded in
+  `hermes cron status`.
+
+## Verification summary (STEP 9)
+
+| Check | Result |
+|---|---|
+| Wrapper exists in Hermes scripts boundary | yes |
+| Wrapper invokes the pinned `.venv` interpreter (absolute path, PYTHONPATH=repro src) | yes — proven by sandbox dry-run success + cron-fired run reaching `src\ayce\cli.py` |
+| Dry-run succeeds | yes — `ok:true, dry_run:true`, EXIT=0 (sandbox; also re-verified after the PYTHONPATH fix under a clean env) |
+| Exit-code propagation | yes — 0/1/2/3 mapped; observed 0, 1, 2 |
+| No external API contact | yes — `--dry-run` hardcoded; collector §27/§28; no credentials present |
+| No unwanted DB mutation | production `data\publishing` 0 rows, `data\analytics` absent, `data\runs` absent; sandbox `data\analytics` absent after dry-runs |
+| Hermes sees the cron job | yes — `19a6cce6796c`, paused, every 360m, exact script path, single job |
+| Existing AYCE tests | `tests/unit/test_analytics.py` — 49 passed, EXIT=0 (no repo code changed) |
+
+## PHASE_0_7B_IMPLEMENTATION = complete
+
+## HERMES_CRON_AYCE_ANALYTICS = VERIFIED
