@@ -10,6 +10,12 @@ dependencies = ["pydantic>=2.12,<3"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
+# Real narration provider (P8): Kokoro-82M, executed LOCALLY (Apache-2.0
+# weights from the official repo hexgrad/Kokoro-82M). This extra pulls the
+# official runtime (torch/transformers/misaki[en], incl. espeakng-loader for
+# non-English G2P). The base install stays stdlib+pydantic; without this
+# extra the deterministic file-backed narration provider remains the default.
+tts-kokoro = ["kokoro>=0.9.4,<0.10"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

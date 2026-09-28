@@ -159,6 +159,14 @@ artifact. Resolved-asset data is never merged back into the Scene Contract.
   Scenes without requirements are skipped (no fake assets).
 - Fixture provenance (`local_fixture`) makes **no real-world licensing
   claim**; the `license` field exists for future real providers.
+- **Real provider (opt-in)**: `PexelsVisualProvider`
+  (`src/ayce/visual_pexels.py`) implements the same seam against the
+  official Pexels REST API, selected only when `AYCE_PEXELS_API_KEY` is
+  configured. It enforces production minimums (landscape ≥1920×1080,
+  orientation-configurable), requires adequate-duration MP4 renditions for
+  video scenes, caches downloads, content-hashes the resolved copy, and
+  records full provenance/licensing in `assets/<scene_id>.provenance.json`.
+  See [`docs/visual_pexels.md`](docs/visual_pexels.md).
 - **P2 is one bounded stage — not Hermes.** The orchestrator selects and
   injects the provider; the stage never chooses providers or fallbacks.
   See [`docs/asset_resolution.md`](docs/asset_resolution.md) and
@@ -183,6 +191,16 @@ with audio data.
   provenance (`local_fixture`) makes no licensing claim (`license=None`).
 - Fixtures are **valid tiny WAV files (stdlib-generated silence)** — no
   FFmpeg required at P3; they are placeholders, not real TTS.
+- **Real provider (opt-in)**: `KokoroNarrationProvider`
+  (`src/ayce/tts_kokoro.py`) implements the same seam with Kokoro-82M run
+  LOCALLY (official `kokoro` runtime + Apache-2.0 weights), selected only
+  when `AYCE_KOKORO_VOICE` is configured. It synthesizes English and Hindi,
+  emits 24 kHz mono PCM WAV, caches synthesis content-addressed, and reports
+  missing prerequisites (runtime extra, espeak-ng for Hindi, the Windows
+  MSVC redistributable) truthfully instead of fabricating audio.
+  See [`docs/tts_kokoro.md`](docs/tts_kokoro.md);
+  `PiperNarrationProvider` remains available as a configuration-selected
+  alternative.
 - **P3 is one bounded stage — not Hermes**, and it does not depend on P2:
   narration resolves from the Scene Contract alone.
   See [`docs/narration_audio.md`](docs/narration_audio.md).
@@ -278,12 +296,13 @@ duplicated and no stage implementation was modified.
   completion. A deterministic QA **FAIL verdict is NOT a pipeline
   failure** — it is truthful evidence from a succeeded stage; only a QA
   execution error fails the pipeline.
-- **This is orchestration, not autonomous production**: assets remain
-  fixture-backed (`FileBackedAssetProvider`), narration remains the
-  documented silence/TTS architectural stub
-  (`FileBackedNarrationProvider`). Research, captions, real TTS, repair,
-  publishing, analytics, and Hermes orchestration are still future
-  capabilities. `run` is Hermes-callable glue, not Hermes.
+- **Orchestration with real providers available by configuration**:
+  fixtures remain the default (`FileBackedAssetProvider`,
+  `FileBackedNarrationProvider`), while the real production providers —
+  Pexels visuals (`AYCE_PEXELS_API_KEY`) and Kokoro-82M narration
+  (`AYCE_KOKORO_VOICE`, local execution) — are selected ONLY when explicitly
+  configured, per capability. Nothing falls back silently. `run` is
+  Hermes-callable glue, not Hermes.
 
 ## Technical Media QA (P5.5)
 

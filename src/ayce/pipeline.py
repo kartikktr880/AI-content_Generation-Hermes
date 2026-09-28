@@ -30,10 +30,13 @@ Boundary rules (deliberately small):
   is truthful evidence produced by a SUCCEEDED stage (``ok=True,
   verdict="FAIL"``). Only a QA EXECUTION ERROR (the QA stage cannot do
   its job) fails the pipeline. These two cases are never collapsed.
-- Asset resolution remains fixture-backed (``FileBackedAssetProvider``)
-  and narration remains the documented silence/TTS architectural stub
-  (``FileBackedNarrationProvider``). This pipeline is orchestration, not
-  real autonomous content production.
+- Asset resolution and narration are provider-agnostic: the deterministic
+  fixture providers remain the DEFAULT (``FileBackedAssetProvider`` /
+  ``FileBackedNarrationProvider``), and the real production providers
+  (Pexels for visuals, Kokoro-82M for narration) are selected ONLY when
+  explicitly configured via ``AYCE_*`` — see ``select_asset_provider`` and
+  ``select_narration_provider``. This pipeline is orchestration; provider
+  choice is configuration, never a silent fallback.
 """
 
 from __future__ import annotations
@@ -42,7 +45,7 @@ from dataclasses import dataclass, replace
 from pathlib import Path
 from typing import Any
 
-from .asset_resolution import FileBackedAssetProvider, run_asset_resolution_stage
+from .asset_resolution import run_asset_resolution_stage
 from .artifacts import ArtifactRegistry
 from .captions import run_captions_stage
 from .config import Config
@@ -57,6 +60,7 @@ from .script_to_scene import load_script_input, run_script_to_scene_stage
 from .state import RunState
 from .timeline import run_timeline_stage
 from .tts_piper import select_narration_provider
+from .visual_pexels import select_asset_provider
 
 __all__ = [
     "PIPELINE_STAGES",
@@ -229,12 +233,11 @@ def run_pipeline(
     result = replace(result, production_id=scene_result.production_id)
     scene_manifest = scene_result.manifest
 
-    # ---- stage 2: asset resolution (P2, fixture-backed provider) ------------
-    asset_provider = (
-        FileBackedAssetProvider(config, assets_dir)
-        if assets_dir is not None
-        else FileBackedAssetProvider(config)
-    )
+    # ---- stage 2: asset resolution (P2; provider selected by configuration) -
+    # Default: deterministic file-backed fixture provider (unchanged verified
+    # behavior). The real Pexels provider is selected ONLY when
+    # AYCE_PEXELS_API_KEY is configured (see select_asset_provider).
+    asset_provider = select_asset_provider(config, assets_dir)
     asset_result = run_asset_resolution_stage(
         scene_manifest, run, registry, asset_provider, logger=log
     )

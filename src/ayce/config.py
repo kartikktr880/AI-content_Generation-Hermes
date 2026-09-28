@@ -17,6 +17,10 @@ ENV_PREFIX = "AYCE_"
 
 VALID_LOG_LEVELS = ("DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL")
 
+#: Frame orientations the real visual provider may require for production
+#: assets (the Scene Contract itself carries no orientation field).
+VALID_PEXELS_ORIENTATIONS = ("landscape", "portrait", "square")
+
 
 class ConfigError(RuntimeError):
     """Raised when configuration is missing or invalid."""
@@ -79,6 +83,38 @@ class Config:
     #: external CLI is invoked as a subprocess, Piper/FFmpeg convention).
     #: When unset, PATH lookup applies (AYCE_YTDLP_PATH).
     ytdlp_path: str | None = None
+    #: Real visual-asset provider (P8 selection; Pexels REST API behind the
+    #: existing AssetProvider boundary). The API key is a SECRET — it comes
+    #: from the environment or the git-ignored .env only and is never logged.
+    #: When unset the deterministic file-backed fixture provider remains the
+    #: default (verified behavior unchanged).
+    #: AYCE_PEXELS_API_KEY: Pexels API key (enables the real provider).
+    #: AYCE_PEXELS_ORIENTATION: landscape | portrait | square (production
+    #:   requirement; the Scene Contract carries no orientation field).
+    #: AYCE_PEXELS_MIN_VIDEO_DURATION_S: minimum clip length for video scenes.
+    #: AYCE_PEXELS_CACHE_DIR: content cache for downloaded media (defaults to
+    #:   <data_dir>/assets_cache/pexels).
+    pexels_api_key: str | None = None
+    pexels_orientation: str = "landscape"
+    pexels_min_video_duration_s: float = 4.0
+    pexels_cache_dir: str | None = None
+    #: Real narration provider (P8 selection; Kokoro-82M, Apache-2.0 weights
+    #: from the OFFICIAL repo, executed locally — no paid API). Strictly
+    #: opt-in: AYCE_KOKORO_VOICE unset ⇒ the file-backed fixture provider
+    #: remains the default and Kokoro is never imported.
+    #: AYCE_KOKORO_VOICE: Kokoro voice name (e.g. af_heart, hf_alpha); its
+    #:   first letter is the language code (a/b = English, h = Hindi).
+    #: AYCE_KOKORO_SPEED: speaking-rate multiplier (>0; Kokoro default 1.0).
+    #: AYCE_KOKORO_REPO_ID: model repository id (default hexgrad/Kokoro-82M).
+    #: AYCE_KOKORO_LICENSE: explicit weights/voice license string recorded in
+    #:   provenance (never guessed — stays unset when unverified).
+    #: AYCE_KOKORO_CACHE_DIR: synthesis cache (defaults to
+    #:   <data_dir>/narration_cache/kokoro).
+    kokoro_voice: str | None = None
+    kokoro_speed: float = 1.0
+    kokoro_repo_id: str = "hexgrad/Kokoro-82M"
+    kokoro_license: str | None = None
+    kokoro_cache_dir: str | None = None
 
     @property
     def resolved_data_dir(self) -> Path:
@@ -143,6 +179,43 @@ class Config:
                     f"invalid {ENV_PREFIX}PIPER_LENGTH_SCALE={length_scale_raw!r}; must be > 0"
                 )
 
+        orientation_raw = source.get(ENV_PREFIX + "PEXELS_ORIENTATION", "landscape").strip().lower()
+        if orientation_raw not in VALID_PEXELS_ORIENTATIONS:
+            raise ConfigError(
+                f"invalid {ENV_PREFIX}PEXELS_ORIENTATION={orientation_raw!r}; "
+                f"expected one of: {', '.join(VALID_PEXELS_ORIENTATIONS)}"
+            )
+        pexels_orientation = orientation_raw
+
+        min_duration_raw = source.get(ENV_PREFIX + "PEXELS_MIN_VIDEO_DURATION_S")
+        pexels_min_video_duration_s = 4.0
+        if min_duration_raw:
+            try:
+                pexels_min_video_duration_s = float(min_duration_raw)
+            except ValueError:
+                raise ConfigError(
+                    f"invalid {ENV_PREFIX}PEXELS_MIN_VIDEO_DURATION_S={min_duration_raw!r}; "
+                    f"must be a number of seconds"
+                ) from None
+            if pexels_min_video_duration_s <= 0:
+                raise ConfigError(
+                    f"invalid {ENV_PREFIX}PEXELS_MIN_VIDEO_DURATION_S={min_duration_raw!r}; must be > 0"
+                )
+
+        speed_raw = source.get(ENV_PREFIX + "KOKORO_SPEED")
+        kokoro_speed = 1.0
+        if speed_raw:
+            try:
+                kokoro_speed = float(speed_raw)
+            except ValueError:
+                raise ConfigError(
+                    f"invalid {ENV_PREFIX}KOKORO_SPEED={speed_raw!r}; must be a number"
+                ) from None
+            if kokoro_speed <= 0:
+                raise ConfigError(
+                    f"invalid {ENV_PREFIX}KOKORO_SPEED={speed_raw!r}; must be > 0"
+                )
+
         return cls(
             log_level=log_level,
             data_dir=Path(data_dir_raw),
@@ -154,4 +227,13 @@ class Config:
             piper_length_scale=piper_length_scale,
             piper_license=source.get(ENV_PREFIX + "PIPER_LICENSE") or None,
             ytdlp_path=source.get(ENV_PREFIX + "YTDLP_PATH") or None,
+            pexels_api_key=source.get(ENV_PREFIX + "PEXELS_API_KEY") or None,
+            pexels_orientation=pexels_orientation,
+            pexels_min_video_duration_s=pexels_min_video_duration_s,
+            pexels_cache_dir=source.get(ENV_PREFIX + "PEXELS_CACHE_DIR") or None,
+            kokoro_voice=source.get(ENV_PREFIX + "KOKORO_VOICE") or None,
+            kokoro_speed=kokoro_speed,
+            kokoro_repo_id=source.get(ENV_PREFIX + "KOKORO_REPO_ID") or "hexgrad/Kokoro-82M",
+            kokoro_license=source.get(ENV_PREFIX + "KOKORO_LICENSE") or None,
+            kokoro_cache_dir=source.get(ENV_PREFIX + "KOKORO_CACHE_DIR") or None,
         )

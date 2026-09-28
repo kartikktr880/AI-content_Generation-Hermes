@@ -243,11 +243,22 @@ def _read_wav_duration(data: bytes) -> float | None:
 def select_narration_provider(config: Config, narration_dir: str | Path | None = None):
     """Opt-in provider selection (the ONLY wiring point in the pipeline).
 
-    - Piper is selected ONLY when ``AYCE_PIPER_MODEL`` is explicitly
-      configured.
-    - Otherwise the deterministic file-backed fixture provider is
-      returned — the verified default behavior is untouched.
+    Priority (explicit configuration always wins; nothing is chosen silently):
+
+    - **Kokoro-82M** when ``AYCE_KOKORO_VOICE`` is configured (P8 primary
+      narration provider; local execution, Apache-2.0 weights).
+    - else **Piper** when ``AYCE_PIPER_MODEL`` is configured.
+    - else the deterministic file-backed fixture provider (with
+      ``narration_dir`` when supplied) — the verified default is untouched.
+
+    This is orchestration policy, not in-provider fallback: the stage runs
+    exactly one provider and a configured provider that fails stays failed
+    (no silent fallback to fixtures or to another engine).
     """
+    if config.kokoro_voice:
+        from .tts_kokoro import KokoroNarrationProvider
+
+        return KokoroNarrationProvider(config)
     if config.piper_model:
         return PiperNarrationProvider(config)
     if narration_dir is not None:
