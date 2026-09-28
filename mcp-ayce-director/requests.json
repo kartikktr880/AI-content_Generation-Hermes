@@ -204,6 +204,46 @@
       "run_id": "run-20260922T025706Z-358e19386030",
       "job_id": "job-20260922T025706Z-37f2d005fceb",
       "qa_verdict": "PASS"
+    },
+    {
+      "request_id": "req-b84fb72bd4ae4085af25e8d4a953e5fc",
+      "command": "trigger_golden_path",
+      "script_id": "brief-215a22d36c19",
+      "reason": "Phase: establish real production publish path (operator-approved golden path, no publish)",
+      "requested_by": "hermes",
+      "status": "succeeded",
+      "policy": {
+        "policy_status": "none",
+        "policy_id": null,
+        "policy_version": null,
+        "scope": null,
+        "policy_content_hash": null,
+        "context_hash": "sha256:6d4dd8077f22bbb2f6ddcbac941627df2e23e5e738015820634d587bf0ef28f3",
+        "resolved_scope_candidates": [
+          "global"
+        ]
+      },
+      "argv": [
+        "C:\\Users\\Administrator\\AI-Content-Generation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ayce",
+        "run",
+        "C:\\Users\\Administrator\\AI-Content-Generation\\mcp-ayce-director\\generated_scripts\\brief-215a22d36c19.json",
+        "--assets-dir",
+        "C:\\Users\\Administrator\\AI-Content-Generation\\tests\\fixtures\\asset_provider",
+        "--narration-dir",
+        "C:\\Users\\Administrator\\AI-Content-Generation\\tests\\fixtures\\narration_fixtures",
+        "--json"
+      ],
+      "timeout_s": 600.0,
+      "requested_at": "2026-09-27T17:19:23.753Z",
+      "policy_consumption_id": "cons-402298d35508a399f612e6bd",
+      "policy_consumption_artifact_id": "art-20260927T171930Z-39eb6aeded5f",
+      "finished_at": "2026-09-27T17:19:30.685Z",
+      "exit_code": 0,
+      "run_id": "run-20260927T171925Z-dd7d084b3476",
+      "job_id": "job-20260927T171925Z-d1b7cfcec33b",
+      "qa_verdict": "PASS"
     }
   ]
 }

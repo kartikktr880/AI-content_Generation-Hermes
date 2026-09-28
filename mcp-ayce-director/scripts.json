@@ -16,5 +16,16 @@
       "script_sha256": "3dec7a4de6d0baf675375b8d6ac05d06daab3a45ff98d35cd08261e3e730e38b",
       "registered_at": "2026-09-20T14:46:21.252Z"
     }
+  },
+  "brief-215a22d36c19": {
+    "script": "mcp-ayce-director/generated_scripts/brief-215a22d36c19.json",
+    "assets_dir": "tests/fixtures/asset_provider",
+    "narration_dir": "tests/fixtures/narration_fixtures",
+    "description": "Generated ScriptInput (Stage 2.5) from research artifact res-20260927T171732Z-215a22d36c19 \u2014 deterministic evidence brief.",
+    "generated": {
+      "research_id": "res-20260927T171732Z-215a22d36c19",
+      "script_sha256": "b68c7470fd2b97e871aa6491b7ec31d6440557a4e011a6fd092b0177bc880f33",
+      "registered_at": "2026-09-27T17:19:22.181Z"
+    }
   }
 }

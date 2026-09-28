@@ -34,6 +34,40 @@
         "message": "no persisted research artifact 'res-does-not-exist-proof' in the research store"
       },
       "requested_at": "2026-09-27T13:23:40.881Z"
+    },
+    {
+      "kind": "brief",
+      "research_id": "res-20260920T090318Z-e8f295ac6ec8",
+      "status": "rejected",
+      "error": {
+        "code": "unknown_artifact",
+        "message": "no persisted research artifact 'res-20260920T090318Z-e8f295ac6ec8' in the research store"
+      },
+      "requested_at": "2026-09-27T17:15:43.458Z"
+    },
+    {
+      "kind": "brief",
+      "research_id": "res-20260927T171732Z-215a22d36c19",
+      "script_id": "brief-215a22d36c19",
+      "digest": "b3a349c07089c653216546d10369c6991084bfec716621093c636494a65becc2",
+      "status": "succeeded",
+      "requested_at": "2026-09-27T17:19:21.125Z",
+      "result": {
+        "ok": true,
+        "research_id": "res-20260927T171732Z-215a22d36c19",
+        "script_id": "brief-215a22d36c19",
+        "production_id": "res-20260927T171732Z-215a22d36c19",
+        "title": "Research brief: Identify outlier opening-hook formats in the AI productivity tools niche",
+        "scene_count": 4,
+        "warnings": [
+          "outlier_multiplier unavailable (insufficient baseline); ranked by hook confidence, velocity proxy and view count instead",
+          "research slice status is PARTIAL; the brief inherits that degraded evidence state truthfully"
+        ],
+        "script_path": "mcp-ayce-director/generated_scripts/brief-215a22d36c19.json",
+        "script_sha256": "b68c7470fd2b97e871aa6491b7ec31d6440557a4e011a6fd092b0177bc880f33",
+        "next_step": "trigger_golden_path with command='trigger_golden_path' and script_id='brief-215a22d36c19' to produce this video"
+      },
+      "finished_at": "2026-09-27T17:19:22.217Z"
     }
   ]
 }
