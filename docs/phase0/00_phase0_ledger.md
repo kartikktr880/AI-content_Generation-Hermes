@@ -11,6 +11,7 @@
 > Architecture rule applied: **Hermes-first, capability-first, custom-build-last.**
 > Cost rule applied: zero new paid subscriptions/APIs/infrastructure; only
 > already-available, legitimately usable resources.
+> Permanent execution rules for every task (Task 0 onward): see §8.
 
 ## 0. Source-of-truth accounting
 
@@ -223,3 +224,106 @@ is `skills.trusted_project_dirs` (reversible via `hermes skills untrust`).
 4. `youtube-analytics-harvester` skill does not exist anywhere — unchanged
    (Task 0.7).
 
+
+## 8. Permanent execution rules (mandatory for every implementation task)
+
+Set by the Commander for Task 1 onward. These extend — and do not replace — the
+law, architecture rule and cost rule in this document's header, and the project
+constitution (`rule.md`). Nothing else in this ledger is changed by them.
+
+**1. Hermes-first execution.** Whenever a capability is required, resolve it in
+this order: (1) Hermes native capability, (2) Hermes skill/capability surface,
+(3) already-integrated project capability, (4) explicitly selected
+MCP/tool/connector/API/CLI, (5) legitimate free/local/OSS/existing-subscription
+resource, (6) custom build **only if the capability genuinely does not exist**.
+Never custom-build what Hermes or an already-selected resource provides.
+
+**2. Hermes runtime is the primary verification surface for Hermes tasks.**
+Implement/onboard → execute → observe → verify **inside Hermes**. A Hermes task
+must not be turned into an ordinary AYCE development task. Project files/tests are
+supporting evidence only where they directly validate the changed component.
+
+**3. Capability rule.** `Need → Research Agent → Evidence → Decision →
+Implementation → Runtime Verification`. The existing research reports
+(`Research_Agent/Reports 4A-4L/`, `Phase 0 Research/`) are the candidate source.
+
+**4. Selected-candidate-only onboarding.** A resource appearing in an inventory,
+an earlier report, another task's selection, or an installed-resource list is
+**not** selected for the current task. Use only the resource the task's own
+authoritative specification selected. No mass installation, no "while we're here"
+installs, no rejected/experimental candidates, no silent substitution, no
+invented replacements. If the selected resource is already onboarded, **verify**
+it rather than reinstalling it.
+
+**5. Native onboarding only.** Onboard through Hermes' supported mechanism —
+never bypass Hermes, never edit internal Hermes state when a supported CLI
+exists, never create a parallel configuration or second orchestration layer, and
+never treat "a file exists" as "Hermes has onboarded it". After onboarding:
+registration → enabled/available → invoke through Hermes → observe real result →
+compare expected vs observed.
+
+**6. No useless testing.** No toy prompts, no generic-intelligence/`2+2`-class
+probes, no "is the model working?" tests, no fake IDs/data/responses, no
+redundant re-probing of already-proven capability, no full-project `pytest`
+without a direct requirement, no unrelated suites or modules. A test must prove a
+real acceptance criterion; **reuse existing evidence** rather than retesting what
+is already proven.
+
+**7. Real behaviour only.** Never fabricate IDs, records, API responses,
+artifacts, YouTube records, tool results or success states. If a real external
+credential/account is genuinely required, state the exact blocker; do not
+manufacture a substitute to force a PASS.
+
+**8. Strict change discipline / smallest correct implementation.** Change only
+what the task requires. No unrelated refactors, cleanups, renames, dependency
+additions, configuration edits, speculative/future-task infrastructure, or
+modification of previously completed and verified work. Preserve all previously
+verified functionality.
+
+**9. No scope creep, no false completion.** Executing Task N never authorizes
+Task N+1. `Implemented ≠ Tested ≠ Verified ≠ Production-ready`: a file existing, a
+command exiting 0, or a suite passing is not completion. A task is complete only
+when its acceptance criteria are demonstrated by real behaviour with concrete
+evidence. On a genuine blocker: identify it, resolve it only if legitimately in
+scope, otherwise report it precisely.
+
+**10. Task-by-task sequential execution + expert execution mode.** Execute the
+authoritative task list in order; never invent a task's requirements, never
+silently choose an alternative, never skip ahead. Work as a senior/principal
+engineer: read the authoritative specification, use existing evidence, implement
+the minimum correct change, run the real workflow, verify real behaviour, record
+evidence, close the task, move forward immediately once acceptance criteria are
+satisfied.
+
+
+
+## 9. Task 1 — BLOCKED: no authoritative specification exists
+
+The Task 1 directive requires the authoritative Task 1 specification to be read
+from the repository before any implementation ("Do NOT invent Task 1
+requirements"). An exhaustive search found **no such specification**:
+
+| Search surface | Method | Result |
+|---|---|---|
+| Repository tree (all files, incl. untracked) | full recursive enumeration | only `docs/` (stage contracts + `hermes_*.md`), `docs/phase0/` (Task 0 record), `Phase 0 Research/` (research plans), `Research_Agent/Reports 4A-4L/` (research reports), `src/`, `tests/`, MCP components — no task list |
+| Entire git history | `git log --all --diff-filter=A --name-only` → 230 unique paths ever added | no task/roadmap/controller/constitution document; only three `Phase 0 Research/*Research Plan` files match "plan" |
+| Content grep | `TASK 1` / `Task 1` / `TASK_1` across the repository | only prompt-internal step labels inside the H5-era experiment prompts (`h5a_prompt.txt`, `h5-compose-output.txt`) and Task 0's own statements — no project task definition |
+| Content grep | `TASK LIST` / `ROADMAP` / `Execution Plan` in `Phase 0 Research/`, `Research_Agent/` | no task list or roadmap |
+| Commander specification store | all 17 Hermes `pastes/*.txt` (read-only) | no `TASK 1` / `Task 1` text at all; the pastes cover only the Task 0.1–0.3 / environment / capability-probe series |
+| Recently changed files | repository files changed in the last 3 days (excluding ignored trees) | only Task 0's own artifacts — no newly added Task 1 file |
+| Rulebook / controller files | bounded filesystem search for `rule.md`, `AGENTS.md`, `.ProjectRules`, `PROJECT_CURRENT_STATE.md`, `IMPLEMENTATION_ROADMAP.md`, `TOOL_REGISTRY.md`, `DECISION_LOG.md`, `TEST_STRATEGY.md` | none exist on this machine; the constitution (`rule.md`) is supplied to the agent as session rules only |
+
+This is the same class of blocker as §5 blocker 1 (`0.4 → 0.15` definitions
+unavailable) and it is **the Commander's input boundary**, not a technical
+failure. Consistent with §8 rule 9, no Task 1 capability work was invented, no
+alternative task was substituted, and Task 2 was not started.
+
+**Minimum Commander action:** supply the authoritative Task 1 specification (task
+name, required capability, selected candidate/resource if applicable, and
+acceptance criteria), or confirm that Task 1 is limited to the permanent
+execution rules recorded in §8.
+
+Delivered independently of that blocker — the only imperative in the Task 1
+directive that does not depend on the missing specification — is §8 above: the
+permanent Hermes-first expert-execution rules, recorded in this project's
+authoritative execution document.
