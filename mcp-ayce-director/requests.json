@@ -284,6 +284,46 @@
       "run_id": "run-20260929T064556Z-3b422d61fce8",
       "job_id": "job-20260929T064556Z-4bff2a419bd7",
       "qa_verdict": "PASS"
+    },
+    {
+      "request_id": "req-20260929-h10-real-prod-01",
+      "command": "trigger_golden_path",
+      "script_id": "brief-77ca29a092d7",
+      "reason": "H10 - Hermes directing one real research-derived production through the AYCE Golden Path",
+      "requested_by": "hermes",
+      "status": "succeeded",
+      "policy": {
+        "policy_status": "none",
+        "policy_id": null,
+        "policy_version": null,
+        "scope": null,
+        "policy_content_hash": null,
+        "context_hash": "sha256:6d4dd8077f22bbb2f6ddcbac941627df2e23e5e738015820634d587bf0ef28f3",
+        "resolved_scope_candidates": [
+          "global"
+        ]
+      },
+      "argv": [
+        "C:\\Users\\Administrator\\AI-Content-Generation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ayce",
+        "run",
+        "C:\\Users\\Administrator\\AI-Content-Generation\\mcp-ayce-director\\generated_scripts\\brief-77ca29a092d7.json",
+        "--assets-dir",
+        "C:\\Users\\Administrator\\AI-Content-Generation\\tests\\fixtures\\asset_provider",
+        "--narration-dir",
+        "C:\\Users\\Administrator\\AI-Content-Generation\\tests\\fixtures\\narration_fixtures",
+        "--json"
+      ],
+      "timeout_s": 600.0,
+      "requested_at": "2026-09-29T07:30:04.661Z",
+      "policy_consumption_id": "cons-32e80b7374e37e3888b9edc9",
+      "policy_consumption_artifact_id": "art-20260929T073019Z-b8de3d81c954",
+      "finished_at": "2026-09-29T07:30:19.234Z",
+      "exit_code": 0,
+      "run_id": "run-20260929T073007Z-01adeb428f9c",
+      "job_id": "job-20260929T073007Z-55fd291324d3",
+      "qa_verdict": "PASS"
     }
   ]
 }

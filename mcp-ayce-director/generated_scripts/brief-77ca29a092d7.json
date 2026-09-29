@@ -1,0 +1,32 @@
+{
+  "production_id": "res-20260929T072643Z-77ca29a092d7",
+  "title": "Research brief: Identify outlier opening-hook formats in the AI productivity tools niche",
+  "scenes": [
+    {
+      "narration_text": "Here is an opening hook recorded by the research worker, quoted verbatim: \"We're going to look at five practical ways you can start using AI in your work or at school right now. And best of all, most of these are completely free to use.\"",
+      "visual_description": "High-contrast opening title card referencing: 5 AI for Work Tips and Tricks.",
+      "asset_requirement": {
+        "kind": "image",
+        "description": "Opening visual representing: 5 AI for Work Tips and Tricks",
+        "requires_provenance": true
+      }
+    },
+    {
+      "narration_text": "This video is built directly from research evidence, with no invented facts. The research objective: Identify outlier opening-hook formats in the AI productivity tools niche. Niche: AI productivity tools. Query: AI productivity tools workflow automation. Evidence base: research artifact res-20260929T072643Z-77ca29a092d7, status SUCCESS.",
+      "visual_description": "Clean text card naming the research objective for res-20260929T072643Z-77ca29a092d7."
+    },
+    {
+      "narration_text": "The top-ranked candidate, \"5 AI for Work Tips and Tricks\", channel field reports Kevin Stratvert, 221,597 views, velocity proxy of 260 views per day. A second ranked candidate is \"4 AI Agents To Automate 99% Of Your Life\", with 1,728,739 views.",
+      "visual_description": "Side-by-side comparison graphic of the top-ranked research candidates.",
+      "asset_requirement": {
+        "kind": "image",
+        "description": "Chart-style graphic comparing the top research candidates",
+        "requires_provenance": true
+      }
+    },
+    {
+      "narration_text": "The research suggests one opening-hook angle worth testing, quoted from its hypothesis tier: \"opening-hook angle: We're going to look at five practical ways you can start using AI in your work or at school right now. And best of all, most of these are co\"",
+      "visual_description": "Closing card visualising the suggested hook angle."
+    }
+  ]
+}

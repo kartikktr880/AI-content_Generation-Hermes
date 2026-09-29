@@ -327,3 +327,40 @@ Delivered independently of that blocker — the only imperative in the Task 1
 directive that does not depend on the missing specification — is §8 above: the
 permanent Hermes-first expert-execution rules, recorded in this project's
 authoritative execution document.
+
+## 10. Task 1 — Hermes-directed real production cycle (2026-09-29) — VERIFIED
+
+Derived from the approved sources (Master Project Description / engineering north
+star: ultimate loop + "Hermes is the intended high-level director" + production
+job model; the approved director design and the H6/H7/H8 experiment records).
+Task 0 had proven Hermes operating the Golden Path over the **documentary
+fixture**; the real `research → brief → production` chain existed as approved
+integrated capability but had never been operated by Hermes on this machine
+state. That chain is the next executable item in the approved loop.
+
+Executed **inside Hermes** (two single-purpose one-shot agent sessions,
+`gemini-3.6-flash` via per-session `-m`, no config change):
+
+| Leg | Hermes tool call | Real result |
+|---|---|---|
+| DISCOVER/RESEARCH | `ayce-director.execute_research_slice` | `res-20260929T072643Z-77ca29a092d7`, `SUCCESS`, 6 candidates, real yt-dlp evidence (yt-dlp 2026.08.19), artifact under `data/research/` |
+| CREATE | `ayce-director.propose_script_brief` | new `brief-77ca29a092d7`, `duplicate: false`, sha256 `f02f227b…`, registered in `scripts.json` |
+| PRODUCE | `ayce-director.trigger_golden_path` (`req-20260929-h10-real-prod-01`) | `run-20260929T073007Z-01adeb428f9c` / `job-20260929T073007Z-55fd291324d3`, 7/7 stages succeeded, `qa_verdict PASS`, `exit_code 0` |
+| VERIFY | `ayce-readonly.get_run_state` / `get_run_artifacts` (in-session) + `verify_via_readonly.py` (independent) | 10 artifacts; `script_input` carries `research_id`/`script_id` lineage; 4 scenes / 69.3 s render (fixture run: 5 / 34.0 s); `qa_report PASS` 15 checks 0 failed; render sha256 `a0a89c2c…` matches |
+
+State deltas (all produced by the runs): research artifacts 1→2, research ledger
+2→3, brief ledger 4→5, production ledger 9→10, `scripts.json` +`brief-77ca29a092d7`,
+run directories 3→4. MCP-only boundary held (transcripts show only
+`tool_describe`/`tool_call` + AYCE MCP tools). **No publish, no new code, no new
+resource, no Hermes configuration change.** Evidence record:
+`docs/phase0/12_hermes_real_production_cycle.md`.
+
+### 10.1 Next approved task
+
+`PACKAGE` — seal the research-derived production
+(`run-20260929T073007Z-01adeb428f9c`) into a publish-ready package through the
+project's own approved CLI execution surface (`python -m ayce package <run_id>`,
+the already-verified Stage 5 packaging capability), operated by Hermes. PUBLISH
+remains blocked account-side (Phase 0.7B) and requires explicit Commander
+authorization; MEASURE/LEARN remain blocked until a real published record exists.
+

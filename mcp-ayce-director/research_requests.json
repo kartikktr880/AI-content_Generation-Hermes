@@ -128,6 +128,112 @@
         }
       },
       "finished_at": "2026-09-20T09:04:03.108Z"
+    },
+    {
+      "kind": "research",
+      "research_id": "res-20260929T072643Z-77ca29a092d7",
+      "digest": "77ca29a092d7bc8449c026c3531c38fd0ba8359e6d8c74c7cb17a401df4256c6",
+      "request": {
+        "objective": "Identify outlier opening-hook formats in the AI productivity tools niche",
+        "niche": "AI productivity tools",
+        "query": "AI productivity tools workflow automation",
+        "target_channels": [],
+        "max_outliers": 2,
+        "max_videos": 6
+      },
+      "status": "succeeded",
+      "requested_at": "2026-09-29T07:26:40.413Z",
+      "result": {
+        "ok": true,
+        "research_id": "res-20260929T072643Z-77ca29a092d7",
+        "status": "SUCCESS",
+        "candidate_count": 6,
+        "artifact_path": "C:\\Users\\Administrator\\AI-Content-Generation\\data\\research\\res-20260929T072643Z-77ca29a092d7.json",
+        "artifact": {
+          "schema_version": "1.0",
+          "research_id": "res-20260929T072643Z-77ca29a092d7",
+          "objective": "Identify outlier opening-hook formats in the AI productivity tools niche",
+          "niche": "AI productivity tools",
+          "query": "AI productivity tools workflow automation",
+          "collected_at": "2026-09-29T07:26:43.235Z",
+          "status": "SUCCESS",
+          "tiers": [
+            "OBSERVED_FACT",
+            "DERIVED_METRIC",
+            "MODEL_INFERENCE",
+            "CREATIVE_HYPOTHESIS"
+          ],
+          "candidate_count": 6,
+          "outliers": [
+            {
+              "video_id": "4uvX6dxD6QA",
+              "url": "https://www.youtube.com/watch?v=4uvX6dxD6QA",
+              "title": "5 AI for Work Tips and Tricks",
+              "channel": "Kevin Stratvert",
+              "published_at": "2024-05-30",
+              "view_count": 221597,
+              "outlier_multiplier": null,
+              "velocity_proxy": 260.0,
+              "hook_summary": "We're going to look at five practical ways you can start using AI in your work or at school right now. And best of all, most of these are completely free to use. For example, you can analyze data, extract text, get feed\u2026",
+              "cluster_id": null,
+              "confidence": 0.9,
+              "observed_facts": [
+                "view_count: 221597",
+                "published_at: 2024-05-30",
+                "channel: Kevin Stratvert"
+              ],
+              "derived_metrics": [
+                "outlier_multiplier: None (insufficient_baseline; channel median baseline unavailable)",
+                "velocity_proxy_views_per_day: 260.0"
+              ],
+              "model_inferences": [],
+              "creative_hypotheses": [
+                "opening-hook angle: We're going to look at five practical ways you can start using AI in your work or at school right now. And best of all,\u2026"
+              ],
+              "captions_status": "available"
+            },
+            {
+              "video_id": "FwOTs4UxQS4",
+              "url": "https://www.youtube.com/watch?v=FwOTs4UxQS4",
+              "title": "AI Agents, Clearly Explained",
+              "channel": "Jeff Su",
+              "published_at": "2025-04-08",
+              "view_count": 5201695,
+              "outlier_multiplier": null,
+              "velocity_proxy": 9645.1,
+              "hook_summary": "AI. AI. AI. AI. AI. AI. You know, more agentic. Agentic capabilities. An AI agent. Agents. Agentic workflows. Agents. Agents. Agent. Agent. Agent. Agent. Agentic. All right. Most explanations of AI agents is either too\u2026",
+              "cluster_id": null,
+              "confidence": 0.9,
+              "observed_facts": [
+                "view_count: 5201695",
+                "published_at: 2025-04-08",
+                "channel: Jeff Su"
+              ],
+              "derived_metrics": [
+                "outlier_multiplier: None (insufficient_baseline; channel median baseline unavailable)",
+                "velocity_proxy_views_per_day: 9645.1"
+              ],
+              "model_inferences": [],
+              "creative_hypotheses": [
+                "opening-hook angle: AI. AI. AI. AI. AI. AI. You know, more agentic. Agentic capabilities. An AI agent. Agents. Agentic workflows. Agents. A\u2026"
+              ],
+              "captions_status": "auto_generated"
+            }
+          ],
+          "provenance": {
+            "worker_version": "1.0",
+            "ytdlp_version": "2026.08.19",
+            "clustering": {
+              "method": "lexical_cosine_dbscan",
+              "capability_status": "fallback_lexical",
+              "n_clusters": 1,
+              "detail": "deterministic lexical vectors + local DBSCAN (fastembed not installed)"
+            },
+            "warnings": []
+          }
+        }
+      },
+      "finished_at": "2026-09-29T07:28:07.986Z"
     }
   ]
 }
