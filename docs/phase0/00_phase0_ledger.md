@@ -395,3 +395,37 @@ Hermes the operator of the publish boundary under explicit Commander
 authorization once the account/channel standing is resolved — no code or
 architecture change is required for it.
 
+
+## 12. Stage 8 — Motion & Compositing (MUST slice) — VERIFIED (2026-09-29)
+
+Next approved task derived from the research reports (not invented): the Stage 8
+blueprint `Phase 0 Research/Stage 8 Motion and Compositing Architecture Deep R___`
+("Programmable Motion, Timeline Orchestration, and Media Compositing"), whose
+Executive Verdict selects a **Decoupled Hybrid Rendering Pipeline** and mandates
+that the existing P4/P4.5/P5.5 modules be *adapted and wrapped rather than
+retired*.
+
+| Item | State |
+|---|---|
+| Selected candidates | **FFmpeg** (foundational media pipeline) + **libass** (pre-timed ASS rasterization) — both already present in Hermes' bundled FFmpeg 9.0.1 (`--enable-libass`, fontconfig/harfbuzz/freetype/fribidi); **reused, nothing installed**. Remotion (SHOULD/OPTIONAL) deliberately not implemented. |
+| Implementation | NEW `src/ayce/compositor.py` (procedural filtergraph generator + libass typography, subclassing the verified `FFmpegRenderer` so validation/health/codec policy are reused); `config.py` +9 optional keys; `pipeline.py` renderer resolution via `build_renderer`. `AYCE_RENDERER` defaults to `ffmpeg-smoke`, so no previously verified behaviour changes. |
+| MUST coverage | multi-track composition, aspect-fit + background blur, programmable Ken Burns, non-linear (smooth-step) easing, cut/fade/dissolve/wipe transitions (duration-preserving), pre-timed SSA/ASS via libass, 48 kHz audio multiplex. |
+| Hermes execution | session `20260929_101927`-era one-shot (`gemini-3.7-flash`, `terminal` tool, `timeout=600`) ran the exact production command with `AYCE_RENDERER=ffmpeg-compositor` → verbatim report `{"ok": true, "run_id": "run-20260929T101927Z-e32756f8d6a5", "qa_verdict": "PASS", …7/7 stages ok}` |
+| Hermes verification | second one-shot session (`h11b_compositor_verify_prompt.txt`) via `mcp__ayce_readonly__get_run_state` + `get_run_artifacts` → 7/7 `succeeded`, 7 artifacts, `rendered_video.renderer = ffmpeg-compositor`, **1920×1080**, 34.0 s, sha256 `f1a05414…89b5`, `qa_report PASS 16 checks / 0 failed` |
+| Independent check | `ffprobe` on the produced master: h264 1920×1080 @30 fps, aac 48000 Hz stereo, duration 34.000 s; `render/captions.ass` present (`PlayResX: 1920`, one `Dialogue:` per cue). Byte-deterministic for identical inputs. |
+| Focused regression | `test_compositor + test_render + test_production_render + test_captions + test_pipeline + test_config` → **62 passed / 0 failed** (no project-wide suite) |
+| Evidence record | `docs/phase0/13_stage8_compositor_must_slice.md` |
+
+### 12.1 Next approved task
+
+**Stage 10 — QA + Autonomous Repair (MUST slice).** The Stage 10 blueprint
+("Automated Quality Assurance, Fault Localization, and Autonomous Repair
+Architecture") lists MUST items the current `media_qa` gate does not yet
+implement — EBU R128 loudness/True-Peak verification, acoustic dead-air/silence
+detection, caption timestamp/bounds and reading-speed (CPS) validation,
+zero-byte/truncated-container detection, and timeline black-slug detection — all
+of which the **already-installed FFmpeg/ffprobe** provides (`loudnorm`,
+`silencedetect`, `blackdetect`, `ffprobe` stream/format fields) with no new
+candidate; the repair loop then re-renders the affected scene through the Stage 8
+compositor. PUBLISH remains **PENDING — `403 authenticatedUserAccountSuspended`**.
+

@@ -115,6 +115,25 @@ class Config:
     kokoro_repo_id: str = "hexgrad/Kokoro-82M"
     kokoro_license: str | None = None
     kokoro_cache_dir: str | None = None
+    #: Stage 8 compositor (Motion + Compositing MUST slice). The verified
+    #: ``ffmpeg-smoke`` renderer stays the DEFAULT; the compositor is opt-in
+    #: per run, so previously verified behaviour never changes. All optional.
+    #:   AYCE_RENDERER: "ffmpeg-smoke" (default) | "ffmpeg-compositor".
+    #:   AYCE_CANVAS_WIDTH / AYCE_CANVAS_HEIGHT / AYCE_FRAME_RATE: canvas.
+    #:   AYCE_TRANSITION: cut | fade | dissolve | wipe* | slide* | smooth* |
+    #:     circle* (membership is validated by the compositor's own contract).
+    #:   AYCE_TRANSITION_SECONDS: cross-fade duration (duration-preserving).
+    #:   AYCE_KENBURNS: programme camera motion; AYCE_KENBURNS_STRENGTH: 0..0.9.
+    #:   AYCE_BURN_CAPTIONS: rasterize the verified captions via libass.
+    renderer: str = "ffmpeg-smoke"
+    canvas_width: int = 1920
+    canvas_height: int = 1080
+    frame_rate: int = 30
+    transition: str = "dissolve"
+    transition_seconds: float = 0.5
+    kenburns: bool = True
+    kenburns_strength: float = 0.08
+    burn_captions: bool = True
 
     @property
     def resolved_data_dir(self) -> Path:
@@ -216,6 +235,59 @@ class Config:
                     f"invalid {ENV_PREFIX}KOKORO_SPEED={speed_raw!r}; must be > 0"
                 )
 
+        def _bool_env(name: str, default: bool) -> bool:
+            raw = source.get(ENV_PREFIX + name)
+            if raw is None or not raw.strip():
+                return default
+            value = raw.strip().lower()
+            if value in {"1", "true", "yes", "on"}:
+                return True
+            if value in {"0", "false", "no", "off"}:
+                return False
+            raise ConfigError(
+                f"invalid {ENV_PREFIX}{name}={raw!r}; expected a boolean "
+                f"(1/0, true/false, yes/no, on/off)"
+            )
+
+        def _int_env(name: str, default: int, *, minimum: int) -> int:
+            raw = source.get(ENV_PREFIX + name)
+            if raw is None or not raw.strip():
+                return default
+            try:
+                value = int(raw.strip())
+            except ValueError:
+                raise ConfigError(
+                    f"invalid {ENV_PREFIX}{name}={raw!r}; must be an integer"
+                ) from None
+            if value < minimum:
+                raise ConfigError(
+                    f"invalid {ENV_PREFIX}{name}={raw!r}; must be >= {minimum}"
+                )
+            return value
+
+        def _float_env(name: str, default: float, *, minimum: float) -> float:
+            raw = source.get(ENV_PREFIX + name)
+            if raw is None or not raw.strip():
+                return default
+            try:
+                value = float(raw.strip())
+            except ValueError:
+                raise ConfigError(
+                    f"invalid {ENV_PREFIX}{name}={raw!r}; must be a number"
+                ) from None
+            if value < minimum:
+                raise ConfigError(
+                    f"invalid {ENV_PREFIX}{name}={raw!r}; must be >= {minimum}"
+                )
+            return value
+
+        renderer = source.get(ENV_PREFIX + "RENDERER", "ffmpeg-smoke").strip().lower()
+        if not renderer:
+            raise ConfigError(f"{ENV_PREFIX}RENDERER must not be empty")
+        transition = source.get(ENV_PREFIX + "TRANSITION", "dissolve").strip().lower()
+        if not transition:
+            raise ConfigError(f"{ENV_PREFIX}TRANSITION must not be empty")
+
         return cls(
             log_level=log_level,
             data_dir=Path(data_dir_raw),
@@ -236,4 +308,13 @@ class Config:
             kokoro_repo_id=source.get(ENV_PREFIX + "KOKORO_REPO_ID") or "hexgrad/Kokoro-82M",
             kokoro_license=source.get(ENV_PREFIX + "KOKORO_LICENSE") or None,
             kokoro_cache_dir=source.get(ENV_PREFIX + "KOKORO_CACHE_DIR") or None,
+            renderer=renderer,
+            canvas_width=_int_env("CANVAS_WIDTH", 1920, minimum=16),
+            canvas_height=_int_env("CANVAS_HEIGHT", 1080, minimum=16),
+            frame_rate=_int_env("FRAME_RATE", 30, minimum=1),
+            transition=transition,
+            transition_seconds=_float_env("TRANSITION_SECONDS", 0.5, minimum=0.0),
+            kenburns=_bool_env("KENBURNS", True),
+            kenburns_strength=_float_env("KENBURNS_STRENGTH", 0.08, minimum=0.0),
+            burn_captions=_bool_env("BURN_CAPTIONS", True),
         )

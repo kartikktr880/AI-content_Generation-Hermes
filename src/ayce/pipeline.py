@@ -52,10 +52,11 @@ from .config import Config
 from .ids import new_job_id, new_run_id
 from .lineage import discover as discover_lineage
 from .lineage import register_lineage
+from .compositor import build_renderer
 from .logging import StructuredLogger
 from .media_qa import run_media_qa_stage
 from .narration_audio import run_narration_audio_stage
-from .render import FFmpegRenderer, Renderer, run_production_render_stage
+from .render import Renderer, run_production_render_stage
 from .script_to_scene import load_script_input, run_script_to_scene_stage
 from .state import RunState
 from .timeline import run_timeline_stage
@@ -288,8 +289,12 @@ def run_pipeline(
     if not captions_result.ok:
         return stopped("captions", captions_result.error or "unknown error")
 
-    # ---- stage 6: multi-scene production render (P5) ------------------------
-    selected_renderer = renderer if renderer is not None else FFmpegRenderer(config)
+    # ---- stage 6: multi-scene production render (P5 / Stage 8) --------------
+    # Renderer selection is configuration-driven (`AYCE_RENDERER`); the
+    # verified `ffmpeg-smoke` renderer remains the default, so previously
+    # verified behaviour is unchanged unless the compositor is explicitly
+    # selected. An explicitly injected renderer always wins (tests/orchestrators).
+    selected_renderer = renderer if renderer is not None else build_renderer(config)
     render_result = run_production_render_stage(
         timeline_manifest, run, registry, selected_renderer, logger=log
     )
