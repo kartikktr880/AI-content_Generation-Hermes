@@ -364,3 +364,34 @@ the already-verified Stage 5 packaging capability), operated by Hermes. PUBLISH
 remains blocked account-side (Phase 0.7B) and requires explicit Commander
 authorization; MEASURE/LEARN remain blocked until a real published record exists.
 
+
+## 11. PACKAGE task — sealed publish package for the Task 1 run (2026-09-29) — VERIFIED
+
+Executed **through Hermes** with the already-verified Stage 4 packaging
+capability — no new tool, no architectural change, no code change.
+
+| Item | Evidence |
+|---|---|
+| Hermes session / tool | `20260929_004650_02f3e1`, tool `terminal` only (single shell invocation running exactly the two approved commands) |
+| Commands | `.venv\Scripts\python.exe -m ayce package run-20260929T073007Z-01adeb428f9c --json` (seal) then the same with `--verify --json` |
+| Hermes-observed result | `{"ok": true, "package_id": "pkg-6c0d9cc96879e3f0", "run_id": "run-20260929T073007Z-01adeb428f9c", "verified_content": true, "errors": []}`, exit 0 for both commands |
+| Sealed package | `data/runs/run-20260929T073007Z-01adeb428f9c/publish_package.json`, `package_version 1`, seal `sha256:1f8cb27b01af785efe24a8e6298446e910c21d6e89f5349d34eba269723c51e7` |
+| Lineage | `research_id res-20260929T072643Z-77ca29a092d7`, `script_id brief-77ca29a092d7`, `objective_id obj-5969bacf4a332431`, `production_id` = the research id |
+| QA gate | `verdict PASS`, 15 checks, 0 failed; `render_sha256` == the run's rendered_video sha256 (`a0a89c2c…`) |
+| Artifacts | 10-entry `artifact_manifest` (script, research, scene_manifest, asset_manifest, audio, timeline, captions, rendered_video, qa_report, policy_consumption) |
+| Not published | publish ledger `publish_attempts` unchanged at **1 row** (the blocked 2026-09-27 attempt); no upload, no YouTube action |
+| Files changed | the run's `publish_package.json` (run-produced), `mcp-ayce-director/h11_package_prompt.txt`, `docs/phase0/12_hermes_real_production_cycle.md` §8, this section |
+
+Evidence record: `docs/phase0/12_hermes_real_production_cycle.md` §8.
+
+### 11.1 Next approved task
+
+`PUBLISH` remains **Commander/account-blocked** (Phase 0.7B: YouTube
+`403 authenticatedUserAccountSuspended`); the sealed package
+`pkg-6c0d9cc96879e3f0` is now the exact artifact that boundary would consume, and
+the existing `ayce publish` path is idempotent on `(package_seal, destination)`.
+The next *executable* approved work that is not externally blocked is to make
+Hermes the operator of the publish boundary under explicit Commander
+authorization once the account/channel standing is resolved — no code or
+architecture change is required for it.
+

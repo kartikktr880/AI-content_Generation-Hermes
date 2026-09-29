@@ -157,3 +157,62 @@ the research id itself.
 | H | Cycle stops before PUBLISH | PASS — nothing published |
 
 **TASK 1 (Hermes-directed real production cycle) = VERIFIED.**
+
+## 8. PACKAGE task — sealed publish package for the Task 1 run (VERIFIED)
+
+**Capability used (no new tool, no code change):** the already-verified Stage 4
+packaging boundary `python -m ayce package <run_id>` (seal) /
+`--verify` (`src/ayce/publish_package.py`: deterministic, QA-gated,
+immutable-after-seal, content-derived `package_id` + `seal`).
+
+**Operated through Hermes** — one-shot session `20260929_004650_02f3e1`
+(`gemini-3.6-flash`), tool used: `terminal` (only). The agent executed exactly
+the two approved commands (chained in one shell invocation) from the repository
+root and reported every output verbatim:
+
+```text
+.venv\Scripts\python.exe -m ayce package run-20260929T073007Z-01adeb428f9c --json           # seal
+.venv\Scripts\python.exe -m ayce package run-20260929T073007Z-01adeb428f9c --verify --json  # verify
+```
+
+Hermes terminal result (verbatim JSON, exit code 0 for both):
+
+```json
+{"ok": true, "package_id": "pkg-6c0d9cc96879e3f0",
+ "run_id": "run-20260929T073007Z-01adeb428f9c",
+ "verified_content": true, "errors": []}
+```
+
+**Sealed package** (`data/runs/run-20260929T073007Z-01adeb428f9c/publish_package.json`):
+
+| Field | Value |
+|---|---|
+| `package_version` | 1 |
+| `package_id` | `pkg-6c0d9cc96879e3f0` |
+| `seal` | `algorithm: sha256`, `value: 1f8cb27b01af785efe24a8e6298446e910c21d6e89f5349d34eba269723c51e7` |
+| `run_id` / `job_id` | `run-20260929T073007Z-01adeb428f9c` / `job-20260929T073007Z-55fd291324d3` |
+| `production_id` | `res-20260929T072643Z-77ca29a092d7` |
+| `lineage` | `objective_id obj-5969bacf4a332431`, `research_id res-20260929T072643Z-77ca29a092d7`, `script_id brief-77ca29a092d7`, `script_sha256 9531ced8…`, `research_sha256 1351740d…`, `objective_text "Identify outlier opening-hook formats in the AI productivity tools niche"` |
+| `render` | `art-20260929T073017Z-06f02221cd1c`, `render/res-20260929T072643Z-77ca29a092d7.mp4`, sha256 `a0a89c2c…`, 28,902 B |
+| `qa` | `verdict PASS`, `total_checks 15`, `failed_checks 0`, `render_sha256` equal to the render sha |
+| `artifact_manifest` | **10 entries** — asset_manifest, audio, captions, qa_report, policy_consumption, rendered_video, research, scene_manifest, script, timeline |
+
+**Verification (existing approved surfaces only):**
+
+| Criterion | Evidence |
+|---|---|
+| exact real run packaged | `run_id` inside the sealed package == `run-20260929T073007Z-01adeb428f9c` |
+| package created successfully | `ok: true`, `publish_package.json` present in the run directory, exit 0 |
+| package sealed/verified | content seal `1f8cb27b…`; `ayce package --verify` → `verified_content: true`, `errors: []` (run **through Hermes**) |
+| lineage points to the correct run | `lineage.research_id`/`script_id`/`objective_id` + `production_id` == the Task 1 research, brief and run; `render.sha256` / `qa.render_sha256` match the run's rendered_video artifact |
+| expected artifacts present | 10-entry `artifact_manifest` covering every Golden Path artifact of the run |
+| no corruption / missing artifact | `errors: []`, `verified_content: true` (the verifier recomputes artifact sizes/sha256 against the run directory) |
+| metadata consistent with the source run | `created_at` = the run's own timestamp; `qa` block equals the run's `qa_report` metadata |
+| **not published** | publish ledger `publish_attempts` unchanged at **1 row** (the old blocked 2026-09-27 attempt) — no publish attempt, no upload, no YouTube action |
+
+**Files changed:** `data/runs/run-20260929T073007Z-01adeb428f9c/publish_package.json`
+(produced by the sealing), `mcp-ayce-director/h11_package_prompt.txt` (session
+prompt), this section, ledger §11. **No `src/`, `tests/`, Hermes config, MCP
+config, cron or dependency change.**
+
+**PACKAGE task = VERIFIED.**
