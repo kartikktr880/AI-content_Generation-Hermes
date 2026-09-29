@@ -244,6 +244,46 @@
       "run_id": "run-20260927T171925Z-dd7d084b3476",
       "job_id": "job-20260927T171925Z-d1b7cfcec33b",
       "qa_verdict": "PASS"
+    },
+    {
+      "request_id": "req-20260928-h9-golden-compose-01",
+      "command": "trigger_golden_path",
+      "script_id": "documentary",
+      "reason": "H9 Task 0 verification - one controlled Golden Path run through the AYCE director boundary.",
+      "requested_by": "hermes",
+      "status": "succeeded",
+      "policy": {
+        "policy_status": "none",
+        "policy_id": null,
+        "policy_version": null,
+        "scope": null,
+        "policy_content_hash": null,
+        "context_hash": "sha256:6d4dd8077f22bbb2f6ddcbac941627df2e23e5e738015820634d587bf0ef28f3",
+        "resolved_scope_candidates": [
+          "global"
+        ]
+      },
+      "argv": [
+        "C:\\Users\\Administrator\\AI-Content-Generation\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ayce",
+        "run",
+        "C:\\Users\\Administrator\\AI-Content-Generation\\tests\\fixtures\\script_to_scene\\documentary.json",
+        "--assets-dir",
+        "C:\\Users\\Administrator\\AI-Content-Generation\\tests\\fixtures\\asset_provider",
+        "--narration-dir",
+        "C:\\Users\\Administrator\\AI-Content-Generation\\tests\\fixtures\\narration_fixtures",
+        "--json"
+      ],
+      "timeout_s": 600.0,
+      "requested_at": "2026-09-29T06:45:52.258Z",
+      "policy_consumption_id": "cons-e9a5189766ba95c3faeb659f",
+      "policy_consumption_artifact_id": "art-20260929T064605Z-a5e3675d3789",
+      "finished_at": "2026-09-29T06:46:05.638Z",
+      "exit_code": 0,
+      "run_id": "run-20260929T064556Z-3b422d61fce8",
+      "job_id": "job-20260929T064556Z-4bff2a419bd7",
+      "qa_verdict": "PASS"
     }
   ]
 }

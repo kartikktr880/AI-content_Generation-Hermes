@@ -191,3 +191,35 @@ This ledger section only (`docs/phase0/00_phase0_ledger.md`). No `src/`,
 dependency was modified; all temporary diagnostics lived in `.tmp/` and were
 removed after use.
 
+
+## 7. Task 0 completion — the two unresolved requirements implemented IN Hermes (2026-09-29)
+
+§6.1 recorded that §5 proposed items **4** (controlled Golden Path through the
+director boundary) and **5** (project-knowledge skill inside Hermes' real skill
+surface) were NOT executed. Both are now implemented through Hermes' own
+mechanisms and **behaviourally verified in the Hermes runtime**. Evidence record:
+`docs/phase0/11_hermes_director_skill_verification.md`.
+
+| Item | Hermes mechanism | Runtime evidence | Status |
+|---|---|---|---|
+| **§5 item 4** — one controlled Golden Path execution through the director boundary, verified independently through the read-only server | Hermes one-shot agent session (LLM) → Hermes tool dispatcher → MCP stdio `ayce-director.trigger_golden_path` → AYCE Golden Path → MCP stdio `ayce-readonly` observation | session `20260928_234452_4cc22a`: real tool call + real result `ok: true`, `run_id run-20260929T064556Z-3b422d61fce8`, `job_id job-20260929T064556Z-4bff2a419bd7`, `qa_verdict PASS`, `exit_code 0`, 7/7 stages; read-only `get_run_state`/`get_run_artifacts` through Hermes = 7/7 succeeded, 8 artifacts, `failed_checks 0`; independent `verify_via_readonly.py` agrees (render sha256 `df90f486…`) | **VERIFIED** |
+| §5 item 4 (idempotency leg, H5 "next step") | same boundary, identical duplicate request through Hermes | session `20260928_234741_93137d`: `duplicate_request` + original result; `data/runs` 3 → **3**, ledger records 9 → **9** (no second run) | **VERIFIED** |
+| **§5 item 5** — project-knowledge skill/asset set in Hermes' real skill surface | Hermes native project-local skill mechanism: `.hermes/skills/ayce-project-knowledge/SKILL.md` + `hermes skills trust <repo>` | `hermes skills list` → `51 builtin, 1 local — 52 enabled`; `hermes prompt-size --json` skills index 5076 → 5203 bytes; skill present in the *stored system prompt* of a repo session; session `20260928_235021_5c7864` called `skill_view ayce-project-knowledge` (`success: true`) and reproduced its Golden Path stages / director fields verbatim | **VERIFIED** |
+| §6 row "LLM-driven agent round trip — credential-gated" | — | **stale blocker**: Hermes is configured against a live **local** OpenAI-compatible endpoint (`http://127.0.0.1:8081/v1`, dummy key); real one-shot sessions run without any external credential. The configured default `gemini-3.1-pro` is unreliable on that proxy, so sessions pin `-m gemini-3.6-flash`/`gemini-3.7-flash` (per-session flag only — **no config change**) | **CLOSED (was mis-recorded)** |
+
+Scope hygiene for §7: `ayce-readonly`/`ayce-director` were **reused, not
+reinstalled**; the paused analytics cron job is untouched; no project-wide pytest
+was used as Task 0 evidence; no Task 1 work was started. Only Hermes-state change
+is `skills.trusted_project_dirs` (reversible via `hermes skills untrust`).
+
+### 7.1 Blockers still open after §7
+
+1. `0.4 → 0.15` task definitions unavailable → Commander input still required
+   (§5 blocker 1). **This remains the only Task 0 boundary.**
+2. YouTube publishing blocked account-side (`403 authenticatedUserAccountSuspended`)
+   — Phase 0.7B, unchanged.
+3. Authenticated analytics collection blocked (no eligible published record) —
+   unchanged.
+4. `youtube-analytics-harvester` skill does not exist anywhere — unchanged
+   (Task 0.7).
+
